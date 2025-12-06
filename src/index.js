@@ -6,10 +6,14 @@ import './styles/main.css';
 import { applyBrandingToDOM } from './config/branding.js';
 import { initAuth, onAuthStateChange } from './services/auth.js';
 import { renderApp } from './App.js';
+import { initPWAMode, isReadOnlyMode, isPWA, updateLastSync } from './services/pwa.js';
 
 // Initialize application
 async function init() {
   console.log('Initializing Aviation Permit Book...');
+
+  // Initialize PWA mode (adds styles, detects read-only mode)
+  initPWAMode();
 
   // Apply default branding
   applyBrandingToDOM();
@@ -19,46 +23,49 @@ async function init() {
 
   // Listen for auth state changes
   onAuthStateChange((user) => {
+    // Hide loading screen
+    hideLoadingScreen();
+
     if (user) {
       console.log('User signed in:', user.email);
       renderApp(true);
+      updateLastSync(); // Track last successful data sync
     } else {
       console.log('User signed out');
       renderApp(false);
     }
   });
 
-  // Register service worker for PWA (production only)
-  if ('serviceWorker' in navigator && import.meta.env.PROD) {
-    try {
-      const registration = await navigator.serviceWorker.register('/sw.js');
-      console.log('Service Worker registered:', registration.scope);
-    } catch (error) {
-      console.error('Service Worker registration failed:', error);
+  // Log PWA status
+  if (isPWA()) {
+    console.log('Running in PWA mode');
+    if (isReadOnlyMode()) {
+      console.log('Read-only mode enabled (mobile PWA)');
     }
   }
-
-  // Detect PWA mode
-  const isPWA = window.matchMedia('(display-mode: standalone)').matches
-             || window.navigator.standalone;
-
-  if (isPWA) {
-    document.body.classList.add('pwa-mode');
-    console.log('Running in PWA mode');
-  }
-
-  // Offline detection
-  window.addEventListener('online', updateOnlineStatus);
-  window.addEventListener('offline', updateOnlineStatus);
-  updateOnlineStatus();
 }
 
-function updateOnlineStatus() {
-  const banner = document.getElementById('offline-banner');
-  if (banner) {
-    banner.classList.toggle('visible', !navigator.onLine);
+/**
+ * Hide the loading screen
+ */
+function hideLoadingScreen() {
+  const loadingEl = document.getElementById('app-loading');
+  if (loadingEl) {
+    loadingEl.style.opacity = '0';
+    loadingEl.style.transition = 'opacity 0.3s ease';
+    setTimeout(() => {
+      loadingEl.remove();
+    }, 300);
   }
 }
 
 // Start the app
 document.addEventListener('DOMContentLoaded', init);
+
+// Handle app visibility changes (for data refresh)
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') {
+    // App became visible - could trigger data refresh here
+    console.log('App became visible');
+  }
+});

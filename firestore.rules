@@ -2,7 +2,9 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // Helper functions
+    // =====================================
+    // Helper Functions
+    // =====================================
     function isAuthenticated() {
       return request.auth != null;
     }
@@ -27,6 +29,23 @@ service cloud.firestore {
       return belongsToOrg(orgId) && getUserData().role == 'admin';
     }
 
+    // Data validation helpers
+    function isValidEmail(email) {
+      return email is string && email.matches('.*@.*\\..*');
+    }
+
+    function isValidString(field, minLen, maxLen) {
+      return field is string && field.size() >= minLen && field.size() <= maxLen;
+    }
+
+    function hasRequiredFields(data, fields) {
+      return data.keys().hasAll(fields);
+    }
+
+    function onlyChangedFields(fields) {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(fields);
+    }
+
     // =====================================
     // Organizations
     // =====================================
@@ -39,12 +58,19 @@ service cloud.firestore {
       // Organization-specific subcollections
       match /countryOverrides/{countryCode} {
         allow read: if belongsToOrg(orgId);
-        allow write: if belongsToOrg(orgId);
+        allow write: if belongsToOrg(orgId) &&
+          // Validate override data structure
+          request.resource.data.keys().hasOnly(['overrides', 'notes', '_baseVersion', 'updatedAt', 'notesUpdatedAt']) &&
+          // Notes must be reasonable length
+          (!('notes' in request.resource.data) || request.resource.data.notes.size() <= 10000);
       }
 
       match /customHandlers/{airportCode} {
         allow read: if belongsToOrg(orgId);
-        allow write: if belongsToOrg(orgId);
+        allow write: if belongsToOrg(orgId) &&
+          // Validate handler data
+          request.resource.data.keys().hasOnly(['handlers', 'updatedAt', 'updatedBy']) &&
+          request.resource.data.handlers.size() <= 50; // Max 50 custom handlers per airport
       }
     }
 
@@ -60,17 +86,30 @@ service cloud.firestore {
         getUserData().organizationId == resource.data.organizationId &&
         getUserData().role == 'admin';
 
-      // Only org admins can modify users in their org
+      // Users can update their own non-sensitive fields
+      allow update: if request.auth.uid == userId &&
+        isApproved() &&
+        onlyChangedFields(['displayName', 'lastLogin']) &&
+        (!('displayName' in request.resource.data) || isValidString(request.resource.data.displayName, 1, 100));
+
+      // Org admins can modify users in their org (role, status)
       allow update: if isApproved() &&
         getUserData().organizationId == resource.data.organizationId &&
         getUserData().role == 'admin' &&
-        // Cannot change organizationId
-        request.resource.data.organizationId == resource.data.organizationId;
+        // Cannot change organizationId or email
+        request.resource.data.organizationId == resource.data.organizationId &&
+        request.resource.data.email == resource.data.email &&
+        // Can only change allowed fields
+        onlyChangedFields(['role', 'status', 'displayName', 'updatedAt']) &&
+        // Role must be valid
+        request.resource.data.role in ['admin', 'user'] &&
+        // Status must be valid
+        request.resource.data.status in ['approved', 'disabled', 'pending'];
 
       // Users cannot delete themselves or others
       allow delete: if false;
 
-      // New user creation is handled by Auth + Cloud Functions
+      // New user creation is handled by Auth + Admin SDK
       allow create: if false;
     }
 
@@ -80,7 +119,12 @@ service cloud.firestore {
     match /pendingUsers/{requestId} {
       // Anyone authenticated can create a pending user request
       allow create: if isAuthenticated() &&
-        request.resource.data.email == request.auth.token.email;
+        request.resource.data.email == request.auth.token.email &&
+        hasRequiredFields(request.resource.data, ['email', 'organizationId', 'status']) &&
+        request.resource.data.status == 'pending' &&
+        isValidEmail(request.resource.data.email) &&
+        isValidString(request.resource.data.organizationId, 1, 100) &&
+        (!('displayName' in request.resource.data) || isValidString(request.resource.data.displayName, 1, 100));
 
       // Org admins can read pending requests for their org
       allow read: if isApproved() &&
@@ -90,7 +134,10 @@ service cloud.firestore {
       // Org admins can update (approve/deny) pending requests
       allow update: if isApproved() &&
         getUserData().organizationId == resource.data.organizationId &&
-        getUserData().role == 'admin';
+        getUserData().role == 'admin' &&
+        // Can only change status fields
+        onlyChangedFields(['status', 'approvedAt', 'deniedAt']) &&
+        request.resource.data.status in ['approved', 'denied'];
 
       // Org admins can delete pending requests
       allow delete: if isApproved() &&
@@ -104,20 +151,26 @@ service cloud.firestore {
     match /invitations/{inviteId} {
       // Org admins can create invitations for their org
       allow create: if isAdmin() &&
-        request.resource.data.organizationId == getUserData().organizationId;
+        request.resource.data.organizationId == getUserData().organizationId &&
+        hasRequiredFields(request.resource.data, ['email', 'organizationId', 'invitedBy', 'status', 'token']) &&
+        isValidEmail(request.resource.data.email) &&
+        request.resource.data.status == 'pending' &&
+        request.resource.data.invitedBy == request.auth.uid &&
+        isValidString(request.resource.data.token, 20, 50);
 
       // Org admins can read invitations for their org
       allow read: if isAdmin() &&
         resource.data.organizationId == getUserData().organizationId;
 
-      // Anyone with a valid token can read to verify (via Cloud Function is safer)
-      // For now, allow authenticated users to read invitations
+      // Anyone authenticated can read invitations by token (for signup flow)
+      // This is needed for the invitation acceptance flow
       allow read: if isAuthenticated();
 
       // Only the invited user can update (accept)
       allow update: if isAuthenticated() &&
         resource.data.email == request.auth.token.email &&
-        request.resource.data.status == 'accepted';
+        request.resource.data.status == 'accepted' &&
+        onlyChangedFields(['status', 'acceptedAt']);
 
       // Org admins can delete invitations
       allow delete: if isAdmin() &&
@@ -160,20 +213,32 @@ service cloud.firestore {
       // Any approved user can create a suggestion
       allow create: if isApproved() &&
         request.resource.data.submittedBy == request.auth.uid &&
-        request.resource.data.organizationId == getUserData().organizationId;
+        request.resource.data.organizationId == getUserData().organizationId &&
+        hasRequiredFields(request.resource.data, ['countryCode', 'field', 'suggestedValue', 'submittedBy', 'organizationId', 'status']) &&
+        request.resource.data.status == 'pending' &&
+        isValidString(request.resource.data.countryCode, 2, 3) &&
+        isValidString(request.resource.data.field, 1, 100) &&
+        (!('reason' in request.resource.data) || isValidString(request.resource.data.reason, 0, 2000)) &&
+        (!('source' in request.resource.data) || isValidString(request.resource.data.source, 0, 500));
 
       // Users can read their own suggestions
       allow read: if isApproved() &&
         resource.data.submittedBy == request.auth.uid;
 
-      // Super-admins can read all (handled via Admin SDK)
-      // For now, org admins can see their org's suggestions
+      // Org admins can see their org's suggestions
       allow read: if isAdmin() &&
         resource.data.organizationId == getUserData().organizationId;
 
       // Only super-admin can update status (via Admin SDK)
       allow update: if false;
       allow delete: if false;
+    }
+
+    // =====================================
+    // Catch-all: Deny everything else
+    // =====================================
+    match /{document=**} {
+      allow read, write: if false;
     }
   }
 }

@@ -7,6 +7,18 @@ import { getCurrentUser, signOut } from './services/auth.js';
 import { renderLoginPage } from './components/auth/LoginPage.js';
 import { renderHeader } from './components/layout/Header.js';
 import { renderCountriesTab } from './components/countries/CountriesTab.js';
+import { renderRoutePlanner } from './components/route-planner/RoutePlanner.js';
+import { renderLeadTimeCalculator } from './components/lead-time/LeadTimeCalculator.js';
+import { renderFBODirectory } from './components/fbo-directory/FBODirectory.js';
+import { renderChangelog } from './components/changelog/Changelog.js';
+import { renderAdminDashboard } from './components/admin/AdminDashboard.js';
+import {
+  isPWA,
+  isReadOnlyMode,
+  renderInstallPrompt,
+  attachInstallPromptHandlers,
+  shouldShowInstallPrompt,
+} from './services/pwa.js';
 
 // App state
 const state = {
@@ -42,10 +54,16 @@ export function renderApp(isAuthenticated) {
       </div>
     </main>
     ${renderOfflineBanner()}
-    ${isPWAMode() ? renderPWAIndicator() : ''}
+    ${isReadOnlyMode() ? renderPWAIndicator() : ''}
+    ${shouldShowInstallPrompt() ? renderInstallPrompt() : ''}
   `;
 
   attachAppHandlers();
+
+  // Attach PWA install prompt handlers
+  if (shouldShowInstallPrompt()) {
+    attachInstallPromptHandlers();
+  }
 }
 
 /**
@@ -91,84 +109,29 @@ function renderTabContent() {
     case 'countries':
       return renderCountriesTab();
     case 'routeplanner':
-      return renderRoutePlannerPlaceholder();
+      return renderRoutePlanner();
     case 'leadtime':
-      return renderLeadTimePlaceholder();
+      return renderLeadTimeCalculator();
     case 'fbos':
-      return renderFBOsPlaceholder();
+      return renderFBODirectory();
     case 'changelog':
-      return renderChangelogPlaceholder();
+      return renderChangelog();
     case 'reference':
       return renderReferencePlaceholder();
     case 'admin':
-      return renderAdminPlaceholder();
+      return renderAdminDashboard();
     default:
       return '<p>Tab not found</p>';
   }
 }
 
 // Placeholder renderers (to be replaced with actual components)
-function renderRoutePlannerPlaceholder() {
-  return `
-    <div class="card">
-      <div class="card-body text-center">
-        <h2>Route Planner</h2>
-        <p class="text-muted mt-2">Coming soon - Calculate routes and analyze FIR/permit requirements</p>
-      </div>
-    </div>
-  `;
-}
-
-function renderLeadTimePlaceholder() {
-  return `
-    <div class="card">
-      <div class="card-body text-center">
-        <h2>Lead Time Calculator</h2>
-        <p class="text-muted mt-2">Coming soon - Calculate permit application deadlines</p>
-      </div>
-    </div>
-  `;
-}
-
-function renderFBOsPlaceholder() {
-  return `
-    <div class="card">
-      <div class="card-body text-center">
-        <h2>FBO Directory</h2>
-        <p class="text-muted mt-2">Coming soon - Browse FBOs and handlers worldwide</p>
-      </div>
-    </div>
-  `;
-}
-
-function renderChangelogPlaceholder() {
-  return `
-    <div class="card">
-      <div class="card-body text-center">
-        <h2>Changelog</h2>
-        <p class="text-muted mt-2">Coming soon - View data update history</p>
-      </div>
-    </div>
-  `;
-}
-
 function renderReferencePlaceholder() {
   return `
     <div class="card">
       <div class="card-body text-center">
         <h2>Reference</h2>
         <p class="text-muted mt-2">Coming soon - CAA contacts, slot coordinators, and resources</p>
-      </div>
-    </div>
-  `;
-}
-
-function renderAdminPlaceholder() {
-  return `
-    <div class="card">
-      <div class="card-body text-center">
-        <h2>Admin Dashboard</h2>
-        <p class="text-muted mt-2">Coming soon - User management and settings</p>
       </div>
     </div>
   `;
@@ -190,10 +153,6 @@ function renderPWAIndicator() {
   `;
 }
 
-function isPWAMode() {
-  return window.matchMedia('(display-mode: standalone)').matches
-      || window.navigator.standalone;
-}
 
 /**
  * Attach event handlers for login page
