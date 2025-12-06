@@ -1,0 +1,98 @@
+[
+  {
+    "date": "2024-12-05",
+    "country": "All",
+    "changeType": "Database Launch",
+    "description": "Initial v3.0 release with 203 countries",
+    "source": "Multiple sources",
+    "verifiedBy": "System"
+  },
+  {
+    "date": "2024-12-01",
+    "country": "Mongolia",
+    "changeType": "Lead Time Update",
+    "description": "Confirmed 14 business days overflight requirement",
+    "source": "Universal Weather",
+    "verifiedBy": "Dispatch Team"
+  },
+  {
+    "date": "2024-11-28",
+    "country": "Brazil",
+    "changeType": "New Requirement",
+    "description": "Overflight permit now required (was not previously)",
+    "source": "ANAC Brazil",
+    "verifiedBy": "Handler Feedback"
+  },
+  {
+    "date": "2024-11-25",
+    "country": "Venezuela",
+    "changeType": "Lead Time Update",
+    "description": "Updated to 25-30 business days, added apostille requirement",
+    "source": "Universal Weather",
+    "verifiedBy": "Trip Support"
+  },
+  {
+    "date": "2024-11-20",
+    "country": "Italy",
+    "changeType": "Lead Time Update",
+    "description": "First-time charter: 45 days if no ops in past 2 IATA seasons",
+    "source": "ENAC, Universal Weather",
+    "verifiedBy": "Dispatch Team"
+  },
+  {
+    "date": "2024-11-15",
+    "country": "UK",
+    "changeType": "Process Change",
+    "description": "No more short-notice charter processing since CAA takeover",
+    "source": "UK CAA",
+    "verifiedBy": "Handler Feedback"
+  },
+  {
+    "date": "2024-11-10",
+    "country": "Germany",
+    "changeType": "New Requirement",
+    "description": "Security questionnaire now mandatory for charter",
+    "source": "LBA",
+    "verifiedBy": "Permit Service"
+  },
+  {
+    "date": "2024-11-05",
+    "country": "Turkey",
+    "changeType": "New Requirement",
+    "description": "Aircraft documentation now required for overflight",
+    "source": "SHGM",
+    "verifiedBy": "Universal Weather"
+  },
+  {
+    "date": "2024-10-30",
+    "country": "China",
+    "changeType": "Verification",
+    "description": "Confirmed sponsor letter mandatory, max 2 revisions",
+    "source": "Universal Weather",
+    "verifiedBy": "Trip Support"
+  },
+  {
+    "date": "2024-10-25",
+    "country": "India",
+    "changeType": "Verification",
+    "description": "Military airport lead times 15-30 days confirmed",
+    "source": "DGCA India",
+    "verifiedBy": "Handler"
+  },
+  {
+    "date": "2024-10-20",
+    "country": "Philippines",
+    "changeType": "Verification",
+    "description": "Confirmed color aircraft photo requirement",
+    "source": "CAAP",
+    "verifiedBy": "Handler"
+  },
+  {
+    "date": "2024-10-15",
+    "country": "Suriname",
+    "changeType": "New Requirement",
+    "description": "Overflight permits now required",
+    "source": "Industry guidance",
+    "verifiedBy": "Permit Service"
+  }
+]

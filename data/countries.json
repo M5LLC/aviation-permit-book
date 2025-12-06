@@ -1,0 +1,7635 @@
+[
+  {
+    "name": "United Kingdom",
+    "code": "UK",
+    "flag": "🇬🇧",
+    "region": "Europe",
+    "icaoPrefix": "EG",
+    "caa": "UK Civil Aviation Authority",
+    "caaWebsite": "https://www.caa.co.uk/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "UK CAA, Mon-Fri only, no short notice"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather, UK CAA",
+    "lastVerified": "2024-12",
+    "visaCrew": "UK ETA required from 2025",
+    "notes": "Short-notice charter no longer possible. Slots required at major airports.",
+    "warnings": [
+      "No short-notice charter"
+    ],
+    "airports": [
+      "EGLL",
+      "EGLF",
+      "EGGW"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Germany",
+    "code": "DE",
+    "flag": "🇩🇪",
+    "region": "Europe",
+    "icaoPrefix": "ED",
+    "caa": "Luftfahrt-Bundesamt (LBA)",
+    "caaWebsite": "https://www.lba.de/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Aircraft docs now required with request"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Security questionnaire mandatory. Very strict."
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather, LBA",
+    "lastVerified": "2024-11",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Will NOT process short-notice charter. Missing docs = rejection.",
+    "warnings": [
+      "No short-notice charter",
+      "Security questionnaire required"
+    ],
+    "airports": [
+      "EDDB",
+      "EDDM",
+      "EDDF"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "France",
+    "code": "FR",
+    "flag": "🇫🇷",
+    "region": "Europe",
+    "icaoPrefix": "LF",
+    "caa": "DGAC",
+    "caaWebsite": "https://www.ecologie.gouv.fr/dgac",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "FOQ (Foreign Operator Questionnaire) required"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-11",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "FOQ may trigger additional documentation requests.",
+    "warnings": [],
+    "airports": [
+      "LFPB",
+      "LFPG",
+      "LFMN"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Italy",
+    "code": "IT",
+    "flag": "🇮🇹",
+    "region": "Europe",
+    "icaoPrefix": "LI",
+    "caa": "ENAC",
+    "caaWebsite": "https://www.enac.gov.it/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard for repeat operators"
+      },
+      "landingCharterFirstTime": {
+        "required": true,
+        "leadTime": "45",
+        "notes": "FIRST-TIME: 45 days if no ops in 2 IATA seasons"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather, ENAC",
+    "lastVerified": "2024-11",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "⚠️ First-time charter operators: 45 DAYS lead time required!",
+    "warnings": [
+      "First-time charter: 45 days!"
+    ],
+    "airports": [
+      "LIRF",
+      "LIML",
+      "LIPZ"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Spain",
+    "code": "ES",
+    "flag": "🇪🇸",
+    "region": "Europe",
+    "icaoPrefix": "LE",
+    "caa": "AESA",
+    "caaWebsite": "https://www.seguridadaerea.gob.es/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Straightforward process for EU destinations.",
+    "warnings": [],
+    "airports": [
+      "LEMD",
+      "LEBL",
+      "LEPA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Switzerland",
+    "code": "CH",
+    "flag": "🇨🇭",
+    "region": "Europe",
+    "icaoPrefix": "LS",
+    "caa": "FOCA",
+    "caaWebsite": "https://www.bazl.admin.ch/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Longer during WEF Davos, Geneva shows"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Lead times increase significantly during major events.",
+    "warnings": [
+      "Extended times during events"
+    ],
+    "airports": [
+      "LSGG",
+      "LSZH"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Netherlands",
+    "code": "NL",
+    "flag": "🇳🇱",
+    "region": "Europe",
+    "icaoPrefix": "EH",
+    "caa": "ILT",
+    "caaWebsite": "https://www.ilent.nl/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Amsterdam Schiphol requires slots.",
+    "warnings": [],
+    "airports": [
+      "EHAM",
+      "EHRD"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Belgium",
+    "code": "BE",
+    "flag": "🇧🇪",
+    "region": "Europe",
+    "icaoPrefix": "EB",
+    "caa": "BCAA",
+    "caaWebsite": "https://mobilit.belgium.be/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Brussels slots required during peak times.",
+    "warnings": [],
+    "airports": [
+      "EBBR",
+      "EBAW"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Austria",
+    "code": "AT",
+    "flag": "🇦🇹",
+    "region": "Europe",
+    "icaoPrefix": "LO",
+    "caa": "Austro Control",
+    "caaWebsite": "https://www.austrocontrol.at/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Vienna popular for Central European access.",
+    "warnings": [],
+    "airports": [
+      "LOWW",
+      "LOWS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Portugal",
+    "code": "PT",
+    "flag": "🇵🇹",
+    "region": "Europe",
+    "icaoPrefix": "LP",
+    "caa": "ANAC Portugal",
+    "caaWebsite": "https://www.anac.pt/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Lisbon slots required. Faro popular for Algarve.",
+    "warnings": [],
+    "airports": [
+      "LPPT",
+      "LPFR"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Ireland",
+    "code": "IE",
+    "flag": "🇮🇪",
+    "region": "Europe",
+    "icaoPrefix": "EI",
+    "caa": "IAA",
+    "caaWebsite": "https://www.iaa.ie/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Shannon offers US preclearance.",
+    "warnings": [],
+    "airports": [
+      "EIDW",
+      "EINN"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Greece",
+    "code": "GR",
+    "flag": "🇬🇷",
+    "region": "Europe",
+    "icaoPrefix": "LG",
+    "caa": "HCAA",
+    "caaWebsite": "https://www.ypa.gr/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "High season delays possible"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Very busy during summer. Island airports require careful planning.",
+    "warnings": [],
+    "airports": [
+      "LGAV",
+      "LGMK",
+      "LGSR"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Turkey",
+    "code": "TR",
+    "flag": "🇹🇷",
+    "region": "Europe",
+    "icaoPrefix": "LT",
+    "caa": "SHGM",
+    "caaWebsite": "https://web.shgm.gov.tr/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Usually notification only. Aircraft docs now required."
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Quick processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard documentation"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-11",
+    "visaCrew": "e-Visa required",
+    "notes": "Aircraft documentation now required even for overflight (recent change).",
+    "warnings": [
+      "Docs required for overflight"
+    ],
+    "airports": [
+      "LTFM",
+      "LTAI"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Poland",
+    "code": "PL",
+    "flag": "🇵🇱",
+    "region": "Europe",
+    "icaoPrefix": "EP",
+    "caa": "ULC",
+    "caaWebsite": "https://www.ulc.gov.pl/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Notification only with noise/insurance certs"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Private landing is notification-only process.",
+    "warnings": [],
+    "airports": [
+      "EPWA",
+      "EPKK"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Czech Republic",
+    "code": "CZ",
+    "flag": "🇨🇿",
+    "region": "Europe",
+    "icaoPrefix": "LK",
+    "caa": "CAA Czech",
+    "caaWebsite": "https://www.caa.cz/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Prague well-served for business aviation.",
+    "warnings": [],
+    "airports": [
+      "LKPR"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Hungary",
+    "code": "HU",
+    "flag": "🇭🇺",
+    "region": "Europe",
+    "icaoPrefix": "LH",
+    "caa": "HungaroControl",
+    "caaWebsite": "https://www.hungarocontrol.hu/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Budapest main international gateway.",
+    "warnings": [],
+    "airports": [
+      "LHBP"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Romania",
+    "code": "RO",
+    "flag": "🇷🇴",
+    "region": "Europe",
+    "icaoPrefix": "LR",
+    "caa": "AACR",
+    "caaWebsite": "https://www.caa.ro/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Bucharest and Constanta main airports.",
+    "warnings": [],
+    "airports": [
+      "LROP"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Bulgaria",
+    "code": "BG",
+    "flag": "🇧🇬",
+    "region": "Europe",
+    "icaoPrefix": "LB",
+    "caa": "DGCA Bulgaria",
+    "caaWebsite": "https://www.caa.bg/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen rules apply",
+    "notes": "Sofia main international airport.",
+    "warnings": [],
+    "airports": [
+      "LBSF"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Croatia",
+    "code": "HR",
+    "flag": "🇭🇷",
+    "region": "Europe",
+    "icaoPrefix": "LD",
+    "caa": "CCAA",
+    "caaWebsite": "https://www.ccaa.hr/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Popular summer destination. Slots may be needed in peak season.",
+    "warnings": [],
+    "airports": [
+      "LDZA",
+      "LDSP",
+      "LDDU"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Serbia",
+    "code": "RS",
+    "flag": "🇷🇸",
+    "region": "Europe",
+    "icaoPrefix": "LY",
+    "caa": "CAD Serbia",
+    "caaWebsite": "https://cad.gov.rs/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required for all foreign aircraft"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Application required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa-free for US crew ≤90 days",
+    "notes": "Non-Schengen - check visa requirements.",
+    "warnings": [],
+    "airports": [
+      "LYBE"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Norway",
+    "code": "NO",
+    "flag": "🇳🇴",
+    "region": "Europe",
+    "icaoPrefix": "EN",
+    "caa": "CAA Norway",
+    "caaWebsite": "https://luftfartstilsynet.no/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Oslo main hub. Remote airports may have limited services.",
+    "warnings": [],
+    "airports": [
+      "ENGM",
+      "ENBR"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Sweden",
+    "code": "SE",
+    "flag": "🇸🇪",
+    "region": "Europe",
+    "icaoPrefix": "ES",
+    "caa": "Transportstyrelsen",
+    "caaWebsite": "https://www.transportstyrelsen.se/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Stockholm Arlanda and Bromma serve the capital.",
+    "warnings": [],
+    "airports": [
+      "ESSA",
+      "ESSB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Denmark",
+    "code": "DK",
+    "flag": "🇩🇰",
+    "region": "Europe",
+    "icaoPrefix": "EK",
+    "caa": "Danish CAA",
+    "caaWebsite": "https://www.trafikstyrelsen.dk/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Copenhagen main international gateway.",
+    "warnings": [],
+    "airports": [
+      "EKCH"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Finland",
+    "code": "FI",
+    "flag": "🇫🇮",
+    "region": "Europe",
+    "icaoPrefix": "EF",
+    "caa": "Traficom",
+    "caaWebsite": "https://www.traficom.fi/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Helsinki gateway to Nordics and Russia.",
+    "warnings": [],
+    "airports": [
+      "EFHK"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Iceland",
+    "code": "IS",
+    "flag": "🇮🇸",
+    "region": "Europe",
+    "icaoPrefix": "BI",
+    "caa": "ICETRA",
+    "caaWebsite": "https://www.icetra.is/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Popular tech stop for North Atlantic crossings. Keflavik 24/7.",
+    "warnings": [],
+    "airports": [
+      "BIKF"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Luxembourg",
+    "code": "LU",
+    "flag": "🇱🇺",
+    "region": "Europe",
+    "icaoPrefix": "EL",
+    "caa": "DAC Luxembourg",
+    "caaWebsite": "https://mt.gouvernement.lu/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Small but well-equipped airport for business aviation.",
+    "warnings": [],
+    "airports": [
+      "ELLX"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Malta",
+    "code": "MT",
+    "flag": "🇲🇹",
+    "region": "Europe",
+    "icaoPrefix": "LM",
+    "caa": "TM-CAD",
+    "caaWebsite": "https://www.transport.gov.mt/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Single airport serves entire country.",
+    "warnings": [],
+    "airports": [
+      "LMML"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Cyprus",
+    "code": "CY",
+    "flag": "🇨🇾",
+    "region": "Europe",
+    "icaoPrefix": "LC",
+    "caa": "DCAA Cyprus",
+    "caaWebsite": "https://www.mcw.gov.cy/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen rules in process",
+    "notes": "Larnaca and Paphos serve international traffic.",
+    "warnings": [],
+    "airports": [
+      "LCLK",
+      "LCPH"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Slovenia",
+    "code": "SI",
+    "flag": "🇸🇮",
+    "region": "Europe",
+    "icaoPrefix": "LJ",
+    "caa": "CAA Slovenia",
+    "caaWebsite": "https://www.caa.si/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Ljubljana sole international airport.",
+    "warnings": [],
+    "airports": [
+      "LJLJ"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Slovakia",
+    "code": "SK",
+    "flag": "🇸🇰",
+    "region": "Europe",
+    "icaoPrefix": "LZ",
+    "caa": "CAA Slovakia",
+    "caaWebsite": "https://www.caa.sk/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Bratislava close to Vienna - consider both.",
+    "warnings": [],
+    "airports": [
+      "LZIB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Estonia",
+    "code": "EE",
+    "flag": "🇪🇪",
+    "region": "Europe",
+    "icaoPrefix": "EE",
+    "caa": "ECAA",
+    "caaWebsite": "https://www.ecaa.ee/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Tallinn main international airport.",
+    "warnings": [],
+    "airports": [
+      "EETN"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Latvia",
+    "code": "LV",
+    "flag": "🇱🇻",
+    "region": "Europe",
+    "icaoPrefix": "EV",
+    "caa": "CAA Latvia",
+    "caaWebsite": "https://www.caa.lv/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Riga main international airport.",
+    "warnings": [],
+    "airports": [
+      "EVRA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Lithuania",
+    "code": "LT",
+    "flag": "🇱🇹",
+    "region": "Europe",
+    "icaoPrefix": "EY",
+    "caa": "CAA Lithuania",
+    "caaWebsite": "https://www.caa.lt/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Schengen visa-free ≤90 days",
+    "notes": "Vilnius main international airport.",
+    "warnings": [],
+    "airports": [
+      "EYVI"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Montenegro",
+    "code": "ME",
+    "flag": "🇲🇪",
+    "region": "Europe",
+    "icaoPrefix": "LY",
+    "caa": "CAA Montenegro",
+    "caaWebsite": "https://www.caa.me/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Application required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew ≤90 days",
+    "notes": "Non-Schengen. Tivat popular for Adriatic coast.",
+    "warnings": [],
+    "airports": [
+      "LYPG",
+      "LYTV"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "North Macedonia",
+    "code": "MK",
+    "flag": "🇲🇰",
+    "region": "Europe",
+    "icaoPrefix": "LW",
+    "caa": "CAA North Macedonia",
+    "caaWebsite": "http://www.caa.gov.mk/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Application required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew ≤90 days",
+    "notes": "Skopje main international airport.",
+    "warnings": [],
+    "airports": [
+      "LWSK"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Albania",
+    "code": "AL",
+    "flag": "🇦🇱",
+    "region": "Europe",
+    "icaoPrefix": "LA",
+    "caa": "ACAA",
+    "caaWebsite": "https://www.acaa.gov.al/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Application required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew ≤90 days",
+    "notes": "Tirana sole international airport.",
+    "warnings": [],
+    "airports": [
+      "LATI"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Kosovo",
+    "code": "XK",
+    "flag": "🇽🇰",
+    "region": "Europe",
+    "icaoPrefix": "LY",
+    "caa": "CAA Kosovo",
+    "caaWebsite": "https://www.caa-ks.org/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Application required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "May require additional documentation"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Pristina sole international airport.",
+    "warnings": [
+      "Recognition issues may affect permits"
+    ],
+    "airports": [
+      "LYPR"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "code": "BA",
+    "flag": "🇧🇦",
+    "region": "Europe",
+    "icaoPrefix": "LQ",
+    "caa": "BHDCA",
+    "caaWebsite": "http://www.bhdca.gov.ba/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Application required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew ≤90 days",
+    "notes": "Sarajevo main international airport.",
+    "warnings": [],
+    "airports": [
+      "LQSA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Moldova",
+    "code": "MD",
+    "flag": "🇲🇩",
+    "region": "Europe",
+    "icaoPrefix": "LU",
+    "caa": "CAA Moldova",
+    "caaWebsite": "https://www.caa.md/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Application required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew ≤90 days",
+    "notes": "Chisinau main international airport.",
+    "warnings": [],
+    "airports": [
+      "LUKK"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "China",
+    "code": "CN",
+    "flag": "🇨🇳",
+    "region": "Asia",
+    "icaoPrefix": "Z",
+    "caa": "CAAC",
+    "caaWebsite": "http://www.caac.gov.cn/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Specific entry/exit FIRs. Route changes common."
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "LOCAL SPONSOR LETTER MANDATORY"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Sponsor letter required"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-12",
+    "visaCrew": "Visa required",
+    "notes": "⚠️ Sponsor letter MANDATORY. Max 2 revisions then restart. Sanya/Guangzhou FIR transit ok without permit.",
+    "warnings": [
+      "Sponsor letter required",
+      "Max 2 revisions",
+      "Route conflicts with Mongolia/Russia"
+    ],
+    "airports": [
+      "ZBAA",
+      "ZSPD",
+      "ZGGG"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "India",
+    "code": "IN",
+    "flag": "🇮🇳",
+    "region": "Asia",
+    "icaoPrefix": "V",
+    "caa": "DGCA India",
+    "caaWebsite": "https://www.dgca.gov.in/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Stringent on minimum lead times"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "5 days recommended"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Extended documentation"
+      },
+      "techStop": {
+        "required": true,
+        "leadTime": "1-3",
+        "notes": "1 day min, 3 recommended"
+      },
+      "militaryAirport": {
+        "required": true,
+        "leadTime": "15-30",
+        "notes": "Birth place, father's name required"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-11",
+    "visaCrew": "e-Visa available",
+    "notes": "Tech stops: 1 day min/3 recommended. Military airports: 15-30 days + unique passenger info.",
+    "warnings": [
+      "Strict minimums",
+      "Military: 15-30 days"
+    ],
+    "airports": [
+      "VIDP",
+      "VABB",
+      "VOBL"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Japan",
+    "code": "JP",
+    "flag": "🇯🇵",
+    "region": "Asia",
+    "icaoPrefix": "RJ",
+    "caa": "JCAB",
+    "caaWebsite": "https://www.mlit.go.jp/koku/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required for most private"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required for most private"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Signed charter agreement copy required"
+      },
+      "militaryAirport": {
+        "required": true,
+        "leadTime": "30",
+        "notes": "30+ days for military airports"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-11",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "Private generally permit-free. Charter needs signed agreement copy.",
+    "warnings": [],
+    "airports": [
+      "RJTT",
+      "RJAA",
+      "RJBB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "South Korea",
+    "code": "KR",
+    "flag": "🇰🇷",
+    "region": "Asia",
+    "icaoPrefix": "RK",
+    "caa": "KOCA",
+    "caaWebsite": "https://www.molit.go.kr/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Application required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "K-ETA required",
+    "notes": "Cruise speed restrictions when transiting. Seoul airports busy.",
+    "warnings": [
+      "Speed restrictions"
+    ],
+    "airports": [
+      "RKSI",
+      "RKSS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Singapore",
+    "code": "SG",
+    "flag": "🇸🇬",
+    "region": "Asia",
+    "icaoPrefix": "WS",
+    "caa": "CAAS",
+    "caaWebsite": "https://www.caas.gov.sg/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Online system - fast"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Online application"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Maintenance release + aging compliance required"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather, CAAS",
+    "lastVerified": "2024-11",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "Digital system - among fastest in Asia. Good Indonesia alternative when lead time tight.",
+    "warnings": [],
+    "airports": [
+      "WSSS",
+      "WSSL"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Thailand",
+    "code": "TH",
+    "flag": "🇹🇭",
+    "region": "Asia",
+    "icaoPrefix": "VT",
+    "caa": "CAAT",
+    "caaWebsite": "https://www.caat.or.th/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa on arrival/visa-free",
+    "notes": "Bangkok major regional hub. U-Tapao good GA alternative.",
+    "warnings": [],
+    "airports": [
+      "VTBS",
+      "VTBD",
+      "VTSP"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Vietnam",
+    "code": "VN",
+    "flag": "🇻🇳",
+    "region": "Asia",
+    "icaoPrefix": "VV",
+    "caa": "CAAV",
+    "caaWebsite": "https://caa.gov.vn/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "e-Visa available",
+    "notes": "Cruise speed restrictions when transiting. Ho Chi Minh and Hanoi main airports.",
+    "warnings": [
+      "Speed restrictions"
+    ],
+    "airports": [
+      "VVNB",
+      "VVTS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Malaysia",
+    "code": "MY",
+    "flag": "🇲🇾",
+    "region": "Asia",
+    "icaoPrefix": "WM",
+    "caa": "CAAM",
+    "caaWebsite": "https://www.caam.gov.my/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "Kuala Lumpur quicker permits than Indonesia - good alternative tech stop.",
+    "warnings": [],
+    "airports": [
+      "WMKK",
+      "WMSA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Indonesia",
+    "code": "ID",
+    "flag": "🇮🇩",
+    "region": "Asia",
+    "icaoPrefix": "W",
+    "caa": "DGCA Indonesia",
+    "caaWebsite": "http://hubud.dephub.go.id/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "7",
+        "notes": "7 business days - longer than regional average"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "5 days minimum"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Extended documentation"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "VOA available",
+    "notes": "Longer lead times than neighbors. Matak Island overflight needs permit. Consider Singapore if time tight.",
+    "warnings": [
+      "7 days overflight - plan ahead"
+    ],
+    "airports": [
+      "WIII",
+      "WADD"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Philippines",
+    "code": "PH",
+    "flag": "🇵🇭",
+    "region": "Asia",
+    "icaoPrefix": "RP",
+    "caa": "CAAP",
+    "caaWebsite": "https://caap.gov.ph/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "FIR information required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "COLOR PHOTO of aircraft with tail number required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Color photo required"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa-free ≤30 days",
+    "notes": "Unique: COLOR PHOTO of aircraft showing tail number required in PDF format.",
+    "warnings": [
+      "Aircraft photo required"
+    ],
+    "airports": [
+      "RPLL",
+      "RPLC"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Taiwan",
+    "code": "TW",
+    "flag": "🇹🇼",
+    "region": "Asia",
+    "icaoPrefix": "RC",
+    "caa": "CAA Taiwan",
+    "caaWebsite": "https://www.caa.gov.tw/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "Cannot fly directly between Taiwan and China. Taipei Songshan convenient for city.",
+    "warnings": [
+      "No direct China flights"
+    ],
+    "airports": [
+      "RCTP",
+      "RCSS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Hong Kong",
+    "code": "HK",
+    "flag": "🇭🇰",
+    "region": "Asia",
+    "icaoPrefix": "VH",
+    "caa": "CAD Hong Kong",
+    "caaWebsite": "https://www.cad.gov.hk/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Specific insurance verbiage required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Strict insurance requirements"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "Very specific insurance coverage and verbiage requirements - verify with handler.",
+    "warnings": [
+      "Specific insurance wording required"
+    ],
+    "airports": [
+      "VHHH"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Macau",
+    "code": "MO",
+    "flag": "🇲🇴",
+    "region": "Asia",
+    "icaoPrefix": "VM",
+    "caa": "AACM",
+    "caaWebsite": "https://www.aacm.gov.mo/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "Single airport. Consider Hong Kong for more options.",
+    "warnings": [],
+    "airports": [
+      "VMMC"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Mongolia",
+    "code": "MN",
+    "flag": "🇲🇳",
+    "region": "Asia",
+    "icaoPrefix": "ZM",
+    "caa": "CAAM",
+    "caaWebsite": "http://www.mcaa.gov.mn/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "14",
+        "notes": "14 BUSINESS DAYS - one of longest worldwide"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "14",
+        "notes": "14 business days"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "14",
+        "notes": "14 business days"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather, FAA IFIM",
+    "lastVerified": "2024-12",
+    "visaCrew": "Visa required",
+    "notes": "⚠️ 14 BUSINESS DAYS - nearly 3 weeks! Entry/exit FIRs may conflict with China. CAA: 0030Z-0900Z Mon-Fri.",
+    "warnings": [
+      "14 days - plan 3+ weeks ahead"
+    ],
+    "airports": [
+      "ZMUB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Myanmar",
+    "code": "MM",
+    "flag": "🇲🇲",
+    "region": "Asia",
+    "icaoPrefix": "VY",
+    "caa": "DCA Myanmar",
+    "caaWebsite": "https://www.dca.gov.mm/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "9",
+        "notes": "9 business days - submit 72 working hours advance"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "14",
+        "notes": "14 business days"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "14",
+        "notes": "14 business days"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "e-Visa available",
+    "notes": "Routing restrictions. Few airports open to international GA. CAA hours: 0330Z-1000Z.",
+    "warnings": [
+      "9 days overflight",
+      "14 days landing",
+      "Limited airports"
+    ],
+    "airports": [
+      "VYYY",
+      "VYMD"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Cambodia",
+    "code": "KH",
+    "flag": "🇰🇭",
+    "region": "Asia",
+    "icaoPrefix": "VD",
+    "caa": "SSCA Cambodia",
+    "caaWebsite": "https://www.civilaviation.gov.kh/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa on arrival available",
+    "notes": "Phnom Penh and Siem Reap main airports.",
+    "warnings": [],
+    "airports": [
+      "VDPP",
+      "VDSR"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Laos",
+    "code": "LA",
+    "flag": "🇱🇦",
+    "region": "Asia",
+    "icaoPrefix": "VL",
+    "caa": "DCA Laos",
+    "caaWebsite": "https://www.dca.gov.la/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Application required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa on arrival available",
+    "notes": "Limited infrastructure. Vientiane main international airport.",
+    "warnings": [],
+    "airports": [
+      "VLVT"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Bangladesh",
+    "code": "BD",
+    "flag": "🇧🇩",
+    "region": "Asia",
+    "icaoPrefix": "VG",
+    "caa": "CAAB",
+    "caaWebsite": "https://www.caab.gov.bd/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "FIR information required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa on arrival for some",
+    "notes": "Dhaka main international airport.",
+    "warnings": [],
+    "airports": [
+      "VGHS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Sri Lanka",
+    "code": "LK",
+    "flag": "🇱🇰",
+    "region": "Asia",
+    "icaoPrefix": "VC",
+    "caa": "CAASL",
+    "caaWebsite": "https://www.caa.lk/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "FIR information required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "ETA required",
+    "notes": "Colombo main international airport.",
+    "warnings": [],
+    "airports": [
+      "VCBI"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Nepal",
+    "code": "NP",
+    "flag": "🇳🇵",
+    "region": "Asia",
+    "icaoPrefix": "VN",
+    "caa": "CAAN",
+    "caaWebsite": "https://caanepal.gov.np/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa on arrival",
+    "notes": "Kathmandu at 4,390ft. Mountainous terrain - specialized procedures.",
+    "warnings": [
+      "High elevation",
+      "Mountain terrain"
+    ],
+    "airports": [
+      "VNKT"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Pakistan",
+    "code": "PK",
+    "flag": "🇵🇰",
+    "region": "Asia",
+    "icaoPrefix": "OP",
+    "caa": "PCAA",
+    "caaWebsite": "https://www.caapakistan.com.pk/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "FIR information required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Security clearance may be required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Additional security processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa required",
+    "notes": "Security situation may affect permit processing. Verify current requirements.",
+    "warnings": [
+      "Security clearance may be needed"
+    ],
+    "airports": [
+      "OPKC",
+      "OPLA",
+      "OPIS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Brunei",
+    "code": "BN",
+    "flag": "🇧🇳",
+    "region": "Asia",
+    "icaoPrefix": "WB",
+    "caa": "DCA Brunei",
+    "caaWebsite": "https://www.dca.gov.bn/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew ≤90 days",
+    "notes": "Single international airport. Limited GA facilities.",
+    "warnings": [],
+    "airports": [
+      "WBSB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Maldives",
+    "code": "MV",
+    "flag": "🇲🇻",
+    "region": "Asia",
+    "icaoPrefix": "VR",
+    "caa": "MCAA",
+    "caaWebsite": "https://www.caa.gov.mv/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Slots required at Velana"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Slots required"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa on arrival",
+    "notes": "Velana (Malé) requires slots. Popular luxury destination.",
+    "warnings": [
+      "Slots required"
+    ],
+    "airports": [
+      "VRMM"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Bhutan",
+    "code": "BT",
+    "flag": "🇧🇹",
+    "region": "Asia",
+    "icaoPrefix": "VQ",
+    "caa": "BCAA",
+    "caaWebsite": "https://www.bcaa.bt/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "10-14",
+        "notes": "Special pilot certification required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "10-14",
+        "notes": "Only certified pilots may operate"
+      }
+    },
+    "confidence": "high",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa required - arranged through tour operator",
+    "notes": "⚠️ Paro - world's most challenging airport. ONLY certified pilots. $200/day sustainable development fee for visitors.",
+    "warnings": [
+      "Special pilot certification",
+      "World's most challenging airport",
+      "$200/day fee"
+    ],
+    "airports": [
+      "VQPR"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Timor-Leste",
+    "code": "TL",
+    "flag": "🇹🇱",
+    "region": "Asia",
+    "icaoPrefix": "WP",
+    "caa": "AACTL",
+    "caaWebsite": "https://www.aactl.gov.tl/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Limited facilities"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Advance coordination essential"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa on arrival",
+    "notes": "Very limited infrastructure. Plan carefully.",
+    "warnings": [
+      "Limited infrastructure"
+    ],
+    "airports": [
+      "WPDL"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "North Korea",
+    "code": "KP",
+    "flag": "🇰🇵",
+    "region": "Asia",
+    "icaoPrefix": "ZK",
+    "caa": "GACA DPRK",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Rarely granted"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "30+",
+        "notes": "Exceptional circumstances only"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "30+",
+        "notes": "Rarely permitted"
+      }
+    },
+    "confidence": "low",
+    "source": "State Dept guidance",
+    "lastVerified": "2024-06",
+    "visaCrew": "US persons effectively banned",
+    "notes": "⚠️ US PERSONS BANNED without State Dept validation. Sanctions apply. Avoid.",
+    "warnings": [
+      "US persons banned",
+      "OFAC sanctions"
+    ],
+    "airports": [
+      "ZKPY"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Afghanistan",
+    "code": "AF",
+    "flag": "🇦🇫",
+    "region": "Asia",
+    "icaoPrefix": "OA",
+    "caa": "ACAA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "7-14",
+        "notes": "Diplomatic channels"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Exceptional circumstances only"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Diplomatic clearance required"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Complex - verify current status",
+    "notes": "⚠️ Taliban control. Diplomatic channels required. Security situation unstable.",
+    "warnings": [
+      "Taliban control",
+      "Security risk",
+      "War risk insurance required"
+    ],
+    "airports": [
+      "OAKB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "United Arab Emirates",
+    "code": "AE",
+    "flag": "🇦🇪",
+    "region": "Middle East",
+    "icaoPrefix": "OM",
+    "caa": "GCAA",
+    "caaWebsite": "https://www.gcaa.gov.ae/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Online portal - quick"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "GCAA online portal"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Comprehensive documentation"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather, GCAA",
+    "lastVerified": "2024-12",
+    "visaCrew": "VOA for US crew",
+    "notes": "Streamlined online permits. Strict noise regulations at Dubai. OMDW requires slots.",
+    "warnings": [],
+    "airports": [
+      "OMDB",
+      "OMSJ",
+      "OMAA",
+      "OMDW"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Saudi Arabia",
+    "code": "SA",
+    "flag": "🇸🇦",
+    "region": "Middle East",
+    "icaoPrefix": "OE",
+    "caa": "GACA",
+    "caaWebsite": "https://gaca.gov.sa/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required for all"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Sponsor information verified"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Sponsor info required"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-11",
+    "visaCrew": "Tourist e-Visa now available",
+    "notes": "Sponsor information required and VERIFIED. Security protocols. Weekend: Fri-Sat.",
+    "warnings": [
+      "Sponsor info verified"
+    ],
+    "airports": [
+      "OEJN",
+      "OERK",
+      "OEDF"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Qatar",
+    "code": "QA",
+    "flag": "🇶🇦",
+    "region": "Middle East",
+    "icaoPrefix": "OT",
+    "caa": "QCAA",
+    "caaWebsite": "https://www.caa.gov.qa/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-11",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Doha major hub. Good facilities.",
+    "warnings": [],
+    "airports": [
+      "OTHH"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Kuwait",
+    "code": "KW",
+    "flag": "🇰🇼",
+    "region": "Middle East",
+    "icaoPrefix": "OK",
+    "caa": "DGCA Kuwait",
+    "caaWebsite": "https://www.dgca.gov.kw/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "FIR information required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa on arrival available",
+    "notes": "Single main airport. Good GA facilities.",
+    "warnings": [],
+    "airports": [
+      "OKBK"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Bahrain",
+    "code": "BH",
+    "flag": "🇧🇭",
+    "region": "Middle East",
+    "icaoPrefix": "OB",
+    "caa": "CAA Bahrain",
+    "caaWebsite": "https://www.caa.gov.bh/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa on arrival available",
+    "notes": "Small island state. Good regional access.",
+    "warnings": [],
+    "airports": [
+      "OBBI"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Oman",
+    "code": "OM",
+    "flag": "🇴🇲",
+    "region": "Middle East",
+    "icaoPrefix": "OO",
+    "caa": "PACA Oman",
+    "caaWebsite": "https://www.paca.gov.om/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "FIR information required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "e-Visa available",
+    "notes": "Muscat main international gateway.",
+    "warnings": [],
+    "airports": [
+      "OOMS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Jordan",
+    "code": "JO",
+    "flag": "🇯🇴",
+    "region": "Middle East",
+    "icaoPrefix": "OJ",
+    "caa": "CARC Jordan",
+    "caaWebsite": "https://www.carc.gov.jo/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa on arrival available",
+    "notes": "Amman main gateway. Dead Sea and Petra popular destinations.",
+    "warnings": [],
+    "airports": [
+      "OJAI"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Israel",
+    "code": "IL",
+    "flag": "🇮🇱",
+    "region": "Middle East",
+    "icaoPrefix": "LL",
+    "caa": "CAAI",
+    "caaWebsite": "https://www.gov.il/en/departments/civil_aviation_authority",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Specific application forms"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Specific forms required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Security vetting"
+      }
+    },
+    "confidence": "medium",
+    "source": "Universal Weather",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "Specific forms required. No early arrivals. Israeli-built aircraft cannot overfly most Middle East countries.",
+    "warnings": [
+      "Forms required",
+      "No early arrivals",
+      "Israeli aircraft restricted regionally"
+    ],
+    "airports": [
+      "LLBG"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Lebanon",
+    "code": "LB",
+    "flag": "🇱🇧",
+    "region": "Middle East",
+    "icaoPrefix": "OL",
+    "caa": "DGCA Lebanon",
+    "caaWebsite": "https://www.dgca.gov.lb/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "FIR information required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Security situation may affect processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Security clearances may be needed"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa on arrival for US crew",
+    "notes": "Security situation variable. Verify current status before planning.",
+    "warnings": [
+      "Security situation variable"
+    ],
+    "airports": [
+      "OLBA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Iraq",
+    "code": "IQ",
+    "flag": "🇮🇶",
+    "region": "Middle East",
+    "icaoPrefix": "OR",
+    "caa": "ICAA",
+    "caaWebsite": "https://www.iraqicaa.gov.iq/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "FIR information required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Security clearance required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "War risk insurance mandatory"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "⚠️ War risk insurance MANDATORY. Security situation varies by region.",
+    "warnings": [
+      "War risk insurance mandatory",
+      "Security varies"
+    ],
+    "airports": [
+      "ORBI",
+      "ORMM"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Iran",
+    "code": "IR",
+    "flag": "🇮🇷",
+    "region": "Middle East",
+    "icaoPrefix": "OI",
+    "caa": "CAO Iran",
+    "caaWebsite": "https://www.cao.ir/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "7-14",
+        "notes": "Complex approval process"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Sanctions compliance required"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required - complex for US citizens",
+    "notes": "⚠️ US SANCTIONS - OFAC compliance REQUIRED. Operations by US persons highly restricted.",
+    "warnings": [
+      "US sanctions apply",
+      "OFAC compliance required"
+    ],
+    "airports": [
+      "OIIE"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Yemen",
+    "code": "YE",
+    "flag": "🇾🇪",
+    "region": "Middle East",
+    "icaoPrefix": "OY",
+    "caa": "CAMA Yemen",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "7-14",
+        "notes": "Conflict zone"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Operations effectively suspended"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Not recommended"
+      }
+    },
+    "confidence": "low",
+    "source": "State Dept",
+    "lastVerified": "2024-06",
+    "visaCrew": "Not applicable",
+    "notes": "⚠️ CONFLICT ZONE - operations effectively suspended. Do not plan operations.",
+    "warnings": [
+      "Active conflict",
+      "Operations suspended",
+      "Do not operate"
+    ],
+    "airports": [
+      "OYSN",
+      "OYAA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "United States",
+    "code": "US",
+    "flag": "🇺🇸",
+    "region": "North America",
+    "icaoPrefix": "K",
+    "caa": "FAA",
+    "caaWebsite": "https://www.faa.gov/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "No overflight fees"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "For N-registered aircraft"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Foreign carriers need DOT/FAA authority"
+      }
+    },
+    "confidence": "high",
+    "source": "FAA",
+    "lastVerified": "2024-12",
+    "visaCrew": "Varies by nationality",
+    "notes": "Foreign carriers need Part 129 or exemption. eAPIS required. CBP advance notification.",
+    "warnings": [
+      "Foreign carrier rules apply"
+    ],
+    "airports": [
+      "KJFK",
+      "KLAX",
+      "KORD",
+      "KTEB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Canada",
+    "code": "CA",
+    "flag": "🇨🇦",
+    "region": "North America",
+    "icaoPrefix": "C",
+    "caa": "Transport Canada",
+    "caaWebsite": "https://tc.canada.ca/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Nav fees via NAV CANADA"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "For N-registered aircraft - CANPASS required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Foreign carriers need authority"
+      }
+    },
+    "confidence": "high",
+    "source": "Transport Canada",
+    "lastVerified": "2024-12",
+    "visaCrew": "eTA required for visa-exempt travelers",
+    "notes": "CANPASS for US flights. Foreign charter authority required. Nav fees apply.",
+    "warnings": [],
+    "airports": [
+      "CYYZ",
+      "CYVR",
+      "CYUL",
+      "CYYC"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Mexico",
+    "code": "MX",
+    "flag": "🇲🇽",
+    "region": "North America",
+    "icaoPrefix": "MM",
+    "caa": "AFAC",
+    "caaWebsite": "https://www.gob.mx/sct",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Will deny if SENEAM fees owed"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "DGAC landing permit"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Domestic movements now ok with same pax"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-12",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Charter domestic movements allowed since June 2014. SENEAM fees must be current or denied entry without warning.",
+    "warnings": [
+      "SENEAM fees must be current"
+    ],
+    "airports": [
+      "MMMX",
+      "MMTJ",
+      "MMUN",
+      "MMSD"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Panama",
+    "code": "PA",
+    "flag": "🇵🇦",
+    "region": "Central America",
+    "icaoPrefix": "MP",
+    "caa": "AAC Panama",
+    "caaWebsite": "https://www.aeronautica.gob.pa/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "CENAMER notification - rarely issues"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Straightforward"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard documentation"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-11",
+    "visaCrew": "Visa-free ≤180 days",
+    "notes": "CENAMER permits typically just notifications. Rarely problems unless fees outstanding.",
+    "warnings": [],
+    "airports": [
+      "MPTO",
+      "MPPA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Costa Rica",
+    "code": "CR",
+    "flag": "🇨🇷",
+    "region": "Central America",
+    "icaoPrefix": "MR",
+    "caa": "DGAC Costa Rica",
+    "caaWebsite": "https://www.dgac.go.cr/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "CENAMER notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Industry guidance",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "Popular eco-tourism destination. Liberia (MRLB) good alternative to San Jose.",
+    "warnings": [],
+    "airports": [
+      "MROC",
+      "MRLB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Guatemala",
+    "code": "GT",
+    "flag": "🇬🇹",
+    "region": "Central America",
+    "icaoPrefix": "MG",
+    "caa": "DGAC Guatemala",
+    "caaWebsite": "https://dgac.gob.gt/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "CENAMER notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "Guatemala City main international gateway.",
+    "warnings": [],
+    "airports": [
+      "MGGT"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Belize",
+    "code": "BZ",
+    "flag": "🇧🇿",
+    "region": "Central America",
+    "icaoPrefix": "MZ",
+    "caa": "BCAA",
+    "caaWebsite": "https://www.civilaviation.gov.bz/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Simple notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Small country. Philip Goldson International main airport.",
+    "warnings": [],
+    "airports": [
+      "MZBZ"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Honduras",
+    "code": "HN",
+    "flag": "🇭🇳",
+    "region": "Central America",
+    "icaoPrefix": "MH",
+    "caa": "AHAC",
+    "caaWebsite": "https://ahac.gob.hn/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "CENAMER notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "⚠️ Tegucigalpa (MHTG) has challenging terrain approach. Consider Roatán (MHRO) or San Pedro Sula (MHLM).",
+    "warnings": [
+      "Tegucigalpa: challenging approach"
+    ],
+    "airports": [
+      "MHTG",
+      "MHLM",
+      "MHRO"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Nicaragua",
+    "code": "NI",
+    "flag": "🇳🇮",
+    "region": "Central America",
+    "icaoPrefix": "MN",
+    "caa": "INAC Nicaragua",
+    "caaWebsite": "https://www.inac.gob.ni/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Only required if overflying landmass + CENAMER notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "Overflight permit only needed if overflying landmass.",
+    "warnings": [],
+    "airports": [
+      "MNMG"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "El Salvador",
+    "code": "SV",
+    "flag": "🇸🇻",
+    "region": "Central America",
+    "icaoPrefix": "MS",
+    "caa": "AAC El Salvador",
+    "caaWebsite": "https://www.aac.gob.sv/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "CENAMER notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "El Salvador International (MSSS) is main gateway.",
+    "warnings": [],
+    "airports": [
+      "MSSS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Brazil",
+    "code": "BR",
+    "flag": "🇧🇷",
+    "region": "South America",
+    "icaoPrefix": "SB",
+    "caa": "ANAC Brazil",
+    "caaWebsite": "https://www.gov.br/anac/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Now required - was not previously"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Both pilots need ATPs from registry state"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Both pilots need ATPs from registry state"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather, ANAC",
+    "lastVerified": "2024-11",
+    "visaCrew": "Visa required for US crew",
+    "notes": "Overflight now required (change from previous). Both pilots must have ATPs from aircraft's state of registry.",
+    "warnings": [
+      "Pilots need ATPs from registry country"
+    ],
+    "airports": [
+      "SBGR",
+      "SBRJ",
+      "SBBR"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Argentina",
+    "code": "AR",
+    "flag": "🇦🇷",
+    "region": "South America",
+    "icaoPrefix": "SA",
+    "caa": "ANAC Argentina",
+    "caaWebsite": "https://www.argentina.gob.ar/anac",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Cannot fly directly between Argentina and Falkland Islands.",
+    "warnings": [
+      "No Falklands direct flights"
+    ],
+    "airports": [
+      "SAEZ",
+      "SABE"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Chile",
+    "code": "CL",
+    "flag": "🇨🇱",
+    "region": "South America",
+    "icaoPrefix": "SC",
+    "caa": "DGAC Chile",
+    "caaWebsite": "https://www.dgac.gob.cl/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Santiago main gateway. Easter Island operations require additional planning.",
+    "warnings": [],
+    "airports": [
+      "SCEL"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Colombia",
+    "code": "CO",
+    "flag": "🇨🇴",
+    "region": "South America",
+    "icaoPrefix": "SK",
+    "caa": "Aerocivil",
+    "caaWebsite": "https://www.aerocivil.gov.co/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Engine + ELT serial numbers required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Short stays ≤48 hrs may not need permit"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Full documentation"
+      },
+      "shortStay": {
+        "required": false,
+        "leadTime": null,
+        "notes": "≤48 hours - no landing permit needed"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "Unique: Engine and ELT serial numbers required for overflight. Short stays ≤48 hrs don't need landing permit.",
+    "warnings": [
+      "Engine/ELT serials required"
+    ],
+    "airports": [
+      "SKBO",
+      "SKMR",
+      "SKCG"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Peru",
+    "code": "PE",
+    "flag": "🇵🇪",
+    "region": "South America",
+    "icaoPrefix": "SP",
+    "caa": "DGAC Peru",
+    "caaWebsite": "https://www.gob.pe/mtc",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Lima main gateway. Cusco high elevation (10,860ft).",
+    "warnings": [
+      "Cusco: high elevation"
+    ],
+    "airports": [
+      "SPJC",
+      "SPZO"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Venezuela",
+    "code": "VE",
+    "flag": "🇻🇪",
+    "region": "South America",
+    "icaoPrefix": "SV",
+    "caa": "INAC Venezuela",
+    "caaWebsite": "http://www.inac.gob.ve/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Will deny if nav fees owed - NO warning"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "25-30",
+        "notes": "25 days minimum for stays >72 hrs"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "25-30",
+        "notes": "30 business days recommended"
+      },
+      "shortStay": {
+        "required": false,
+        "leadTime": null,
+        "notes": "≤72 hours - may not need landing permit"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa required",
+    "notes": "⚠️ 25-30 BUSINESS DAYS. Docs: Spanish translation + apostille + courier original to CAA. Nav fees must be current.",
+    "warnings": [
+      "25-30 days",
+      "Spanish translation + apostille",
+      "Nav fees checked"
+    ],
+    "airports": [
+      "SVMI",
+      "SVMC"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Ecuador",
+    "code": "EC",
+    "flag": "🇪🇨",
+    "region": "South America",
+    "icaoPrefix": "SE",
+    "caa": "DGAC Ecuador",
+    "caaWebsite": "https://www.aviacioncivil.gob.ec/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Short stays ≤72 hrs may not need permit"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Full documentation"
+      },
+      "shortStay": {
+        "required": false,
+        "leadTime": null,
+        "notes": "≤72 hours - no landing permit"
+      },
+      "galapagos": {
+        "required": true,
+        "leadTime": "10-14",
+        "notes": "Galápagos: special permits + Transit Control Card"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa-free ≤90 days",
+    "notes": "Short stays ≤72 hrs don't need landing permit. Quito: 7,800ft. Galápagos requires special permits.",
+    "warnings": [
+      "Quito: 7,800ft",
+      "Galápagos: special permits"
+    ],
+    "airports": [
+      "SEQM",
+      "SEGU"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Bolivia",
+    "code": "BO",
+    "flag": "🇧🇴",
+    "region": "South America",
+    "icaoPrefix": "SL",
+    "caa": "DGAC Bolivia",
+    "caaWebsite": "https://www.dgac.gob.bo/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Company logo + pilot signature required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Company logo + signature"
+      }
+    },
+    "confidence": "medium",
+    "source": "Universal Weather",
+    "lastVerified": "2024-08",
+    "visaCrew": "Visa required",
+    "notes": "Company logo on permit requests + pilot/officer signature required. La Paz El Alto: 13,325ft - WORLD'S HIGHEST commercial airport.",
+    "warnings": [
+      "Logo + signature required",
+      "La Paz: 13,325ft - highest airport"
+    ],
+    "airports": [
+      "SLLP",
+      "SLVR"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Paraguay",
+    "code": "PY",
+    "flag": "🇵🇾",
+    "region": "South America",
+    "icaoPrefix": "SG",
+    "caa": "DINAC",
+    "caaWebsite": "https://www.dinac.gov.py/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Asunción main international airport.",
+    "warnings": [],
+    "airports": [
+      "SGAS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Uruguay",
+    "code": "UY",
+    "flag": "🇺🇾",
+    "region": "South America",
+    "icaoPrefix": "SU",
+    "caa": "DINACIA",
+    "caaWebsite": "https://www.dinacia.gub.uy/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Montevideo main international gateway. Punta del Este popular destination.",
+    "warnings": [],
+    "airports": [
+      "SUMU",
+      "SULS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Guyana",
+    "code": "GY",
+    "flag": "🇬🇾",
+    "region": "South America",
+    "icaoPrefix": "SY",
+    "caa": "GCAA Guyana",
+    "caaWebsite": "https://gcaa.gy/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Georgetown main airport. Limited GA facilities.",
+    "warnings": [],
+    "airports": [
+      "SYCJ"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Suriname",
+    "code": "SR",
+    "flag": "🇸🇷",
+    "region": "South America",
+    "icaoPrefix": "SM",
+    "caa": "CAA Suriname",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Now required - was not previously"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Industry guidance",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Overflight permits now required (recent change). Paramaribo main airport.",
+    "warnings": [
+      "Overflight now required"
+    ],
+    "airports": [
+      "SMJP"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Bahamas",
+    "code": "BS",
+    "flag": "🇧🇸",
+    "region": "Caribbean",
+    "icaoPrefix": "MY",
+    "caa": "BCAA",
+    "caaWebsite": "https://www.bcaa.gov.bs/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required - file flight plan + customs forms"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Charter permit required"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-12",
+    "visaCrew": "Visa-free",
+    "notes": "Straightforward entry. Popular US gateway.",
+    "warnings": [],
+    "airports": [
+      "MYNN",
+      "MYGF"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Jamaica",
+    "code": "JM",
+    "flag": "🇯🇲",
+    "region": "Caribbean",
+    "icaoPrefix": "MK",
+    "caa": "JCAA",
+    "caaWebsite": "https://www.jcaa.gov.jm/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Simple notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Montego Bay and Kingston main airports.",
+    "warnings": [],
+    "airports": [
+      "MKJP",
+      "MKJS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Dominican Republic",
+    "code": "DO",
+    "flag": "🇩🇴",
+    "region": "Caribbean",
+    "icaoPrefix": "MD",
+    "caa": "IDAC",
+    "caaWebsite": "https://www.idac.gob.do/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Simple notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Punta Cana and Santo Domingo main airports.",
+    "warnings": [],
+    "airports": [
+      "MDPC",
+      "MDSD"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Cuba",
+    "code": "CU",
+    "flag": "🇨🇺",
+    "region": "Caribbean",
+    "icaoPrefix": "MU",
+    "caa": "IACC",
+    "caaWebsite": "http://www.iacc.gov.cu/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "OFAC authorization required for US"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Must meet one of 12 OFAC categories"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather, OFAC",
+    "lastVerified": "2024-11",
+    "visaCrew": "Visa required + OFAC",
+    "notes": "⚠️ US SANCTIONS: OFAC authorization required. 12 authorized travel categories only. Consult legal counsel.",
+    "warnings": [
+      "OFAC compliance required",
+      "12 categories only",
+      "Legal counsel recommended"
+    ],
+    "airports": [
+      "MUHA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Cayman Islands",
+    "code": "KY",
+    "flag": "🇰🇾",
+    "region": "Caribbean",
+    "icaoPrefix": "MW",
+    "caa": "CAACI",
+    "caaWebsite": "https://www.caacayman.com/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "PPR and customs notification"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Charter permit required"
+      }
+    },
+    "confidence": "high",
+    "source": "Industry guidance",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "UK Overseas Territory. Popular financial center.",
+    "warnings": [],
+    "airports": [
+      "MWCR"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Turks and Caicos",
+    "code": "TC",
+    "flag": "🇹🇨",
+    "region": "Caribbean",
+    "icaoPrefix": "MB",
+    "caa": "TCAA",
+    "caaWebsite": "https://www.tcaa.tc/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Customs notification"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Charter permit required"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "UK Overseas Territory. Providenciales main airport.",
+    "warnings": [],
+    "airports": [
+      "MBPV"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Puerto Rico",
+    "code": "PR",
+    "flag": "🇵🇷",
+    "region": "Caribbean",
+    "icaoPrefix": "TJ",
+    "caa": "FAA",
+    "caaWebsite": "https://www.faa.gov/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "US domestic"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "US domestic"
+      },
+      "landingCharter": {
+        "required": false,
+        "leadTime": null,
+        "notes": "US domestic"
+      }
+    },
+    "confidence": "high",
+    "source": "FAA",
+    "lastVerified": "2024-12",
+    "visaCrew": "US territory",
+    "notes": "US territory - domestic rules apply. CBP for international arrivals. Luggage screening required.",
+    "warnings": [
+      "Luggage screening at TJSJ/TJBQ"
+    ],
+    "airports": [
+      "TJSJ",
+      "TJBQ"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "US Virgin Islands",
+    "code": "VI",
+    "flag": "🇻🇮",
+    "region": "Caribbean",
+    "icaoPrefix": "TI",
+    "caa": "FAA",
+    "caaWebsite": "https://www.faa.gov/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "US domestic"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "US domestic"
+      },
+      "landingCharter": {
+        "required": false,
+        "leadTime": null,
+        "notes": "US domestic"
+      }
+    },
+    "confidence": "high",
+    "source": "FAA",
+    "lastVerified": "2024-12",
+    "visaCrew": "US territory",
+    "notes": "US territory - domestic rules. St. Thomas and St. Croix main airports.",
+    "warnings": [],
+    "airports": [
+      "TIST",
+      "TISX"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "British Virgin Islands",
+    "code": "VG",
+    "flag": "🇻🇬",
+    "region": "Caribbean",
+    "icaoPrefix": "TU",
+    "caa": "BVI CAA",
+    "caaWebsite": "https://bviaa.vg/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Customs notification"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Charter permit required"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "UK Overseas Territory. Tortola main airport - short runway.",
+    "warnings": [
+      "Short runway"
+    ],
+    "airports": [
+      "TUPJ"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Barbados",
+    "code": "BB",
+    "flag": "🇧🇧",
+    "region": "Caribbean",
+    "icaoPrefix": "TB",
+    "caa": "BCAD",
+    "caaWebsite": "https://civilaviation.gov.bb/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Simple notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Grantley Adams main airport. Good GA facilities.",
+    "warnings": [],
+    "airports": [
+      "TBPB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "code": "TT",
+    "flag": "🇹🇹",
+    "region": "Caribbean",
+    "icaoPrefix": "TT",
+    "caa": "TTCAA",
+    "caaWebsite": "https://www.ttcaa.com/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Piarco main airport. Oil/gas industry hub.",
+    "warnings": [],
+    "airports": [
+      "TTPP"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Aruba",
+    "code": "AW",
+    "flag": "🇦🇼",
+    "region": "Caribbean",
+    "icaoPrefix": "TN",
+    "caa": "DCA Aruba",
+    "caaWebsite": "https://www.dcaaruba.com/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Simple notification"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Netherlands territory. Popular resort destination.",
+    "warnings": [],
+    "airports": [
+      "TNCA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Curaçao",
+    "code": "CW",
+    "flag": "🇨🇼",
+    "region": "Caribbean",
+    "icaoPrefix": "TN",
+    "caa": "CCAA",
+    "caaWebsite": "https://www.ccaa.cw/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Simple notification"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Netherlands territory. Hato airport.",
+    "warnings": [],
+    "airports": [
+      "TNCC"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Sint Maarten",
+    "code": "SX",
+    "flag": "🇸🇽",
+    "region": "Caribbean",
+    "icaoPrefix": "TN",
+    "caa": "DCSM",
+    "caaWebsite": "https://www.dcasxm.sx/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Netherlands territory. Princess Juliana famous for beach approaches.",
+    "warnings": [],
+    "airports": [
+      "TNCM"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Haiti",
+    "code": "HT",
+    "flag": "🇭🇹",
+    "region": "Caribbean",
+    "icaoPrefix": "MT",
+    "caa": "OFNAC",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Security situation variable"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Security assessment recommended"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "⚠️ Security situation highly variable. Verify current status before planning.",
+    "warnings": [
+      "Security situation variable"
+    ],
+    "airports": [
+      "MTPP"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "St. Barthélemy",
+    "code": "BL",
+    "flag": "🇧🇱",
+    "region": "Caribbean",
+    "icaoPrefix": "TF",
+    "caa": "DGAC France",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "SPECIAL PILOT AUTHORIZATION required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Special authorization"
+      }
+    },
+    "confidence": "high",
+    "source": "Industry guidance",
+    "lastVerified": "2024-10",
+    "visaCrew": "Schengen rules",
+    "notes": "⚠️ 2,119ft runway - SPECIAL PILOT AUTHORIZATION REQUIRED. No jet fuel. Max aircraft size limited.",
+    "warnings": [
+      "2,119ft runway",
+      "Special pilot auth required",
+      "No jet fuel"
+    ],
+    "airports": [
+      "TFFJ"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Bermuda",
+    "code": "BM",
+    "flag": "🇧🇲",
+    "region": "Caribbean",
+    "icaoPrefix": "TX",
+    "caa": "BCAA Bermuda",
+    "caaWebsite": "https://www.bcaa.bm/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Advance notification"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Charter permit required"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "UK Overseas Territory. Single airport.",
+    "warnings": [],
+    "airports": [
+      "TXKF"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "code": "AG",
+    "flag": "🇦🇬",
+    "region": "Caribbean",
+    "icaoPrefix": "TA",
+    "caa": "ABAA",
+    "caaWebsite": "https://abaagov.com/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Simple notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "V.C. Bird International main airport.",
+    "warnings": [],
+    "airports": [
+      "TAPA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "St. Lucia",
+    "code": "LC",
+    "flag": "🇱🇨",
+    "region": "Caribbean",
+    "icaoPrefix": "TL",
+    "caa": "SLASPA",
+    "caaWebsite": "https://slaspa.lc/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Simple notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Hewanorra (UVF) main airport. George F.L. Charles (SLU) closer to Castries but shorter runway.",
+    "warnings": [],
+    "airports": [
+      "TLPL",
+      "TLPC"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Grenada",
+    "code": "GD",
+    "flag": "🇬🇩",
+    "region": "Caribbean",
+    "icaoPrefix": "TG",
+    "caa": "GCAA Grenada",
+    "caaWebsite": "https://www.gcaa.gd/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Simple notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Maurice Bishop International main airport.",
+    "warnings": [],
+    "airports": [
+      "TGPY"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "St. Kitts and Nevis",
+    "code": "KN",
+    "flag": "🇰🇳",
+    "region": "Caribbean",
+    "icaoPrefix": "TK",
+    "caa": "SKCAA",
+    "caaWebsite": "https://skcaa.kn/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Simple notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Robert L. Bradshaw main airport.",
+    "warnings": [],
+    "airports": [
+      "TKPK"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "St. Vincent and the Grenadines",
+    "code": "VC",
+    "flag": "🇻🇨",
+    "region": "Caribbean",
+    "icaoPrefix": "TV",
+    "caa": "SVGCAA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Simple notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Argyle International new main airport.",
+    "warnings": [],
+    "airports": [
+      "TVSA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Dominica",
+    "code": "DM",
+    "flag": "🇩🇲",
+    "region": "Caribbean",
+    "icaoPrefix": "TD",
+    "caa": "DCAA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Simple notification"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Douglas-Charles (DOM) 5,830ft runway. Canefield (DCF) shorter.",
+    "warnings": [
+      "Short runways"
+    ],
+    "airports": [
+      "TDPD",
+      "TDCF"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Anguilla",
+    "code": "AI",
+    "flag": "🇦🇮",
+    "region": "Caribbean",
+    "icaoPrefix": "TX",
+    "caa": "UK CAA oversight",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "1-2",
+        "notes": "Customs notification"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "UK Overseas Territory. Clayton J. Lloyd 5,462ft runway.",
+    "warnings": [],
+    "airports": [
+      "TQPF"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Montserrat",
+    "code": "MS",
+    "flag": "🇲🇸",
+    "region": "Caribbean",
+    "icaoPrefix": "TR",
+    "caa": "UK CAA oversight",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "Not required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Limited - small aircraft only"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Very limited"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "⚠️ 1,965ft runway - SMALL AIRCRAFT ONLY (DHC-6 max). Volcano exclusion zone.",
+    "warnings": [
+      "1,965ft runway",
+      "Small aircraft only",
+      "Volcano zone"
+    ],
+    "airports": [
+      "TRPM"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "South Africa",
+    "code": "ZA",
+    "flag": "🇿🇦",
+    "region": "Africa",
+    "icaoPrefix": "FA",
+    "caa": "SACAA",
+    "caaWebsite": "https://www.caa.co.za/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-11",
+    "visaCrew": "Visa-free for US crew ≤90 days",
+    "notes": "Major African hub. Johannesburg, Cape Town well-served.",
+    "warnings": [],
+    "airports": [
+      "FAOR",
+      "FACT",
+      "FALE"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Kenya",
+    "code": "KE",
+    "flag": "🇰🇪",
+    "region": "Africa",
+    "icaoPrefix": "HK",
+    "caa": "KCAA",
+    "caaWebsite": "https://www.kcaa.or.ke/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "MAINTENANCE LOGS required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Maintenance logs required"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "e-Visa required",
+    "notes": "Unique: MAINTENANCE LOGS required with permit application. Wilson Airport popular for GA.",
+    "warnings": [
+      "Maintenance logs required"
+    ],
+    "airports": [
+      "HKJK",
+      "HKWL",
+      "HKMO"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Nigeria",
+    "code": "NG",
+    "flag": "🇳🇬",
+    "region": "Africa",
+    "icaoPrefix": "DN",
+    "caa": "NCAA",
+    "caaWebsite": "https://www.ncaa.gov.ng/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa required",
+    "notes": "Lagos and Abuja main airports. Security considerations vary by region.",
+    "warnings": [],
+    "airports": [
+      "DNMM",
+      "DNAA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Egypt",
+    "code": "EG",
+    "flag": "🇪🇬",
+    "region": "Africa",
+    "icaoPrefix": "HE",
+    "caa": "ECAA",
+    "caaWebsite": "https://www.civilaviation.gov.eg/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "FIR information required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa on arrival available",
+    "notes": "Cairo main hub. Sharm el-Sheikh, Hurghada resort destinations.",
+    "warnings": [],
+    "airports": [
+      "HECA",
+      "HEGN",
+      "HESN"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Morocco",
+    "code": "MA",
+    "flag": "🇲🇦",
+    "region": "Africa",
+    "icaoPrefix": "GM",
+    "caa": "DGAC Morocco",
+    "caaWebsite": "https://www.dgac.gov.ma/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa-free for US crew ≤90 days",
+    "notes": "Marrakech and Casablanca main airports. Good European gateway.",
+    "warnings": [],
+    "airports": [
+      "GMMN",
+      "GMMX"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Tanzania",
+    "code": "TZ",
+    "flag": "🇹🇿",
+    "region": "Africa",
+    "icaoPrefix": "HT",
+    "caa": "TCAA",
+    "caaWebsite": "https://www.tcaa.go.tz/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa on arrival available",
+    "notes": "Dar es Salaam main hub. Kilimanjaro for safari access.",
+    "warnings": [],
+    "airports": [
+      "HTDA",
+      "HTKJ",
+      "HTZA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Ethiopia",
+    "code": "ET",
+    "flag": "🇪🇹",
+    "region": "Africa",
+    "icaoPrefix": "HA",
+    "caa": "ECAA Ethiopia",
+    "caaWebsite": "https://www.ecaa.gov.et/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "e-Visa available",
+    "notes": "Addis Ababa major African hub. Ethiopian Airlines home base.",
+    "warnings": [],
+    "airports": [
+      "HAAB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Ghana",
+    "code": "GH",
+    "flag": "🇬🇭",
+    "region": "Africa",
+    "icaoPrefix": "DG",
+    "caa": "GCAA Ghana",
+    "caaWebsite": "https://www.gcaa.com.gh/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa required",
+    "notes": "Accra main airport. Good West African hub.",
+    "warnings": [],
+    "airports": [
+      "DGAA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Senegal",
+    "code": "SN",
+    "flag": "🇸🇳",
+    "region": "Africa",
+    "icaoPrefix": "GO",
+    "caa": "ANACIM",
+    "caaWebsite": "https://www.anacim.sn/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa-free for US crew ≤90 days",
+    "notes": "Dakar new airport (GOBD) opened 2017. Good tech stop for Atlantic crossings.",
+    "warnings": [],
+    "airports": [
+      "GOBD"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Togo",
+    "code": "TG",
+    "flag": "🇹🇬",
+    "region": "Africa",
+    "icaoPrefix": "DX",
+    "caa": "ANAC Togo",
+    "caaWebsite": "https://www.anac.tg/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "10",
+        "notes": "10 BUSINESS DAYS - one of longest in Africa"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "10",
+        "notes": "10 business days"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "10",
+        "notes": "10 business days"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather",
+    "lastVerified": "2024-10",
+    "visaCrew": "Visa on arrival",
+    "notes": "⚠️ 10 BUSINESS DAYS - plan 2+ weeks ahead. Lomé main airport.",
+    "warnings": [
+      "10 days - plan 2+ weeks ahead"
+    ],
+    "airports": [
+      "DXXX"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Ivory Coast",
+    "code": "CI",
+    "flag": "🇨🇮",
+    "region": "Africa",
+    "icaoPrefix": "DI",
+    "caa": "ANAC Côte d'Ivoire",
+    "caaWebsite": "https://www.anac.ci/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa required",
+    "notes": "Abidjan main airport. Francophone West African hub.",
+    "warnings": [],
+    "airports": [
+      "DIAP"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Cameroon",
+    "code": "CM",
+    "flag": "🇨🇲",
+    "region": "Africa",
+    "icaoPrefix": "FK",
+    "caa": "CCAA",
+    "caaWebsite": "https://www.ccaa.aero/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa required",
+    "notes": "Douala main airport. Yaoundé also serves international.",
+    "warnings": [],
+    "airports": [
+      "FKKD",
+      "FKYS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Angola",
+    "code": "AO",
+    "flag": "🇦🇴",
+    "region": "Africa",
+    "icaoPrefix": "FN",
+    "caa": "INAVIC",
+    "caaWebsite": "https://www.inavic.gov.ao/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "May require additional documentation"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Oil industry operations common"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa required",
+    "notes": "Luanda main airport. Oil/gas industry hub.",
+    "warnings": [],
+    "airports": [
+      "FNLU"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Democratic Republic of Congo",
+    "code": "CD",
+    "flag": "🇨🇩",
+    "region": "Africa",
+    "icaoPrefix": "FZ",
+    "caa": "RVA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Security situation variable"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Additional security clearances may be needed"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Security situation variable by region. Kinshasa main airport.",
+    "warnings": [
+      "Security varies by region"
+    ],
+    "airports": [
+      "FZAA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Republic of Congo",
+    "code": "CG",
+    "flag": "🇨🇬",
+    "region": "Africa",
+    "icaoPrefix": "FC",
+    "caa": "ANAC Congo",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Brazzaville main airport. Oil industry operations.",
+    "warnings": [],
+    "airports": [
+      "FCBB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Uganda",
+    "code": "UG",
+    "flag": "🇺🇬",
+    "region": "Africa",
+    "icaoPrefix": "HU",
+    "caa": "UCAA",
+    "caaWebsite": "https://www.caa.go.ug/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "e-Visa required",
+    "notes": "Entebbe main airport. Gateway to gorilla trekking.",
+    "warnings": [],
+    "airports": [
+      "HUEN"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Rwanda",
+    "code": "RW",
+    "flag": "🇷🇼",
+    "region": "Africa",
+    "icaoPrefix": "HR",
+    "caa": "RCAA",
+    "caaWebsite": "https://www.caa.gov.rw/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa on arrival",
+    "notes": "Kigali main airport. New Bugesera airport under construction.",
+    "warnings": [],
+    "airports": [
+      "HRYR"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Zambia",
+    "code": "ZM",
+    "flag": "🇿🇲",
+    "region": "Africa",
+    "icaoPrefix": "FL",
+    "caa": "ZCAA",
+    "caaWebsite": "https://www.zcaa.org.zm/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "e-Visa available",
+    "notes": "Lusaka main airport. Livingstone for Victoria Falls.",
+    "warnings": [],
+    "airports": [
+      "FLKK",
+      "FLLS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Zimbabwe",
+    "code": "ZW",
+    "flag": "🇿🇼",
+    "region": "Africa",
+    "icaoPrefix": "FV",
+    "caa": "CAAZ",
+    "caaWebsite": "https://www.caaz.co.zw/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa on arrival available",
+    "notes": "Harare main airport. Victoria Falls airport for tourism.",
+    "warnings": [],
+    "airports": [
+      "FVHA",
+      "FVFA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Botswana",
+    "code": "BW",
+    "flag": "🇧🇼",
+    "region": "Africa",
+    "icaoPrefix": "FB",
+    "caa": "CAAB",
+    "caaWebsite": "https://www.caab.co.bw/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Gaborone main airport. Maun for Okavango Delta safaris.",
+    "warnings": [],
+    "airports": [
+      "FBSK",
+      "FBMN"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Namibia",
+    "code": "NA",
+    "flag": "🇳🇦",
+    "region": "Africa",
+    "icaoPrefix": "FY",
+    "caa": "DCA Namibia",
+    "caaWebsite": "https://www.dca.com.na/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Windhoek main airport. Good GA infrastructure.",
+    "warnings": [],
+    "airports": [
+      "FYWH"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Mozambique",
+    "code": "MZ",
+    "flag": "🇲🇿",
+    "region": "Africa",
+    "icaoPrefix": "FQ",
+    "caa": "IACM",
+    "caaWebsite": "https://www.iacm.gov.mz/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Maputo main airport. Northern region security concerns.",
+    "warnings": [
+      "Northern region security concerns"
+    ],
+    "airports": [
+      "FQMA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Madagascar",
+    "code": "MG",
+    "flag": "🇲🇬",
+    "region": "Africa",
+    "icaoPrefix": "FM",
+    "caa": "ACM",
+    "caaWebsite": "https://www.acm.mg/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa on arrival",
+    "notes": "Antananarivo main airport. Limited GA facilities.",
+    "warnings": [],
+    "airports": [
+      "FMMI"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Mauritius",
+    "code": "MU",
+    "flag": "🇲🇺",
+    "region": "Africa",
+    "icaoPrefix": "FI",
+    "caa": "DCA Mauritius",
+    "caaWebsite": "https://civilaviation.govmu.org/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Sir Seewoosagur Ramgoolam main airport. Popular resort destination.",
+    "warnings": [],
+    "airports": [
+      "FIMP"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Seychelles",
+    "code": "SC",
+    "flag": "🇸🇨",
+    "region": "Africa",
+    "icaoPrefix": "FS",
+    "caa": "SCAA",
+    "caaWebsite": "https://www.scaa.sc/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for all nationalities",
+    "notes": "Mahé main airport. Popular luxury destination.",
+    "warnings": [],
+    "airports": [
+      "FSIA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Tunisia",
+    "code": "TN",
+    "flag": "🇹🇳",
+    "region": "Africa",
+    "icaoPrefix": "DT",
+    "caa": "OACA",
+    "caaWebsite": "https://www.oaca.nat.tn/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew ≤90 days",
+    "notes": "Tunis main airport. Good Mediterranean access.",
+    "warnings": [],
+    "airports": [
+      "DTTA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Algeria",
+    "code": "DZ",
+    "flag": "🇩🇿",
+    "region": "Africa",
+    "icaoPrefix": "DA",
+    "caa": "DGAC Algeria",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "May require additional approvals"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Complex approval process"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Algiers main airport. Oil/gas industry operations.",
+    "warnings": [],
+    "airports": [
+      "DAAG"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Libya",
+    "code": "LY",
+    "flag": "🇱🇾",
+    "region": "Africa",
+    "icaoPrefix": "HL",
+    "caa": "LYCAA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "7-14",
+        "notes": "Security situation"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Operations highly restricted"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Not recommended"
+      }
+    },
+    "confidence": "low",
+    "source": "State Dept",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "⚠️ Security situation. US State Dept travel advisory. War risk insurance required.",
+    "warnings": [
+      "Security situation",
+      "War risk insurance"
+    ],
+    "airports": [
+      "HLLT",
+      "HLLB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Sudan",
+    "code": "SD",
+    "flag": "🇸🇩",
+    "region": "Africa",
+    "icaoPrefix": "HS",
+    "caa": "SCAA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "7-14",
+        "notes": "Diplomatic clearance may be needed"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Operations restricted"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "⚠️ Active conflict (2023+). Operations effectively suspended in many areas.",
+    "warnings": [
+      "Active conflict",
+      "Operations suspended"
+    ],
+    "airports": [
+      "HSSS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "South Sudan",
+    "code": "SS",
+    "flag": "🇸🇸",
+    "region": "Africa",
+    "icaoPrefix": "HJ",
+    "caa": "SSCAA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "7-14",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Highly restricted"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Humanitarian only typically"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "⚠️ Security situation highly volatile. Primarily humanitarian operations.",
+    "warnings": [
+      "Security highly volatile"
+    ],
+    "airports": [
+      "HJJJ"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Eritrea",
+    "code": "ER",
+    "flag": "🇪🇷",
+    "region": "Africa",
+    "icaoPrefix": "HH",
+    "caa": "ECAA Eritrea",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "7-14",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Very restricted"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Rarely permitted"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Highly restricted airspace. Limited commercial operations.",
+    "warnings": [
+      "Highly restricted"
+    ],
+    "airports": [
+      "HHAS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Djibouti",
+    "code": "DJ",
+    "flag": "🇩🇯",
+    "region": "Africa",
+    "icaoPrefix": "HD",
+    "caa": "DGAC Djibouti",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa on arrival",
+    "notes": "Strategic location. Military presence.",
+    "warnings": [],
+    "airports": [
+      "HDAM"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Somalia",
+    "code": "SO",
+    "flag": "🇸🇴",
+    "region": "Africa",
+    "icaoPrefix": "HC",
+    "caa": "SCAMA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "7-14",
+        "notes": "Highly restricted"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Effectively prohibited for commercial"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Humanitarian/diplomatic only"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "⚠️ Security situation extremely volatile. War risk insurance mandatory.",
+    "warnings": [
+      "Extreme security risk",
+      "War risk insurance mandatory"
+    ],
+    "airports": [
+      "HCMM",
+      "HCMN"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Mali",
+    "code": "ML",
+    "flag": "🇲🇱",
+    "region": "Africa",
+    "icaoPrefix": "GA",
+    "caa": "ANAC Mali",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Security clearance may be needed"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Security situation variable"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Security situation in northern regions. Bamako relatively stable.",
+    "warnings": [
+      "Northern regions insecure"
+    ],
+    "airports": [
+      "GABS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Burkina Faso",
+    "code": "BF",
+    "flag": "🇧🇫",
+    "region": "Africa",
+    "icaoPrefix": "DF",
+    "caa": "ANAC Burkina",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Security concerns in some regions.",
+    "warnings": [
+      "Security concerns"
+    ],
+    "airports": [
+      "DFFD"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Niger",
+    "code": "NE",
+    "flag": "🇳🇪",
+    "region": "Africa",
+    "icaoPrefix": "DR",
+    "caa": "ANAC Niger",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Political situation variable (2023 coup). Verify current status.",
+    "warnings": [
+      "Political situation variable"
+    ],
+    "airports": [
+      "DRRN"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Chad",
+    "code": "TD",
+    "flag": "🇹🇩",
+    "region": "Africa",
+    "icaoPrefix": "FT",
+    "caa": "ADAC Chad",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "May require additional clearances"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Oil/humanitarian operations"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "N'Djamena main airport. Oil industry operations.",
+    "warnings": [],
+    "airports": [
+      "FTTJ"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Central African Republic",
+    "code": "CF",
+    "flag": "🇨🇫",
+    "region": "Africa",
+    "icaoPrefix": "FE",
+    "caa": "ANAC CAR",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "7-14",
+        "notes": "Security clearance required"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Primarily humanitarian"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "⚠️ Security situation unstable. Primarily humanitarian operations.",
+    "warnings": [
+      "Security unstable"
+    ],
+    "airports": [
+      "FEFF"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Gabon",
+    "code": "GA",
+    "flag": "🇬🇦",
+    "region": "Africa",
+    "icaoPrefix": "FO",
+    "caa": "ANAC Gabon",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa on arrival available",
+    "notes": "Libreville main airport. Oil industry hub.",
+    "warnings": [],
+    "airports": [
+      "FOOL"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Equatorial Guinea",
+    "code": "GQ",
+    "flag": "🇬🇶",
+    "region": "Africa",
+    "icaoPrefix": "FG",
+    "caa": "DGAC EG",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "May require additional documentation"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Oil industry focus"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Malabo on Bioko Island. Bata on mainland. Oil industry.",
+    "warnings": [],
+    "airports": [
+      "FGSL",
+      "FGBT"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "São Tomé and Príncipe",
+    "code": "ST",
+    "flag": "🇸🇹",
+    "region": "Africa",
+    "icaoPrefix": "FP",
+    "caa": "INAC STP",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa on arrival",
+    "notes": "Small island nation. São Tomé main airport.",
+    "warnings": [],
+    "airports": [
+      "FPST"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Cape Verde",
+    "code": "CV",
+    "flag": "🇨🇻",
+    "region": "Africa",
+    "icaoPrefix": "GV",
+    "caa": "AAC Cape Verde",
+    "caaWebsite": "https://www.aac.cv/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Popular tech stop for South Atlantic crossings. Sal and Praia airports.",
+    "warnings": [],
+    "airports": [
+      "GVNP",
+      "GVAC"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Guinea",
+    "code": "GN",
+    "flag": "🇬🇳",
+    "region": "Africa",
+    "icaoPrefix": "GU",
+    "caa": "DGAC Guinea",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Conakry main airport.",
+    "warnings": [],
+    "airports": [
+      "GUCY"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Guinea-Bissau",
+    "code": "GW",
+    "flag": "🇬🇼",
+    "region": "Africa",
+    "icaoPrefix": "GG",
+    "caa": "INAC GB",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Bissau main airport. Limited infrastructure.",
+    "warnings": [
+      "Limited infrastructure"
+    ],
+    "airports": [
+      "GGOV"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Gambia",
+    "code": "GM",
+    "flag": "🇬🇲",
+    "region": "Africa",
+    "icaoPrefix": "GB",
+    "caa": "GCAA Gambia",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa on arrival",
+    "notes": "Banjul main airport.",
+    "warnings": [],
+    "airports": [
+      "GBYD"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Sierra Leone",
+    "code": "SL",
+    "flag": "🇸🇱",
+    "region": "Africa",
+    "icaoPrefix": "GF",
+    "caa": "SLCAA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Freetown main airport.",
+    "warnings": [],
+    "airports": [
+      "GFLL"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Liberia",
+    "code": "LR",
+    "flag": "🇱🇷",
+    "region": "Africa",
+    "icaoPrefix": "GL",
+    "caa": "LCAA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "Monrovia main airport.",
+    "warnings": [],
+    "airports": [
+      "GLRB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Benin",
+    "code": "BJ",
+    "flag": "🇧🇯",
+    "region": "Africa",
+    "icaoPrefix": "DB",
+    "caa": "ANAC Benin",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "e-Visa available",
+    "notes": "Cotonou main airport.",
+    "warnings": [],
+    "airports": [
+      "DBBB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Malawi",
+    "code": "MW",
+    "flag": "🇲🇼",
+    "region": "Africa",
+    "icaoPrefix": "FW",
+    "caa": "DCA Malawi",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa on arrival",
+    "notes": "Lilongwe main airport.",
+    "warnings": [],
+    "airports": [
+      "FWKI"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Lesotho",
+    "code": "LS",
+    "flag": "🇱🇸",
+    "region": "Africa",
+    "icaoPrefix": "FX",
+    "caa": "DCA Lesotho",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Moshoeshoe I main airport. High elevation country.",
+    "warnings": [
+      "High elevation"
+    ],
+    "airports": [
+      "FXMM"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Eswatini",
+    "code": "SZ",
+    "flag": "🇸🇿",
+    "region": "Africa",
+    "icaoPrefix": "FD",
+    "caa": "SWACAA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "King Mswati III main airport.",
+    "warnings": [],
+    "airports": [
+      "FDSK"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Comoros",
+    "code": "KM",
+    "flag": "🇰🇲",
+    "region": "Africa",
+    "icaoPrefix": "FM",
+    "caa": "ANACM",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa on arrival",
+    "notes": "Moroni main airport. Island nation.",
+    "warnings": [],
+    "airports": [
+      "FMCH"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Burundi",
+    "code": "BI",
+    "flag": "🇧🇮",
+    "region": "Africa",
+    "icaoPrefix": "HB",
+    "caa": "RCCA Burundi",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Security situation variable"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Security clearance may be needed"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "e-Visa available",
+    "notes": "Bujumbura main airport. Security situation variable.",
+    "warnings": [
+      "Security variable"
+    ],
+    "airports": [
+      "HBBA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Australia",
+    "code": "AU",
+    "flag": "🇦🇺",
+    "region": "Oceania",
+    "icaoPrefix": "Y",
+    "caa": "CASA",
+    "caaWebsite": "https://www.casa.gov.au/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Foreign AOC recognition required"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather, CASA",
+    "lastVerified": "2024-11",
+    "visaCrew": "ETA required for US crew",
+    "notes": "Foreign charter authority needed. Multiple entry points.",
+    "warnings": [],
+    "airports": [
+      "YSSY",
+      "YMML",
+      "YBBN",
+      "YPPH"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "New Zealand",
+    "code": "NZ",
+    "flag": "🇳🇿",
+    "region": "Oceania",
+    "icaoPrefix": "NZ",
+    "caa": "CAA NZ",
+    "caaWebsite": "https://www.caa.govt.nz/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Foreign AOC recognition"
+      }
+    },
+    "confidence": "high",
+    "source": "Universal Weather, CAA NZ",
+    "lastVerified": "2024-11",
+    "visaCrew": "NZeTA required",
+    "notes": "Auckland and Queenstown main airports.",
+    "warnings": [],
+    "airports": [
+      "NZAA",
+      "NZWN",
+      "NZCH",
+      "NZQN"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Fiji",
+    "code": "FJ",
+    "flag": "🇫🇯",
+    "region": "Oceania",
+    "icaoPrefix": "NF",
+    "caa": "CAAF",
+    "caaWebsite": "https://www.caaf.org.fj/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free ≤4 months",
+    "notes": "Nadi main international airport. Popular Pacific hub.",
+    "warnings": [],
+    "airports": [
+      "NFFN",
+      "NFNA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Papua New Guinea",
+    "code": "PG",
+    "flag": "🇵🇬",
+    "region": "Oceania",
+    "icaoPrefix": "AY",
+    "caa": "CASAPNG",
+    "caaWebsite": "https://www.casapng.gov.pg/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "May need additional documentation"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Mining/oil industry common"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa on arrival available",
+    "notes": "Port Moresby main airport. Mining industry operations.",
+    "warnings": [],
+    "airports": [
+      "AYPY"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "French Polynesia",
+    "code": "PF",
+    "flag": "🇵🇫",
+    "region": "Oceania",
+    "icaoPrefix": "NT",
+    "caa": "DGAC France",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "French territory rules"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "French DGAC oversight"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Schengen rules apply",
+    "notes": "Tahiti Faa'a main airport. Popular luxury destination.",
+    "warnings": [],
+    "airports": [
+      "NTAA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "New Caledonia",
+    "code": "NC",
+    "flag": "🇳🇨",
+    "region": "Oceania",
+    "icaoPrefix": "NW",
+    "caa": "DGAC France",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "French territory rules"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "French DGAC oversight"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Schengen rules apply",
+    "notes": "Nouméa main airport. French territory.",
+    "warnings": [],
+    "airports": [
+      "NWWW"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Vanuatu",
+    "code": "VU",
+    "flag": "🇻🇺",
+    "region": "Oceania",
+    "icaoPrefix": "NV",
+    "caa": "CAAV",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free ≤30 days",
+    "notes": "Port Vila main airport.",
+    "warnings": [],
+    "airports": [
+      "NVVV"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Samoa",
+    "code": "WS",
+    "flag": "🇼🇸",
+    "region": "Oceania",
+    "icaoPrefix": "NS",
+    "caa": "MAV Samoa",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free ≤60 days",
+    "notes": "Faleolo main airport.",
+    "warnings": [],
+    "airports": [
+      "NSFA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Tonga",
+    "code": "TO",
+    "flag": "🇹🇴",
+    "region": "Oceania",
+    "icaoPrefix": "NF",
+    "caa": "MOI Tonga",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free ≤31 days",
+    "notes": "Fua'amotu main airport.",
+    "warnings": [],
+    "airports": [
+      "NFTF"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Solomon Islands",
+    "code": "SB",
+    "flag": "🇸🇧",
+    "region": "Oceania",
+    "icaoPrefix": "AG",
+    "caa": "SICAA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa on arrival",
+    "notes": "Honiara main airport.",
+    "warnings": [],
+    "airports": [
+      "AGGH"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Marshall Islands",
+    "code": "MH",
+    "flag": "🇲🇭",
+    "region": "Oceania",
+    "icaoPrefix": "PK",
+    "caa": "RMIPA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Majuro main airport. US Compact of Free Association.",
+    "warnings": [],
+    "airports": [
+      "PKMJ"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Palau",
+    "code": "PW",
+    "flag": "🇵🇼",
+    "region": "Oceania",
+    "icaoPrefix": "PT",
+    "caa": "BDCA Palau",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Koror main airport. US Compact.",
+    "warnings": [],
+    "airports": [
+      "PTRO"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Micronesia",
+    "code": "FM",
+    "flag": "🇫🇲",
+    "region": "Oceania",
+    "icaoPrefix": "PT",
+    "caa": "FSM DOT",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free for US crew",
+    "notes": "Pohnpei, Chuuk, Yap, Kosrae airports. US Compact.",
+    "warnings": [],
+    "airports": [
+      "PTPN",
+      "PTKK"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Guam",
+    "code": "GU",
+    "flag": "🇬🇺",
+    "region": "Oceania",
+    "icaoPrefix": "PG",
+    "caa": "FAA",
+    "caaWebsite": "https://www.faa.gov/",
+    "permits": {
+      "overflight": {
+        "required": false,
+        "leadTime": null,
+        "notes": "US territory"
+      },
+      "landingPrivate": {
+        "required": false,
+        "leadTime": null,
+        "notes": "US domestic"
+      },
+      "landingCharter": {
+        "required": false,
+        "leadTime": null,
+        "notes": "US domestic"
+      }
+    },
+    "confidence": "high",
+    "source": "FAA",
+    "lastVerified": "2024-12",
+    "visaCrew": "US territory",
+    "notes": "US territory - domestic rules. Won Pat International.",
+    "warnings": [],
+    "airports": [
+      "PGUM"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Kazakhstan",
+    "code": "KZ",
+    "flag": "🇰🇿",
+    "region": "Central Asia",
+    "icaoPrefix": "UA",
+    "caa": "CAC Kazakhstan",
+    "caaWebsite": "https://www.cac.gov.kz/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free ≤30 days",
+    "notes": "Nur-Sultan (Astana) and Almaty main airports.",
+    "warnings": [],
+    "airports": [
+      "UACC",
+      "UAAA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Uzbekistan",
+    "code": "UZ",
+    "flag": "🇺🇿",
+    "region": "Central Asia",
+    "icaoPrefix": "UT",
+    "caa": "Uzbekistan CAA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "May need additional clearance"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "e-Visa available",
+    "notes": "Tashkent main airport. Samarkand popular tourist destination.",
+    "warnings": [],
+    "airports": [
+      "UTTT",
+      "UTSS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Turkmenistan",
+    "code": "TM",
+    "flag": "🇹🇲",
+    "region": "Central Asia",
+    "icaoPrefix": "UT",
+    "caa": "Turkmenistan CAA",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "7-14",
+        "notes": "Very restricted"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "14+",
+        "notes": "Rarely permitted"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required - difficult to obtain",
+    "notes": "Very restricted access. Ashgabat main airport.",
+    "warnings": [
+      "Very restricted access"
+    ],
+    "airports": [
+      "UTAA"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Kyrgyzstan",
+    "code": "KG",
+    "flag": "🇰🇬",
+    "region": "Central Asia",
+    "icaoPrefix": "UC",
+    "caa": "CAA Kyrgyzstan",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa-free ≤60 days",
+    "notes": "Bishkek main airport.",
+    "warnings": [],
+    "airports": [
+      "UCFM"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Tajikistan",
+    "code": "TJ",
+    "flag": "🇹🇯",
+    "region": "Central Asia",
+    "icaoPrefix": "UT",
+    "caa": "CAA Tajikistan",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "May require additional clearance"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "e-Visa available",
+    "notes": "Dushanbe main airport. Mountainous terrain.",
+    "warnings": [
+      "Mountainous terrain"
+    ],
+    "airports": [
+      "UTDD"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Russia",
+    "code": "RU",
+    "flag": "🇷🇺",
+    "region": "Europe",
+    "icaoPrefix": "U",
+    "caa": "Rosaviation",
+    "caaWebsite": "https://www.favt.ru/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "~48 hours often achievable"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Entry/exit points specified"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "No early arrivals"
+      }
+    },
+    "confidence": "medium",
+    "source": "Universal Weather",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa required",
+    "notes": "⚠️ Entry/exit FIRs must match permit. NO EARLY ARRIVALS without revision. Sanctions considerations may apply.",
+    "warnings": [
+      "Entry/exit FIRs must match",
+      "No early arrivals",
+      "Sanctions considerations"
+    ],
+    "airports": [
+      "UUEE",
+      "UUDD",
+      "ULLI"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Ukraine",
+    "code": "UA",
+    "flag": "🇺🇦",
+    "region": "Europe",
+    "icaoPrefix": "UK",
+    "caa": "SAAU",
+    "caaWebsite": "https://avia.gov.ua/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "N/A",
+        "notes": "AIRSPACE CLOSED"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "N/A",
+        "notes": "AIRSPACE CLOSED"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "N/A",
+        "notes": "AIRSPACE CLOSED"
+      }
+    },
+    "confidence": "high",
+    "source": "NOTAM",
+    "lastVerified": "2024-12",
+    "visaCrew": "N/A",
+    "notes": "⚠️ AIRSPACE CLOSED due to conflict since Feb 2022. Do NOT plan operations.",
+    "warnings": [
+      "AIRSPACE CLOSED",
+      "Active conflict"
+    ],
+    "airports": [
+      "UKBB",
+      "UKKK"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Belarus",
+    "code": "BY",
+    "flag": "🇧🇾",
+    "region": "Europe",
+    "icaoPrefix": "UM",
+    "caa": "Belaeronavigatsia",
+    "caaWebsite": null,
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Sanctions may affect operations"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Restricted"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "7-10",
+        "notes": "Very restricted"
+      }
+    },
+    "confidence": "low",
+    "source": "Limited data",
+    "lastVerified": "2024-06",
+    "visaCrew": "Visa required",
+    "notes": "⚠️ EU/US sanctions affect operations. Many operators avoid. Check current restrictions.",
+    "warnings": [
+      "Sanctions in effect",
+      "Many operators avoid"
+    ],
+    "airports": [
+      "UMMS"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Armenia",
+    "code": "AM",
+    "flag": "🇦🇲",
+    "region": "Asia",
+    "icaoPrefix": "UD",
+    "caa": "CAC Armenia",
+    "caaWebsite": "https://aviation.am/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free ≤180 days",
+    "notes": "Yerevan main airport.",
+    "warnings": [],
+    "airports": [
+      "UDYZ"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Azerbaijan",
+    "code": "AZ",
+    "flag": "🇦🇿",
+    "region": "Asia",
+    "icaoPrefix": "UB",
+    "caa": "SCCA Azerbaijan",
+    "caaWebsite": "https://scca.gov.az/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "e-Visa available",
+    "notes": "Baku main airport. Oil/gas industry hub.",
+    "warnings": [],
+    "airports": [
+      "UBBB"
+    ],
+    "_version": 1
+  },
+  {
+    "name": "Georgia",
+    "code": "GE",
+    "flag": "🇬🇪",
+    "region": "Asia",
+    "icaoPrefix": "UG",
+    "caa": "GCAA Georgia",
+    "caaWebsite": "https://gcaa.ge/",
+    "permits": {
+      "overflight": {
+        "required": true,
+        "leadTime": "2-3",
+        "notes": "Required"
+      },
+      "landingPrivate": {
+        "required": true,
+        "leadTime": "3-5",
+        "notes": "Standard processing"
+      },
+      "landingCharter": {
+        "required": true,
+        "leadTime": "5-7",
+        "notes": "Standard processing"
+      }
+    },
+    "confidence": "medium",
+    "source": "Industry guidance",
+    "lastVerified": "2024-09",
+    "visaCrew": "Visa-free ≤1 year",
+    "notes": "Tbilisi main airport. Popular destination.",
+    "warnings": [],
+    "airports": [
+      "UGTB",
+      "UGBS"
+    ],
+    "_version": 1
+  }
+]

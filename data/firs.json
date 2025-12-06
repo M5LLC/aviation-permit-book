@@ -1,0 +1,995 @@
+[
+  {
+    "countryCode": "US",
+    "firs": [
+      "KZWY",
+      "KZAK",
+      "KZHU",
+      "KZMA",
+      "KZJX",
+      "KZDC",
+      "KZNY",
+      "KZBW",
+      "KZOB",
+      "KZAU",
+      "KZMP",
+      "KZDV",
+      "KZAB",
+      "KZLA",
+      "KZSE",
+      "KZOA"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "CA",
+    "firs": [
+      "CZQX",
+      "CZUL",
+      "CZYZ",
+      "CZWG",
+      "CZEG",
+      "CZVR"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "MX",
+    "firs": [
+      "MMFR"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "GB",
+    "firs": [
+      "EGTT",
+      "EGPX"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "IE",
+    "firs": [
+      "EISN"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "FR",
+    "firs": [
+      "LFFF",
+      "LFBB",
+      "LFEE",
+      "LFMM",
+      "LFRR"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "DE",
+    "firs": [
+      "EDGG",
+      "EDMM",
+      "EDUU",
+      "EDWW"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "IT",
+    "firs": [
+      "LIMM",
+      "LIRR"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "ES",
+    "firs": [
+      "LECM",
+      "LECB",
+      "LECS",
+      "GCCC"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "PT",
+    "firs": [
+      "LPPC"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "CH",
+    "firs": [
+      "LSAS"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "AT",
+    "firs": [
+      "LOVV"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "NL",
+    "firs": [
+      "EHAA"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "BE",
+    "firs": [
+      "EBBU"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "LU",
+    "firs": [
+      "ELLX"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "DK",
+    "firs": [
+      "EKDK"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "SE",
+    "firs": [
+      "ESAA"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "NO",
+    "firs": [
+      "ENOR",
+      "ENOB"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "FI",
+    "firs": [
+      "EFIN"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "IS",
+    "firs": [
+      "BIRD"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "GR",
+    "firs": [
+      "LGGG"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "TR",
+    "firs": [
+      "LTAA",
+      "LTBB"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "PL",
+    "firs": [
+      "EPWW"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "CZ",
+    "firs": [
+      "LKAA"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "HU",
+    "firs": [
+      "LHCC"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "RO",
+    "firs": [
+      "LRBB"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "BG",
+    "firs": [
+      "LBSR"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "HR",
+    "firs": [
+      "LDZO"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "RS",
+    "firs": [
+      "LYBA"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "UA",
+    "firs": [
+      "UKFV",
+      "UKOV",
+      "UKDV",
+      "UKLV"
+    ],
+    "permitRequired": true,
+    "leadTime": "CLOSED",
+    "warning": "AIRSPACE CLOSED"
+  },
+  {
+    "countryCode": "RU",
+    "firs": [
+      "UMMV",
+      "UUWV",
+      "ULLL",
+      "UUUU"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7",
+    "warning": "Sanctions may apply"
+  },
+  {
+    "countryCode": "BY",
+    "firs": [
+      "UMKK"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7",
+    "warning": "Sanctions may apply"
+  },
+  {
+    "countryCode": "AE",
+    "firs": [
+      "OMAE"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "SA",
+    "firs": [
+      "OEJD"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7"
+  },
+  {
+    "countryCode": "QA",
+    "firs": [
+      "OTDF"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "BH",
+    "firs": [
+      "OBBB"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "KW",
+    "firs": [
+      "OKAC"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "OM",
+    "firs": [
+      "OOMM"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "JO",
+    "firs": [
+      "OJAC"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "IL",
+    "firs": [
+      "LLLL"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "IQ",
+    "firs": [
+      "ORBB"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7",
+    "warning": "War risk insurance required"
+  },
+  {
+    "countryCode": "IR",
+    "firs": [
+      "OIIX"
+    ],
+    "permitRequired": true,
+    "leadTime": "7-10",
+    "warning": "US sanctions apply"
+  },
+  {
+    "countryCode": "YE",
+    "firs": [
+      "OYSC"
+    ],
+    "permitRequired": true,
+    "leadTime": "N/A",
+    "warning": "CONFLICT ZONE"
+  },
+  {
+    "countryCode": "SY",
+    "firs": [
+      "OSTT"
+    ],
+    "permitRequired": true,
+    "leadTime": "N/A",
+    "warning": "CONFLICT ZONE"
+  },
+  {
+    "countryCode": "LB",
+    "firs": [
+      "OLBB"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "IN",
+    "firs": [
+      "VIDF",
+      "VABF",
+      "VECF",
+      "VOMF"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "CN",
+    "firs": [
+      "ZBPE",
+      "ZGZU",
+      "ZHWH",
+      "ZJSA",
+      "ZLHW",
+      "ZPKM",
+      "ZSHA",
+      "ZWUQ",
+      "ZYSH"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7"
+  },
+  {
+    "countryCode": "HK",
+    "firs": [
+      "VHHK"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "JP",
+    "firs": [
+      "RJTG",
+      "RJJJ",
+      "RJFC",
+      "RJDG"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "KR",
+    "firs": [
+      "RKRR"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "TW",
+    "firs": [
+      "RCAA"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "KP",
+    "firs": [
+      "ZKKP"
+    ],
+    "permitRequired": true,
+    "leadTime": "N/A",
+    "warning": "DO NOT OVERFLY"
+  },
+  {
+    "countryCode": "MN",
+    "firs": [
+      "ZMUB"
+    ],
+    "permitRequired": true,
+    "leadTime": "14",
+    "warning": "14 business days minimum"
+  },
+  {
+    "countryCode": "TH",
+    "firs": [
+      "VTBB"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "VN",
+    "firs": [
+      "VVTS",
+      "VVHN"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "MY",
+    "firs": [
+      "WMFC",
+      "WBFC"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "SG",
+    "firs": [
+      "WSJC"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "ID",
+    "firs": [
+      "WIIF",
+      "WAAF"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7"
+  },
+  {
+    "countryCode": "PH",
+    "firs": [
+      "RPHI"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "MM",
+    "firs": [
+      "VYYF"
+    ],
+    "permitRequired": true,
+    "leadTime": "9-14",
+    "warning": "Long lead time"
+  },
+  {
+    "countryCode": "PK",
+    "firs": [
+      "OPLR"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7"
+  },
+  {
+    "countryCode": "AF",
+    "firs": [
+      "OAKX"
+    ],
+    "permitRequired": true,
+    "leadTime": "N/A",
+    "warning": "Security risk"
+  },
+  {
+    "countryCode": "EG",
+    "firs": [
+      "HECC"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "LY",
+    "firs": [
+      "HLLL"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7",
+    "warning": "Security unstable"
+  },
+  {
+    "countryCode": "TN",
+    "firs": [
+      "DTTC"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "DZ",
+    "firs": [
+      "DAAA"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7"
+  },
+  {
+    "countryCode": "MA",
+    "firs": [
+      "GMMM"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "MR",
+    "firs": [
+      "GQNN"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7"
+  },
+  {
+    "countryCode": "SN",
+    "firs": [
+      "GOOO"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "NG",
+    "firs": [
+      "DNKK"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "GH",
+    "firs": [
+      "DGAC"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "KE",
+    "firs": [
+      "HKNA"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "TZ",
+    "firs": [
+      "HTDC"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "ET",
+    "firs": [
+      "HAAA"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7"
+  },
+  {
+    "countryCode": "ZA",
+    "firs": [
+      "FAJA",
+      "FACT"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "AO",
+    "firs": [
+      "FNAN"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7"
+  },
+  {
+    "countryCode": "CD",
+    "firs": [
+      "FZZA"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7"
+  },
+  {
+    "countryCode": "SD",
+    "firs": [
+      "HSSS"
+    ],
+    "permitRequired": true,
+    "leadTime": "7-10",
+    "warning": "Sanctions may apply"
+  },
+  {
+    "countryCode": "SS",
+    "firs": [
+      "HJJJ"
+    ],
+    "permitRequired": true,
+    "leadTime": "7-10",
+    "warning": "Conflict zone"
+  },
+  {
+    "countryCode": "SO",
+    "firs": [
+      "HCSM"
+    ],
+    "permitRequired": true,
+    "leadTime": "N/A",
+    "warning": "Security risk"
+  },
+  {
+    "countryCode": "ER",
+    "firs": [
+      "HHAA"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7"
+  },
+  {
+    "countryCode": "MU",
+    "firs": [
+      "FIMM"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "SC",
+    "firs": [
+      "FSSS"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "MG",
+    "firs": [
+      "FMMM"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "BR",
+    "firs": [
+      "SBAO",
+      "SBAZ",
+      "SBBS",
+      "SBCW",
+      "SBRE"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "AR",
+    "firs": [
+      "SACF",
+      "SAEF"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "CL",
+    "firs": [
+      "SCFZ",
+      "SCTZ"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "PE",
+    "firs": [
+      "SPIM"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "CO",
+    "firs": [
+      "SKED",
+      "SKEC"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "EC",
+    "firs": [
+      "SEFG"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "VE",
+    "firs": [
+      "SVZM"
+    ],
+    "permitRequired": true,
+    "leadTime": "25-30",
+    "warning": "Very long lead time"
+  },
+  {
+    "countryCode": "BO",
+    "firs": [
+      "SLLF"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "PY",
+    "firs": [
+      "SGFA"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "UY",
+    "firs": [
+      "SUEO"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "GY",
+    "firs": [
+      "SYGC"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "SR",
+    "firs": [
+      "SMPM"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "BS",
+    "firs": [
+      "MYNA"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "CU",
+    "firs": [
+      "MUFH"
+    ],
+    "permitRequired": true,
+    "leadTime": "5-7",
+    "warning": "OFAC compliance required"
+  },
+  {
+    "countryCode": "JM",
+    "firs": [
+      "MKJK"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "DO",
+    "firs": [
+      "MDCS"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "HT",
+    "firs": [
+      "MTPP"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "PR",
+    "firs": [
+      "TJZS"
+    ],
+    "permitRequired": false
+  },
+  {
+    "countryCode": "PA",
+    "firs": [
+      "MPZL"
+    ],
+    "permitRequired": true,
+    "leadTime": "1-2"
+  },
+  {
+    "countryCode": "CR",
+    "firs": [
+      "MROC"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "GT",
+    "firs": [
+      "MGGT"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "HN",
+    "firs": [
+      "MHTG"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "NI",
+    "firs": [
+      "MNMG"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "SV",
+    "firs": [
+      "MSSA"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "BZ",
+    "firs": [
+      "MZBZ"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "AU",
+    "firs": [
+      "YMMM",
+      "YBBB"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "NZ",
+    "firs": [
+      "NZZO",
+      "NZCM"
+    ],
+    "permitRequired": true,
+    "leadTime": "2-3"
+  },
+  {
+    "countryCode": "FJ",
+    "firs": [
+      "NFFF"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "PF",
+    "firs": [
+      "NTTT"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "PG",
+    "firs": [
+      "AYPM"
+    ],
+    "permitRequired": true,
+    "leadTime": "3-5"
+  },
+  {
+    "countryCode": "ATLANTIC",
+    "firs": [
+      "LPPO",
+      "BIRD",
+      "CZQX",
+      "KZWY"
+    ],
+    "permitRequired": false,
+    "name": "North Atlantic"
+  },
+  {
+    "countryCode": "PACIFIC",
+    "firs": [
+      "KZAK",
+      "RJJJ",
+      "NZZO",
+      "NTTT"
+    ],
+    "permitRequired": false,
+    "name": "Pacific"
+  }
+]

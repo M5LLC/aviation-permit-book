@@ -1,0 +1,1194 @@
+[
+  {
+    "airport": "EGLL",
+    "airportName": "London Heathrow",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+44 20 8283 2400",
+        "email": "lhr@signatureflight.com",
+        "services": "Full service FBO, fueling, handling",
+        "website": "https://signatureaviation.com"
+      },
+      {
+        "name": "Harrods Aviation",
+        "phone": "+44 20 8564 0900",
+        "email": "ops@harrodsaviation.com",
+        "services": "VIP handling, customs, catering",
+        "website": "https://www.harrodsaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "EGLF",
+    "airportName": "Farnborough",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "TAG Farnborough",
+        "phone": "+44 1252 379 000",
+        "email": "handling@tagfarnborough.com",
+        "services": "Dedicated business aviation, full FBO",
+        "website": "https://www.tagfarnborough.com"
+      }
+    ]
+  },
+  {
+    "airport": "LFPB",
+    "airportName": "Paris Le Bourget",
+    "country": "France",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+33 1 49 34 58 58",
+        "email": "lbg@signatureflight.com",
+        "services": "Full service FBO",
+        "website": "https://signatureaviation.com"
+      },
+      {
+        "name": "Universal Aviation",
+        "phone": "+33 1 48 62 27 00",
+        "email": "paris@universalaviation.aero",
+        "services": "Trip support, handling",
+        "website": "https://www.universalaviation.aero"
+      },
+      {
+        "name": "Jetex",
+        "phone": "+33 1 49 34 58 00",
+        "email": "paris@jetex.com",
+        "services": "VIP handling, permits",
+        "website": "https://www.jetex.com"
+      }
+    ]
+  },
+  {
+    "airport": "LSGG",
+    "airportName": "Geneva",
+    "country": "Switzerland",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "TAG Aviation",
+        "phone": "+41 22 717 00 00",
+        "email": "handling.gva@tagaviation.com",
+        "services": "Full service, maintenance",
+        "website": "https://www.tagaviation.com"
+      },
+      {
+        "name": "ExecuJet",
+        "phone": "+41 22 929 06 06",
+        "email": "geneva@execujet.com",
+        "services": "FBO, MRO",
+        "website": "https://www.execujet.com"
+      }
+    ]
+  },
+  {
+    "airport": "EDDF",
+    "airportName": "Frankfurt",
+    "country": "Germany",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "Jet Aviation",
+        "phone": "+49 69 690 280",
+        "email": "fra@jetaviation.com",
+        "services": "Full service FBO",
+        "website": "https://www.jetaviation.com"
+      },
+      {
+        "name": "Universal Aviation",
+        "phone": "+49 69 690 58 620",
+        "email": "frankfurt@universalaviation.aero",
+        "services": "Handling, trip support",
+        "website": "https://www.universalaviation.aero"
+      }
+    ]
+  },
+  {
+    "airport": "EDDM",
+    "airportName": "Munich",
+    "country": "Germany",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+49 89 975 95 100",
+        "email": "muc@signatureflight.com",
+        "services": "Full service FBO",
+        "website": "https://signatureaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "LIRF",
+    "airportName": "Rome Fiumicino",
+    "country": "Italy",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "Universal Aviation",
+        "phone": "+39 06 65 95 36 05",
+        "email": "rome@universalaviation.aero",
+        "services": "Handling, permits",
+        "website": "https://www.universalaviation.aero"
+      },
+      {
+        "name": "Sky Services",
+        "phone": "+39 06 659 531",
+        "email": "rome@skyservices.it",
+        "services": "Full handling",
+        "website": "https://www.skyservices.it"
+      }
+    ]
+  },
+  {
+    "airport": "LEMD",
+    "airportName": "Madrid Barajas",
+    "country": "Spain",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "Iberia Handling",
+        "phone": "+34 91 587 4700",
+        "email": "gaservices@iberia.es",
+        "services": "Ground handling",
+        "website": "https://www.iberiahandling.com"
+      },
+      {
+        "name": "Swissport Executive",
+        "phone": "+34 91 321 1000",
+        "email": "madrid.executive@swissport.com",
+        "services": "VIP services",
+        "website": "https://www.swissport.com"
+      }
+    ]
+  },
+  {
+    "airport": "OMDB",
+    "airportName": "Dubai International",
+    "country": "UAE",
+    "region": "Middle East",
+    "fbos": [
+      {
+        "name": "Jetex Dubai",
+        "phone": "+971 4 212 4000",
+        "email": "dubai@jetex.com",
+        "services": "24/7 VIP FBO, permits",
+        "website": "https://www.jetex.com"
+      },
+      {
+        "name": "ExecuJet",
+        "phone": "+971 4 601 5600",
+        "email": "dubai@execujet.com",
+        "services": "FBO, maintenance",
+        "website": "https://www.execujet.com"
+      },
+      {
+        "name": "Hadid International",
+        "phone": "+971 4 299 8444",
+        "email": "dubai@hadid.aero",
+        "services": "Trip support, permits",
+        "website": "https://www.hadid.aero"
+      }
+    ]
+  },
+  {
+    "airport": "OMDW",
+    "airportName": "Dubai Al Maktoum (DWC)",
+    "country": "UAE",
+    "region": "Middle East",
+    "fbos": [
+      {
+        "name": "DC Aviation Al-Futtaim",
+        "phone": "+971 4 870 1800",
+        "email": "dwc@dc-aviation.ae",
+        "services": "Full FBO, hangar",
+        "website": "https://www.dc-aviation.ae"
+      },
+      {
+        "name": "Jetex",
+        "phone": "+971 4 212 4000",
+        "email": "dwc@jetex.com",
+        "services": "VIP handling",
+        "website": "https://www.jetex.com"
+      }
+    ]
+  },
+  {
+    "airport": "OEJN",
+    "airportName": "Jeddah",
+    "country": "Saudi Arabia",
+    "region": "Middle East",
+    "fbos": [
+      {
+        "name": "Saudia Private Aviation",
+        "phone": "+966 12 686 0000",
+        "email": "spa@saudia.com",
+        "services": "VIP handling",
+        "website": "https://www.saudia.com"
+      },
+      {
+        "name": "Jet Aviation",
+        "phone": "+966 12 686 3800",
+        "email": "jed@jetaviation.com",
+        "services": "Full FBO",
+        "website": "https://www.jetaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "OTHH",
+    "airportName": "Doha Hamad",
+    "country": "Qatar",
+    "region": "Middle East",
+    "fbos": [
+      {
+        "name": "Qatar Executive",
+        "phone": "+974 4010 8888",
+        "email": "qe-fbo@qatarairways.com.qa",
+        "services": "Premium FBO",
+        "website": "https://www.qatarexecutive.com.qa"
+      }
+    ]
+  },
+  {
+    "airport": "VHHH",
+    "airportName": "Hong Kong",
+    "country": "Hong Kong",
+    "region": "Asia",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+852 2269 7700",
+        "email": "hkg@signatureflight.com",
+        "services": "Full FBO",
+        "website": "https://signatureaviation.com"
+      },
+      {
+        "name": "Metrojet",
+        "phone": "+852 2828 3828",
+        "email": "ops@metrojet.com",
+        "services": "FBO, MRO",
+        "website": "https://www.metrojet.com"
+      }
+    ]
+  },
+  {
+    "airport": "WSSS",
+    "airportName": "Singapore Changi",
+    "country": "Singapore",
+    "region": "Asia",
+    "fbos": [
+      {
+        "name": "Jet Aviation",
+        "phone": "+65 6543 0000",
+        "email": "sin@jetaviation.com",
+        "services": "Full service FBO",
+        "website": "https://www.jetaviation.com"
+      },
+      {
+        "name": "Universal Aviation",
+        "phone": "+65 6214 0777",
+        "email": "singapore@universalaviation.aero",
+        "services": "24/7 handling",
+        "website": "https://www.universalaviation.aero"
+      }
+    ]
+  },
+  {
+    "airport": "RJTT",
+    "airportName": "Tokyo Haneda",
+    "country": "Japan",
+    "region": "Asia",
+    "fbos": [
+      {
+        "name": "Universal Aviation",
+        "phone": "+81 3 5708 0700",
+        "email": "tokyo@universalaviation.aero",
+        "services": "Handling, permits",
+        "website": "https://www.universalaviation.aero"
+      }
+    ]
+  },
+  {
+    "airport": "ZBAA",
+    "airportName": "Beijing Capital",
+    "country": "China",
+    "region": "Asia",
+    "fbos": [
+      {
+        "name": "Universal Aviation",
+        "phone": "+86 10 6456 1780",
+        "email": "beijing@universalaviation.aero",
+        "services": "Permits, handling",
+        "website": "https://www.universalaviation.aero"
+      },
+      {
+        "name": "Beijing Capital Jet",
+        "phone": "+86 10 6456 2288",
+        "email": "info@bcjet.com.cn",
+        "services": "Full FBO",
+        "website": null
+      }
+    ]
+  },
+  {
+    "airport": "VIDP",
+    "airportName": "Delhi",
+    "country": "India",
+    "region": "Asia",
+    "fbos": [
+      {
+        "name": "Bird ExecuJet",
+        "phone": "+91 11 4615 5000",
+        "email": "delhi@bird-execujet.com",
+        "services": "FBO, permits",
+        "website": "https://www.bird-execujet.com"
+      },
+      {
+        "name": "Universal Aviation",
+        "phone": "+91 11 4352 7777",
+        "email": "delhi@universalaviation.aero",
+        "services": "Trip support",
+        "website": "https://www.universalaviation.aero"
+      }
+    ]
+  },
+  {
+    "airport": "FAOR",
+    "airportName": "Johannesburg OR Tambo",
+    "country": "South Africa",
+    "region": "Africa",
+    "fbos": [
+      {
+        "name": "ExecuJet",
+        "phone": "+27 11 516 2300",
+        "email": "johannesburg@execujet.com",
+        "services": "Full FBO, MRO",
+        "website": "https://www.execujet.com"
+      },
+      {
+        "name": "National Airways Corporation",
+        "phone": "+27 11 267 5000",
+        "email": "info@nac.co.za",
+        "services": "Handling, fuel",
+        "website": "https://www.nac.co.za"
+      }
+    ]
+  },
+  {
+    "airport": "HKJK",
+    "airportName": "Nairobi Jomo Kenyatta",
+    "country": "Kenya",
+    "region": "Africa",
+    "fbos": [
+      {
+        "name": "Tradewinds Aviation",
+        "phone": "+254 20 822 200",
+        "email": "info@tradewindskenya.com",
+        "services": "Full handling, permits",
+        "website": "https://www.tradewindskenya.com"
+      }
+    ]
+  },
+  {
+    "airport": "DNMM",
+    "airportName": "Lagos Murtala Muhammed",
+    "country": "Nigeria",
+    "region": "Africa",
+    "fbos": [
+      {
+        "name": "Evergreen Apple Nigeria",
+        "phone": "+234 1 774 0022",
+        "email": "ops@evergreenapple.com",
+        "services": "VIP handling, permits",
+        "website": "https://www.evergreenapple.com"
+      }
+    ]
+  },
+  {
+    "airport": "KTEB",
+    "airportName": "Teterboro",
+    "country": "United States",
+    "region": "North America",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+1 201 288 1775",
+        "email": "teb@signatureflight.com",
+        "services": "Full FBO, hangar",
+        "website": "https://signatureaviation.com"
+      },
+      {
+        "name": "Meridian",
+        "phone": "+1 201 288 5040",
+        "email": "ops@meridian.aero",
+        "services": "Full FBO",
+        "website": "https://www.meridian.aero"
+      },
+      {
+        "name": "Jet Aviation",
+        "phone": "+1 201 462 4100",
+        "email": "teb@jetaviation.com",
+        "services": "FBO, MRO",
+        "website": "https://www.jetaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "KLAS",
+    "airportName": "Las Vegas Henderson",
+    "country": "United States",
+    "region": "North America",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+1 702 261 3801",
+        "email": "las@signatureflight.com",
+        "services": "Full FBO",
+        "website": "https://signatureaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "KLAX",
+    "airportName": "Los Angeles International",
+    "country": "United States",
+    "region": "North America",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+1 310 646 7001",
+        "email": "lax@signatureflight.com",
+        "services": "Full FBO",
+        "website": "https://signatureaviation.com"
+      },
+      {
+        "name": "Clay Lacy Aviation",
+        "phone": "+1 818 989 2900",
+        "email": "ops@claylacy.com",
+        "services": "FBO at KVNY",
+        "website": "https://www.claylacy.com"
+      }
+    ]
+  },
+  {
+    "airport": "MMMX",
+    "airportName": "Mexico City",
+    "country": "Mexico",
+    "region": "North America",
+    "fbos": [
+      {
+        "name": "Universal Aviation",
+        "phone": "+52 55 5133 0730",
+        "email": "mexico@universalaviation.aero",
+        "services": "Full handling, permits",
+        "website": "https://www.universalaviation.aero"
+      },
+      {
+        "name": "ASA - Aeropuertos y Servicios Auxiliares",
+        "phone": "+52 55 5133 1000",
+        "email": null,
+        "services": "Government handling",
+        "website": null
+      }
+    ]
+  },
+  {
+    "airport": "SBGR",
+    "airportName": "São Paulo Guarulhos",
+    "country": "Brazil",
+    "region": "South America",
+    "fbos": [
+      {
+        "name": "Universal Aviation",
+        "phone": "+55 11 2445 7070",
+        "email": "saopaulo@universalaviation.aero",
+        "services": "Handling, permits",
+        "website": "https://www.universalaviation.aero"
+      },
+      {
+        "name": "Lider Aviação",
+        "phone": "+55 11 5033 9999",
+        "email": "gru@lfrv.com.br",
+        "services": "Full FBO",
+        "website": "https://www.lfrv.com.br"
+      }
+    ]
+  },
+  {
+    "airport": "MYNN",
+    "airportName": "Nassau",
+    "country": "Bahamas",
+    "region": "Caribbean",
+    "fbos": [
+      {
+        "name": "Jet Nassau",
+        "phone": "+1 242 377 3355",
+        "email": "ops@jetnassau.com",
+        "services": "Full FBO",
+        "website": "https://www.jetnassau.com"
+      },
+      {
+        "name": "Odyssey Aviation",
+        "phone": "+1 242 702 0200",
+        "email": "nassau@odysseyaviation.com",
+        "services": "FBO, customs",
+        "website": "https://www.odysseyaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "MWCR",
+    "airportName": "Grand Cayman",
+    "country": "Cayman Islands",
+    "region": "Caribbean",
+    "fbos": [
+      {
+        "name": "Island Air",
+        "phone": "+1 345 949 0241",
+        "email": "ops@islandair.ky",
+        "services": "Full handling",
+        "website": "https://www.islandair.ky"
+      }
+    ]
+  },
+  {
+    "airport": "YSSY",
+    "airportName": "Sydney",
+    "country": "Australia",
+    "region": "Oceania",
+    "fbos": [
+      {
+        "name": "Universal Aviation",
+        "phone": "+61 2 9693 5844",
+        "email": "sydney@universalaviation.aero",
+        "services": "Full handling",
+        "website": "https://www.universalaviation.aero"
+      },
+      {
+        "name": "Jet Aviation (Sydney Jet Base)",
+        "phone": "+61 2 8337 6900",
+        "email": "syd@jetaviation.com",
+        "services": "FBO at YSSY",
+        "website": "https://www.jetaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "NZAA",
+    "airportName": "Auckland",
+    "country": "New Zealand",
+    "region": "Oceania",
+    "fbos": [
+      {
+        "name": "Aerocare",
+        "phone": "+64 9 256 7007",
+        "email": "exec@aerocare.co.nz",
+        "services": "Handling, biosecurity",
+        "website": "https://www.aerocare.co.nz"
+      }
+    ]
+  },
+  {
+    "airport": "LOWW",
+    "airportName": "Vienna",
+    "country": "Austria",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "Jet Aviation Vienna",
+        "phone": "+43 1 7007 22651",
+        "email": "vie@jetaviation.com",
+        "services": "Full FBO",
+        "website": "https://www.jetaviation.com"
+      },
+      {
+        "name": "Vienna Aircraft Handling",
+        "phone": "+43 1 7007 33550",
+        "email": "ops@viennahandling.com",
+        "services": "Ground handling",
+        "website": null
+      }
+    ]
+  },
+  {
+    "airport": "LEBL",
+    "airportName": "Barcelona",
+    "country": "Spain",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+34 93 298 3700",
+        "email": "bcn@signatureflight.com",
+        "services": "Full FBO",
+        "website": "https://signatureaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "LFMN",
+    "airportName": "Nice Côte d'Azur",
+    "country": "France",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+33 4 93 21 36 00",
+        "email": "nce@signatureflight.com",
+        "services": "Full FBO, Monaco access",
+        "website": "https://signatureaviation.com"
+      },
+      {
+        "name": "Sky Valet",
+        "phone": "+33 4 89 88 32 20",
+        "email": "nice@skyvalet.com",
+        "services": "VIP handling",
+        "website": "https://www.skyvalet.com"
+      }
+    ]
+  },
+  {
+    "airport": "EHAM",
+    "airportName": "Amsterdam Schiphol",
+    "country": "Netherlands",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "Jet Aviation",
+        "phone": "+31 20 649 3848",
+        "email": "ams@jetaviation.com",
+        "services": "Full FBO",
+        "website": "https://www.jetaviation.com"
+      },
+      {
+        "name": "KLM Jet Center",
+        "phone": "+31 20 649 2800",
+        "email": "jetcenter@klm.com",
+        "services": "VIP handling",
+        "website": null
+      }
+    ]
+  },
+  {
+    "airport": "EGKK",
+    "airportName": "London Gatwick",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+44 1293 569 129",
+        "email": "lgw@signatureflight.com",
+        "services": "Full FBO",
+        "website": "https://signatureaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "EGGW",
+    "airportName": "London Luton",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+44 1582 405 063",
+        "email": "ltn@signatureflight.com",
+        "services": "Full FBO",
+        "website": "https://signatureaviation.com"
+      },
+      {
+        "name": "Harrods Aviation Luton",
+        "phone": "+44 1582 424 488",
+        "email": "luton@harrodsaviation.com",
+        "services": "VIP handling",
+        "website": "https://www.harrodsaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "LSZH",
+    "airportName": "Zurich",
+    "country": "Switzerland",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "Jet Aviation Zurich",
+        "phone": "+41 43 816 51 11",
+        "email": "zrh@jetaviation.com",
+        "services": "Full FBO, MRO",
+        "website": "https://www.jetaviation.com"
+      },
+      {
+        "name": "ExecuJet Zurich",
+        "phone": "+41 43 816 50 50",
+        "email": "zurich@execujet.com",
+        "services": "FBO services",
+        "website": "https://www.execujet.com"
+      }
+    ]
+  },
+  {
+    "airport": "LTFM",
+    "airportName": "Istanbul",
+    "country": "Turkey",
+    "region": "Europe",
+    "fbos": [
+      {
+        "name": "TGS (Turkish Ground Services)",
+        "phone": "+90 212 463 3000",
+        "email": "ops@tgs.aero",
+        "services": "Full handling",
+        "website": "https://www.tgs.aero"
+      },
+      {
+        "name": "Celebi Aviation",
+        "phone": "+90 212 465 0000",
+        "email": "ist@celebiaviation.com",
+        "services": "Ground handling",
+        "website": "https://www.celebiaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "OMSJ",
+    "airportName": "Sharjah",
+    "country": "UAE",
+    "region": "Middle East",
+    "fbos": [
+      {
+        "name": "Gama Aviation",
+        "phone": "+971 6 508 8800",
+        "email": "sharjah@gamaaviation.com",
+        "services": "Full FBO, MRO",
+        "website": "https://www.gamaaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "OERK",
+    "airportName": "Riyadh",
+    "country": "Saudi Arabia",
+    "region": "Middle East",
+    "fbos": [
+      {
+        "name": "Saudia Private Aviation",
+        "phone": "+966 11 220 5555",
+        "email": "riyadh@saudia.com",
+        "services": "VIP handling",
+        "website": "https://www.saudia.com"
+      },
+      {
+        "name": "NasJet",
+        "phone": "+966 11 261 1111",
+        "email": "ops@nasjet.com.sa",
+        "services": "Full FBO",
+        "website": "https://www.nasjet.com.sa"
+      }
+    ]
+  },
+  {
+    "airport": "LLBG",
+    "airportName": "Tel Aviv Ben Gurion",
+    "country": "Israel",
+    "region": "Middle East",
+    "fbos": [
+      {
+        "name": "IAI Jet",
+        "phone": "+972 3 935 8888",
+        "email": "jetfbo@iai.co.il",
+        "services": "Full FBO",
+        "website": null
+      },
+      {
+        "name": "CAL Cargo",
+        "phone": "+972 3 977 1111",
+        "email": "vip@cal.co.il",
+        "services": "VIP handling",
+        "website": null
+      }
+    ]
+  },
+  {
+    "airport": "ZSPD",
+    "airportName": "Shanghai Pudong",
+    "country": "China",
+    "region": "Asia",
+    "fbos": [
+      {
+        "name": "Shanghai Hawker Pacific",
+        "phone": "+86 21 6834 5000",
+        "email": "sha@hawkerpacific.com",
+        "services": "Full FBO",
+        "website": "https://www.hawkerpacific.com"
+      },
+      {
+        "name": "Deer Jet",
+        "phone": "+86 21 2231 5888",
+        "email": "pvg@deerjet.com",
+        "services": "FBO, charter",
+        "website": "https://www.deerjet.com"
+      }
+    ]
+  },
+  {
+    "airport": "VABB",
+    "airportName": "Mumbai",
+    "country": "India",
+    "region": "Asia",
+    "fbos": [
+      {
+        "name": "Bird ExecuJet",
+        "phone": "+91 22 6685 1100",
+        "email": "mumbai@bird-execujet.com",
+        "services": "Full FBO",
+        "website": "https://www.bird-execujet.com"
+      },
+      {
+        "name": "Taj Air",
+        "phone": "+91 22 6638 8888",
+        "email": "ops@tajair.com",
+        "services": "Handling, charter",
+        "website": null
+      }
+    ]
+  },
+  {
+    "airport": "VTBS",
+    "airportName": "Bangkok Suvarnabhumi",
+    "country": "Thailand",
+    "region": "Asia",
+    "fbos": [
+      {
+        "name": "MJets",
+        "phone": "+66 2 134 5999",
+        "email": "bkk@mjets.com",
+        "services": "Full FBO",
+        "website": "https://www.mjets.com"
+      },
+      {
+        "name": "VTBS Executive Terminal",
+        "phone": "+66 2 132 9099",
+        "email": null,
+        "services": "VIP terminal",
+        "website": null
+      }
+    ]
+  },
+  {
+    "airport": "WIII",
+    "airportName": "Jakarta Soekarno-Hatta",
+    "country": "Indonesia",
+    "region": "Asia",
+    "fbos": [
+      {
+        "name": "ExecuJet Indonesia",
+        "phone": "+62 21 5591 1188",
+        "email": "jakarta@execujet.com",
+        "services": "Full FBO",
+        "website": "https://www.execujet.com"
+      },
+      {
+        "name": "Premiair",
+        "phone": "+62 21 5591 9999",
+        "email": "ops@premiair.co.id",
+        "services": "Handling",
+        "website": null
+      }
+    ]
+  },
+  {
+    "airport": "RPLL",
+    "airportName": "Manila Ninoy Aquino",
+    "country": "Philippines",
+    "region": "Asia",
+    "fbos": [
+      {
+        "name": "INAEC Aviation",
+        "phone": "+63 2 8879 8300",
+        "email": "ops@inaec.com",
+        "services": "Full handling",
+        "website": "https://www.inaec.com"
+      },
+      {
+        "name": "PhilJets",
+        "phone": "+63 2 8854 1111",
+        "email": "ops@philjets.com",
+        "services": "FBO, charter",
+        "website": "https://www.philjets.com"
+      }
+    ]
+  },
+  {
+    "airport": "RKSI",
+    "airportName": "Seoul Incheon",
+    "country": "South Korea",
+    "region": "Asia",
+    "fbos": [
+      {
+        "name": "Korea Business Aviation Center",
+        "phone": "+82 32 744 8600",
+        "email": "ops@kbac.co.kr",
+        "services": "Full FBO",
+        "website": null
+      },
+      {
+        "name": "Asiana FBO",
+        "phone": "+82 32 744 2114",
+        "email": null,
+        "services": "VIP handling",
+        "website": null
+      }
+    ]
+  },
+  {
+    "airport": "FACT",
+    "airportName": "Cape Town",
+    "country": "South Africa",
+    "region": "Africa",
+    "fbos": [
+      {
+        "name": "ExecuJet Cape Town",
+        "phone": "+27 21 934 8900",
+        "email": "capetown@execujet.com",
+        "services": "Full FBO",
+        "website": "https://www.execujet.com"
+      },
+      {
+        "name": "Signature Cape Town",
+        "phone": "+27 21 936 2800",
+        "email": "cpt@signatureflight.com",
+        "services": "Full FBO",
+        "website": "https://signatureaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "GMMX",
+    "airportName": "Marrakech",
+    "country": "Morocco",
+    "region": "Africa",
+    "fbos": [
+      {
+        "name": "Swissport Executive",
+        "phone": "+212 524 447 910",
+        "email": "marrakech@swissport.com",
+        "services": "VIP handling",
+        "website": "https://www.swissport.com"
+      },
+      {
+        "name": "Jetex Marrakech",
+        "phone": "+212 524 447 800",
+        "email": "marrakech@jetex.com",
+        "services": "Full FBO",
+        "website": "https://www.jetex.com"
+      }
+    ]
+  },
+  {
+    "airport": "HECA",
+    "airportName": "Cairo",
+    "country": "Egypt",
+    "region": "Africa",
+    "fbos": [
+      {
+        "name": "Egyptair Executive",
+        "phone": "+20 2 2696 7777",
+        "email": "executive@egyptair.com",
+        "services": "VIP handling",
+        "website": null
+      },
+      {
+        "name": "Smart Aviation",
+        "phone": "+20 2 2265 5000",
+        "email": "ops@smartaviation.com.eg",
+        "services": "Full handling",
+        "website": null
+      }
+    ]
+  },
+  {
+    "airport": "KORD",
+    "airportName": "Chicago O'Hare",
+    "country": "United States",
+    "region": "North America",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+1 773 686 7000",
+        "email": "ord@signatureflight.com",
+        "services": "Full FBO",
+        "website": "https://signatureaviation.com"
+      },
+      {
+        "name": "Atlantic Aviation",
+        "phone": "+1 773 462 7000",
+        "email": "ord@atlanticaviation.com",
+        "services": "Full FBO",
+        "website": "https://www.atlanticaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "KPBI",
+    "airportName": "West Palm Beach",
+    "country": "United States",
+    "region": "North America",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+1 561 684 1400",
+        "email": "pbi@signatureflight.com",
+        "services": "Full FBO",
+        "website": "https://signatureaviation.com"
+      },
+      {
+        "name": "Atlantic Aviation",
+        "phone": "+1 561 684 6300",
+        "email": "pbi@atlanticaviation.com",
+        "services": "Full FBO",
+        "website": "https://www.atlanticaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "KMIA",
+    "airportName": "Miami International",
+    "country": "United States",
+    "region": "North America",
+    "fbos": [
+      {
+        "name": "Signature Flight Support",
+        "phone": "+1 305 871 2700",
+        "email": "mia@signatureflight.com",
+        "services": "Full FBO",
+        "website": "https://signatureaviation.com"
+      },
+      {
+        "name": "Atlantic Aviation",
+        "phone": "+1 305 871 4250",
+        "email": "mia@atlanticaviation.com",
+        "services": "Full FBO",
+        "website": "https://www.atlanticaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "CYYZ",
+    "airportName": "Toronto Pearson",
+    "country": "Canada",
+    "region": "North America",
+    "fbos": [
+      {
+        "name": "Skyservice FBO",
+        "phone": "+1 416 847 6000",
+        "email": "yyz@skyservice.com",
+        "services": "Full FBO",
+        "website": "https://www.skyservice.com"
+      },
+      {
+        "name": "Signature Flight Support",
+        "phone": "+1 905 676 1540",
+        "email": "yyz@signatureflight.com",
+        "services": "Full FBO",
+        "website": "https://signatureaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "SCEL",
+    "airportName": "Santiago",
+    "country": "Chile",
+    "region": "South America",
+    "fbos": [
+      {
+        "name": "EuroAmerica",
+        "phone": "+56 2 2690 1000",
+        "email": "scl@euroamerica.cl",
+        "services": "Full handling",
+        "website": null
+      },
+      {
+        "name": "Signature Santiago",
+        "phone": "+56 2 2601 9000",
+        "email": "scl@signatureflight.com",
+        "services": "Full FBO",
+        "website": "https://signatureaviation.com"
+      }
+    ]
+  },
+  {
+    "airport": "SAEZ",
+    "airportName": "Buenos Aires Ezeiza",
+    "country": "Argentina",
+    "region": "South America",
+    "fbos": [
+      {
+        "name": "Flyzar",
+        "phone": "+54 11 5480 6600",
+        "email": "ops@flyzar.com",
+        "services": "Full handling",
+        "website": "https://www.flyzar.com"
+      }
+    ]
+  },
+  {
+    "airport": "TNCM",
+    "airportName": "Sint Maarten Princess Juliana",
+    "country": "Sint Maarten",
+    "region": "Caribbean",
+    "fbos": [
+      {
+        "name": "Signature St. Maarten",
+        "phone": "+1 721 545 4240",
+        "email": "sxm@signatureflight.com",
+        "services": "Full FBO",
+        "website": "https://signatureaviation.com"
+      },
+      {
+        "name": "PJIAE",
+        "phone": "+1 721 546 7542",
+        "email": "fbo@sxmairport.com",
+        "services": "Handling",
+        "website": null
+      }
+    ]
+  },
+  {
+    "airport": "MDPC",
+    "airportName": "Punta Cana",
+    "country": "Dominican Republic",
+    "region": "Caribbean",
+    "fbos": [
+      {
+        "name": "Aerodom FBO",
+        "phone": "+1 809 959 2376",
+        "email": "fbo@aerodom.com",
+        "services": "Full handling",
+        "website": null
+      }
+    ]
+  },
+  {
+    "airport": "MKJS",
+    "airportName": "Montego Bay Sangster",
+    "country": "Jamaica",
+    "region": "Caribbean",
+    "fbos": [
+      {
+        "name": "MBJ Airports FBO",
+        "phone": "+1 876 952 2124",
+        "email": "fbo@mbjairport.com",
+        "services": "Full handling",
+        "website": null
+      }
+    ]
+  }
+]

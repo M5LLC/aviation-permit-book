@@ -1,0 +1,179 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function getUserData() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+
+    function isApproved() {
+      return isAuthenticated() && getUserData().status == 'approved';
+    }
+
+    function isAdmin() {
+      return isApproved() && getUserData().role == 'admin';
+    }
+
+    function belongsToOrg(orgId) {
+      return isApproved() && getUserData().organizationId == orgId;
+    }
+
+    function isOrgAdmin(orgId) {
+      return belongsToOrg(orgId) && getUserData().role == 'admin';
+    }
+
+    // =====================================
+    // Organizations
+    // =====================================
+    match /organizations/{orgId} {
+      // Members can read their organization
+      allow read: if belongsToOrg(orgId);
+      // Only super-admin can create/modify organizations (via Admin SDK)
+      allow write: if false;
+
+      // Organization-specific subcollections
+      match /countryOverrides/{countryCode} {
+        allow read: if belongsToOrg(orgId);
+        allow write: if belongsToOrg(orgId);
+      }
+
+      match /customHandlers/{airportCode} {
+        allow read: if belongsToOrg(orgId);
+        allow write: if belongsToOrg(orgId);
+      }
+    }
+
+    // =====================================
+    // Users
+    // =====================================
+    match /users/{userId} {
+      // Users can read their own profile
+      allow read: if request.auth.uid == userId;
+
+      // Org admins can read users in their org
+      allow read: if isApproved() &&
+        getUserData().organizationId == resource.data.organizationId &&
+        getUserData().role == 'admin';
+
+      // Only org admins can modify users in their org
+      allow update: if isApproved() &&
+        getUserData().organizationId == resource.data.organizationId &&
+        getUserData().role == 'admin' &&
+        // Cannot change organizationId
+        request.resource.data.organizationId == resource.data.organizationId;
+
+      // Users cannot delete themselves or others
+      allow delete: if false;
+
+      // New user creation is handled by Auth + Cloud Functions
+      allow create: if false;
+    }
+
+    // =====================================
+    // Pending Users (registration requests)
+    // =====================================
+    match /pendingUsers/{requestId} {
+      // Anyone authenticated can create a pending user request
+      allow create: if isAuthenticated() &&
+        request.resource.data.email == request.auth.token.email;
+
+      // Org admins can read pending requests for their org
+      allow read: if isApproved() &&
+        getUserData().organizationId == resource.data.organizationId &&
+        getUserData().role == 'admin';
+
+      // Org admins can update (approve/deny) pending requests
+      allow update: if isApproved() &&
+        getUserData().organizationId == resource.data.organizationId &&
+        getUserData().role == 'admin';
+
+      // Org admins can delete pending requests
+      allow delete: if isApproved() &&
+        getUserData().organizationId == resource.data.organizationId &&
+        getUserData().role == 'admin';
+    }
+
+    // =====================================
+    // Invitations
+    // =====================================
+    match /invitations/{inviteId} {
+      // Org admins can create invitations for their org
+      allow create: if isAdmin() &&
+        request.resource.data.organizationId == getUserData().organizationId;
+
+      // Org admins can read invitations for their org
+      allow read: if isAdmin() &&
+        resource.data.organizationId == getUserData().organizationId;
+
+      // Anyone with a valid token can read to verify (via Cloud Function is safer)
+      // For now, allow authenticated users to read invitations
+      allow read: if isAuthenticated();
+
+      // Only the invited user can update (accept)
+      allow update: if isAuthenticated() &&
+        resource.data.email == request.auth.token.email &&
+        request.resource.data.status == 'accepted';
+
+      // Org admins can delete invitations
+      allow delete: if isAdmin() &&
+        resource.data.organizationId == getUserData().organizationId;
+    }
+
+    // =====================================
+    // Master Data (Read-only for users)
+    // =====================================
+    match /countries/{countryCode} {
+      allow read: if isApproved();
+      // Write only via Admin SDK (data import/refresh)
+      allow write: if false;
+    }
+
+    match /airports/{airportCode} {
+      allow read: if isApproved();
+      allow write: if false;
+    }
+
+    match /fbos/{airportCode} {
+      allow read: if isApproved();
+      allow write: if false;
+    }
+
+    match /firs/{countryCode} {
+      allow read: if isApproved();
+      allow write: if false;
+    }
+
+    match /changelog/{entryId} {
+      allow read: if isApproved();
+      allow write: if false;
+    }
+
+    // =====================================
+    // Suggested Updates (user contributions)
+    // =====================================
+    match /suggestedUpdates/{suggestionId} {
+      // Any approved user can create a suggestion
+      allow create: if isApproved() &&
+        request.resource.data.submittedBy == request.auth.uid &&
+        request.resource.data.organizationId == getUserData().organizationId;
+
+      // Users can read their own suggestions
+      allow read: if isApproved() &&
+        resource.data.submittedBy == request.auth.uid;
+
+      // Super-admins can read all (handled via Admin SDK)
+      // For now, org admins can see their org's suggestions
+      allow read: if isAdmin() &&
+        resource.data.organizationId == getUserData().organizationId;
+
+      // Only super-admin can update status (via Admin SDK)
+      allow update: if false;
+      allow delete: if false;
+    }
+  }
+}

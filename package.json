@@ -1,0 +1,30 @@
+{
+  "name": "aviation-permit-book",
+  "version": "1.0.0",
+  "description": "Aviation permit management tool for flight departments and charter operations",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "seed": "node scripts/migrate-data.js",
+    "lint": "eslint src --ext .js"
+  },
+  "dependencies": {
+    "firebase": "^10.7.0",
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "eslint": "^8.55.0"
+  },
+  "keywords": [
+    "aviation",
+    "permits",
+    "flight-planning",
+    "charter",
+    "135"
+  ],
+  "license": "UNLICENSED",
+  "private": true
+}
