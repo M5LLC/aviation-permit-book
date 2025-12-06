@@ -25,13 +25,6 @@
       ]
     },
     {
-      "collectionGroup": "changelog",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "date", "order": "DESCENDING" }
-      ]
-    },
-    {
       "collectionGroup": "suggestedUpdates",
       "queryScope": "COLLECTION",
       "fields": [

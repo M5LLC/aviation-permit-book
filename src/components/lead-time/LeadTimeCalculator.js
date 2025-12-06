@@ -391,6 +391,10 @@ function displayDeadlines(deadlines, departure, opType) {
     </div>
   `;
 
+  // Add modal and attach handlers
+  addCountryDetailsModal();
+  attachCountryDetailHandlers();
+
   outputEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
@@ -416,8 +420,186 @@ function renderDeadlineItem(deadline, today) {
           ${isPast ? 'OVERDUE' : formatDaysUntil(deadline.daysUntil)}
         </span>
       </div>
+      <div class="deadline-actions">
+        <button class="btn btn-sm btn-secondary view-country-btn"
+                data-code="${deadline.country.code}">
+          View
+        </button>
+      </div>
     </div>
   `;
+}
+
+/**
+ * Add country details modal to DOM
+ */
+function addCountryDetailsModal() {
+  // Remove existing modal if present
+  const existing = document.getElementById('ltCountryDetailsModal');
+  if (existing) existing.remove();
+
+  const modal = document.createElement('div');
+  modal.id = 'ltCountryDetailsModal';
+  modal.className = 'modal-overlay';
+  modal.style.display = 'none';
+  modal.innerHTML = `
+    <div class="modal modal-lg">
+      <div class="modal-header">
+        <h3 class="modal-title">
+          <span id="ltModalCountryFlag"></span>
+          <span id="ltModalCountryName"></span>
+        </h3>
+        <button class="modal-close" id="closeLtCountryModal">&times;</button>
+      </div>
+      <div class="modal-body" id="ltModalCountryContent"></div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="closeLtCountryModalBtn">Close</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+}
+
+/**
+ * Attach country detail modal handlers
+ */
+function attachCountryDetailHandlers() {
+  document.querySelectorAll('.view-country-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const code = e.target.dataset.code;
+      openCountryDetailsModal(code);
+    });
+  });
+
+  document.getElementById('closeLtCountryModal')?.addEventListener('click', closeCountryDetailsModal);
+  document.getElementById('closeLtCountryModalBtn')?.addEventListener('click', closeCountryDetailsModal);
+
+  // Close on overlay click
+  document.getElementById('ltCountryDetailsModal')?.addEventListener('click', (e) => {
+    if (e.target.id === 'ltCountryDetailsModal') {
+      closeCountryDetailsModal();
+    }
+  });
+}
+
+/**
+ * Open country details modal
+ */
+function openCountryDetailsModal(code) {
+  const country = selectedCountries.find(c => c.code === code);
+  if (!country) return;
+
+  document.getElementById('ltModalCountryFlag').textContent = country.flag || '🏳️';
+  document.getElementById('ltModalCountryName').textContent = country.name;
+  document.getElementById('ltModalCountryContent').innerHTML = renderCountryModalContent(country);
+  document.getElementById('ltCountryDetailsModal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+/**
+ * Close country details modal
+ */
+function closeCountryDetailsModal() {
+  document.getElementById('ltCountryDetailsModal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+/**
+ * Render country modal content
+ */
+function renderCountryModalContent(country) {
+  return `
+    <div class="country-modal-grid">
+      ${country.warnings?.length ? `
+        <div class="modal-section warnings">
+          ${country.warnings.map(w => `
+            <div class="alert alert-warning">${w}</div>
+          `).join('')}
+        </div>
+      ` : ''}
+
+      <div class="modal-section">
+        <h4>Permit Requirements</h4>
+        ${renderPermitSummary(country.permits)}
+      </div>
+
+      <div class="modal-section">
+        <h4>Civil Aviation Authority</h4>
+        <div class="detail-row">
+          <span class="detail-label">CAA:</span>
+          <span>${country.caa || 'Contact local handler'}</span>
+        </div>
+        ${country.caaWebsite ? `
+          <div class="detail-row">
+            <span class="detail-label">Website:</span>
+            <a href="${country.caaWebsite}" target="_blank" rel="noopener">${country.caaWebsite}</a>
+          </div>
+        ` : ''}
+      </div>
+
+      <div class="modal-section">
+        <h4>Additional Information</h4>
+        <div class="detail-row">
+          <span class="detail-label">ICAO Prefix:</span>
+          <span>${country.icaoPrefix || 'N/A'}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Crew Visa:</span>
+          <span>${country.visaCrew || 'Verify requirements'}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Key Airports:</span>
+          <span>${country.airports?.join(', ') || 'N/A'}</span>
+        </div>
+        ${country.notes ? `
+          <div class="detail-row full-width">
+            <span class="detail-label">Notes:</span>
+            <span>${country.notes}</span>
+          </div>
+        ` : ''}
+      </div>
+    </div>
+  `;
+}
+
+/**
+ * Render permit summary table
+ */
+function renderPermitSummary(permits) {
+  if (!permits) return '<p class="text-muted">No permit data</p>';
+
+  const types = [
+    { key: 'overflight', label: 'Overflight' },
+    { key: 'landingPrivate', label: 'Landing (Private)' },
+    { key: 'landingCharter', label: 'Landing (Charter)' },
+    { key: 'techStop', label: 'Tech Stop' },
+  ];
+
+  const rows = types
+    .filter(t => permits[t.key])
+    .map(t => {
+      const p = permits[t.key];
+      return `
+        <tr>
+          <td>${t.label}</td>
+          <td>
+            <span class="badge ${p.required ? 'badge-danger' : 'badge-success'}">
+              ${p.required ? 'Yes' : 'No'}
+            </span>
+          </td>
+          <td>${p.leadTime || '-'}</td>
+        </tr>
+      `;
+    });
+
+  return rows.length ? `
+    <table class="permit-table table">
+      <thead>
+        <tr><th>Type</th><th>Required</th><th>Lead Time</th></tr>
+      </thead>
+      <tbody>${rows.join('')}</tbody>
+    </table>
+  ` : '<p class="text-muted">No permit data</p>';
 }
 
 /**
@@ -483,7 +665,35 @@ function renderLeadTimeStyles() {
         display: grid;
         grid-template-columns: 400px 1fr;
         gap: var(--spacing-lg);
-        align-items: start;
+        align-items: stretch;
+      }
+
+      .lead-time-results {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .lead-time-results > .card:last-child {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .lead-time-results > .card:last-child .card-body {
+        flex: 1;
+      }
+
+      .lead-time-form .card-body {
+        padding: var(--spacing-xl);
+      }
+
+      .lead-time-form .form-group {
+        margin-bottom: var(--spacing-lg);
+      }
+
+      .lead-time-form label {
+        margin-bottom: var(--spacing-sm);
+        display: block;
       }
 
       .lead-time-form .card-header p {
@@ -543,12 +753,12 @@ function renderLeadTimeStyles() {
       }
 
       .selected-countries {
-        margin-top: var(--spacing-sm);
+        margin-top: var(--spacing-md);
         display: flex;
         flex-wrap: wrap;
         gap: var(--spacing-xs);
         min-height: 40px;
-        padding: var(--spacing-sm);
+        padding: var(--spacing-md);
         background: var(--gray-50);
         border-radius: var(--radius-md);
       }
@@ -589,6 +799,9 @@ function renderLeadTimeStyles() {
         flex-wrap: wrap;
         gap: var(--spacing-sm);
         align-items: center;
+        margin-top: var(--spacing-md);
+        padding-top: var(--spacing-md);
+        border-top: 1px solid var(--gray-200);
       }
 
       .quick-add .btn-link {
@@ -627,13 +840,18 @@ function renderLeadTimeStyles() {
 
       .deadline-item {
         display: grid;
-        grid-template-columns: 1fr auto auto;
+        grid-template-columns: 1fr auto auto auto;
         gap: var(--spacing-md);
         align-items: center;
         padding: var(--spacing-md);
         background: var(--gray-50);
         border-radius: var(--radius-md);
         border-left: 4px solid var(--gray-300);
+      }
+
+      .deadline-actions {
+        display: flex;
+        justify-content: flex-end;
       }
 
       .deadline-item.urgent-low {
@@ -758,6 +976,141 @@ function renderLeadTimeStyles() {
         padding: var(--spacing-sm);
       }
 
+      /* View button styling */
+      .view-country-btn {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+      }
+
+      /* Modal Overlay */
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        padding: var(--spacing-lg);
+      }
+
+      .modal {
+        background: var(--white);
+        border-radius: var(--radius-lg);
+        max-width: 600px;
+        width: 100%;
+        max-height: 80vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .modal-lg {
+        max-width: 700px;
+      }
+
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--spacing-md) var(--spacing-lg);
+        border-bottom: 1px solid var(--gray-200);
+        background: var(--gray-50);
+      }
+
+      .modal-title {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        margin: 0;
+        font-size: 1.25rem;
+      }
+
+      .modal-close {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--gray-500);
+        padding: 0;
+        line-height: 1;
+      }
+
+      .modal-close:hover {
+        color: var(--gray-700);
+      }
+
+      .modal-body {
+        padding: var(--spacing-lg);
+        overflow-y: auto;
+        flex: 1;
+      }
+
+      .modal-footer {
+        display: flex;
+        justify-content: flex-end;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md) var(--spacing-lg);
+        border-top: 1px solid var(--gray-200);
+      }
+
+      /* Country Modal Content */
+      .country-modal-grid {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-lg);
+      }
+
+      .modal-section h4 {
+        margin: 0 0 var(--spacing-sm);
+        font-size: 0.9rem;
+        color: var(--gray-700);
+        border-bottom: 1px solid var(--gray-200);
+        padding-bottom: var(--spacing-xs);
+      }
+
+      .detail-row {
+        display: flex;
+        gap: var(--spacing-md);
+        padding: var(--spacing-xs) 0;
+      }
+
+      .detail-label {
+        font-weight: 500;
+        color: var(--gray-600);
+        min-width: 120px;
+      }
+
+      .detail-row a {
+        color: var(--primary);
+        word-break: break-all;
+      }
+
+      .detail-row a:hover {
+        text-decoration: underline;
+      }
+
+      .permit-table {
+        width: 100%;
+        font-size: 0.85rem;
+      }
+
+      .permit-table th,
+      .permit-table td {
+        padding: var(--spacing-sm);
+        text-align: left;
+        border-bottom: 1px solid var(--gray-200);
+      }
+
+      .alert-warning {
+        background: rgba(255, 193, 7, 0.15);
+        border: 1px solid rgba(255, 193, 7, 0.3);
+        color: #856404;
+        padding: var(--spacing-sm) var(--spacing-md);
+        border-radius: var(--radius-md);
+        margin-bottom: var(--spacing-sm);
+      }
+
       @media (max-width: 900px) {
         .lead-time-layout {
           grid-template-columns: 1fr;
@@ -772,8 +1125,18 @@ function renderLeadTimeStyles() {
           text-align: left;
         }
 
+        .deadline-actions {
+          justify-content: flex-start;
+          margin-top: var(--spacing-sm);
+        }
+
         .deadline-header {
           flex-wrap: wrap;
+        }
+
+        .modal {
+          max-height: 90vh;
+          margin: var(--spacing-sm);
         }
       }
 

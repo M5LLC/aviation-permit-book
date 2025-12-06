@@ -10,16 +10,39 @@
         "phone": "+44 20 8283 2400",
         "email": "lhr@signatureflight.com",
         "services": "Full service FBO, fueling, handling",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "06:00-23:00 LT",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       },
       {
         "name": "Harrods Aviation",
         "phone": "+44 20 8564 0900",
         "email": "ops@harrodsaviation.com",
         "services": "VIP handling, customs, catering",
-        "website": "https://www.harrodsaviation.com"
+        "website": "https://www.harrodsaviation.com",
+        "type": "fbo",
+        "operatingHours": "06:00-23:00 LT",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "06:00-23:00 LT",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "EGLF",
@@ -32,9 +55,22 @@
         "phone": "+44 1252 379 000",
         "email": "handling@tagfarnborough.com",
         "services": "Dedicated business aviation, full FBO",
-        "website": "https://www.tagfarnborough.com"
+        "website": "https://www.tagfarnborough.com",
+        "type": "fbo",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "24/7",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "LFPB",
@@ -47,23 +83,56 @@
         "phone": "+33 1 49 34 58 58",
         "email": "lbg@signatureflight.com",
         "services": "Full service FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "05:30-23:30 LT",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       },
       {
         "name": "Universal Aviation",
         "phone": "+33 1 48 62 27 00",
         "email": "paris@universalaviation.aero",
         "services": "Trip support, handling",
-        "website": "https://www.universalaviation.aero"
+        "website": "https://www.universalaviation.aero",
+        "type": "handler",
+        "operatingHours": "05:30-23:30 LT",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       },
       {
         "name": "Jetex",
         "phone": "+33 1 49 34 58 00",
         "email": "paris@jetex.com",
         "services": "VIP handling, permits",
-        "website": "https://www.jetex.com"
+        "website": "https://www.jetex.com",
+        "type": "both",
+        "operatingHours": "05:30-23:30 LT",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "05:30-23:30 LT",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "LSGG",
@@ -76,16 +145,39 @@
         "phone": "+41 22 717 00 00",
         "email": "handling.gva@tagaviation.com",
         "services": "Full service, maintenance",
-        "website": "https://www.tagaviation.com"
+        "website": "https://www.tagaviation.com",
+        "type": "fbo",
+        "operatingHours": "06:00-22:00 LT",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       },
       {
         "name": "ExecuJet",
         "phone": "+41 22 929 06 06",
         "email": "geneva@execujet.com",
         "services": "FBO, MRO",
-        "website": "https://www.execujet.com"
+        "website": "https://www.execujet.com",
+        "type": "fbo",
+        "operatingHours": "06:00-22:00 LT",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "06:00-22:00 LT",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "EDDF",
@@ -98,16 +190,39 @@
         "phone": "+49 69 690 280",
         "email": "fra@jetaviation.com",
         "services": "Full service FBO",
-        "website": "https://www.jetaviation.com"
+        "website": "https://www.jetaviation.com",
+        "type": "fbo",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       },
       {
         "name": "Universal Aviation",
         "phone": "+49 69 690 58 620",
         "email": "frankfurt@universalaviation.aero",
         "services": "Handling, trip support",
-        "website": "https://www.universalaviation.aero"
+        "website": "https://www.universalaviation.aero",
+        "type": "handler",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "24/7",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "EDDM",
@@ -120,9 +235,22 @@
         "phone": "+49 89 975 95 100",
         "email": "muc@signatureflight.com",
         "services": "Full service FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "24/7",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "LIRF",
@@ -135,16 +263,39 @@
         "phone": "+39 06 65 95 36 05",
         "email": "rome@universalaviation.aero",
         "services": "Handling, permits",
-        "website": "https://www.universalaviation.aero"
+        "website": "https://www.universalaviation.aero",
+        "type": "handler",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       },
       {
         "name": "Sky Services",
         "phone": "+39 06 659 531",
         "email": "rome@skyservices.it",
         "services": "Full handling",
-        "website": "https://www.skyservices.it"
+        "website": "https://www.skyservices.it",
+        "type": "handler",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "24/7",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "LEMD",
@@ -157,16 +308,39 @@
         "phone": "+34 91 587 4700",
         "email": "gaservices@iberia.es",
         "services": "Ground handling",
-        "website": "https://www.iberiahandling.com"
+        "website": "https://www.iberiahandling.com",
+        "type": "handler",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "medium"
       },
       {
         "name": "Swissport Executive",
         "phone": "+34 91 321 1000",
         "email": "madrid.executive@swissport.com",
         "services": "VIP services",
-        "website": "https://www.swissport.com"
+        "website": "https://www.swissport.com",
+        "type": "handler",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "24/7",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "OMDB",
@@ -179,23 +353,56 @@
         "phone": "+971 4 212 4000",
         "email": "dubai@jetex.com",
         "services": "24/7 VIP FBO, permits",
-        "website": "https://www.jetex.com"
+        "website": "https://www.jetex.com",
+        "type": "both",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       },
       {
         "name": "ExecuJet",
         "phone": "+971 4 601 5600",
         "email": "dubai@execujet.com",
         "services": "FBO, maintenance",
-        "website": "https://www.execujet.com"
+        "website": "https://www.execujet.com",
+        "type": "fbo",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       },
       {
         "name": "Hadid International",
         "phone": "+971 4 299 8444",
         "email": "dubai@hadid.aero",
         "services": "Trip support, permits",
-        "website": "https://www.hadid.aero"
+        "website": "https://www.hadid.aero",
+        "type": "handler",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "24/7",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "OMDW",
@@ -208,16 +415,39 @@
         "phone": "+971 4 870 1800",
         "email": "dwc@dc-aviation.ae",
         "services": "Full FBO, hangar",
-        "website": "https://www.dc-aviation.ae"
+        "website": "https://www.dc-aviation.ae",
+        "type": "both",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "medium"
       },
       {
         "name": "Jetex",
         "phone": "+971 4 212 4000",
         "email": "dwc@jetex.com",
         "services": "VIP handling",
-        "website": "https://www.jetex.com"
+        "website": "https://www.jetex.com",
+        "type": "both",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "24/7",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "OEJN",
@@ -230,16 +460,39 @@
         "phone": "+966 12 686 0000",
         "email": "spa@saudia.com",
         "services": "VIP handling",
-        "website": "https://www.saudia.com"
+        "website": "https://www.saudia.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       },
       {
         "name": "Jet Aviation",
         "phone": "+966 12 686 3800",
         "email": "jed@jetaviation.com",
         "services": "Full FBO",
-        "website": "https://www.jetaviation.com"
+        "website": "https://www.jetaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "OTHH",
@@ -252,9 +505,22 @@
         "phone": "+974 4010 8888",
         "email": "qe-fbo@qatarairways.com.qa",
         "services": "Premium FBO",
-        "website": "https://www.qatarexecutive.com.qa"
+        "website": "https://www.qatarexecutive.com.qa",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "VHHH",
@@ -267,16 +533,39 @@
         "phone": "+852 2269 7700",
         "email": "hkg@signatureflight.com",
         "services": "Full FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Metrojet",
         "phone": "+852 2828 3828",
         "email": "ops@metrojet.com",
         "services": "FBO, MRO",
-        "website": "https://www.metrojet.com"
+        "website": "https://www.metrojet.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "WSSS",
@@ -289,16 +578,39 @@
         "phone": "+65 6543 0000",
         "email": "sin@jetaviation.com",
         "services": "Full service FBO",
-        "website": "https://www.jetaviation.com"
+        "website": "https://www.jetaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Universal Aviation",
         "phone": "+65 6214 0777",
         "email": "singapore@universalaviation.aero",
         "services": "24/7 handling",
-        "website": "https://www.universalaviation.aero"
+        "website": "https://www.universalaviation.aero",
+        "type": "handler",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "RJTT",
@@ -311,9 +623,22 @@
         "phone": "+81 3 5708 0700",
         "email": "tokyo@universalaviation.aero",
         "services": "Handling, permits",
-        "website": "https://www.universalaviation.aero"
+        "website": "https://www.universalaviation.aero",
+        "type": "handler",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "ZBAA",
@@ -326,16 +651,39 @@
         "phone": "+86 10 6456 1780",
         "email": "beijing@universalaviation.aero",
         "services": "Permits, handling",
-        "website": "https://www.universalaviation.aero"
+        "website": "https://www.universalaviation.aero",
+        "type": "handler",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Beijing Capital Jet",
         "phone": "+86 10 6456 2288",
         "email": "info@bcjet.com.cn",
         "services": "Full FBO",
-        "website": null
+        "website": null,
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "VIDP",
@@ -348,16 +696,39 @@
         "phone": "+91 11 4615 5000",
         "email": "delhi@bird-execujet.com",
         "services": "FBO, permits",
-        "website": "https://www.bird-execujet.com"
+        "website": "https://www.bird-execujet.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Universal Aviation",
         "phone": "+91 11 4352 7777",
         "email": "delhi@universalaviation.aero",
         "services": "Trip support",
-        "website": "https://www.universalaviation.aero"
+        "website": "https://www.universalaviation.aero",
+        "type": "handler",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "FAOR",
@@ -370,16 +741,39 @@
         "phone": "+27 11 516 2300",
         "email": "johannesburg@execujet.com",
         "services": "Full FBO, MRO",
-        "website": "https://www.execujet.com"
+        "website": "https://www.execujet.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "National Airways Corporation",
         "phone": "+27 11 267 5000",
         "email": "info@nac.co.za",
         "services": "Handling, fuel",
-        "website": "https://www.nac.co.za"
+        "website": "https://www.nac.co.za",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "HKJK",
@@ -392,9 +786,22 @@
         "phone": "+254 20 822 200",
         "email": "info@tradewindskenya.com",
         "services": "Full handling, permits",
-        "website": "https://www.tradewindskenya.com"
+        "website": "https://www.tradewindskenya.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "DNMM",
@@ -407,9 +814,22 @@
         "phone": "+234 1 774 0022",
         "email": "ops@evergreenapple.com",
         "services": "VIP handling, permits",
-        "website": "https://www.evergreenapple.com"
+        "website": "https://www.evergreenapple.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "KTEB",
@@ -422,23 +842,56 @@
         "phone": "+1 201 288 1775",
         "email": "teb@signatureflight.com",
         "services": "Full FBO, hangar",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       },
       {
         "name": "Meridian",
         "phone": "+1 201 288 5040",
         "email": "ops@meridian.aero",
         "services": "Full FBO",
-        "website": "https://www.meridian.aero"
+        "website": "https://www.meridian.aero",
+        "type": "both",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "medium"
       },
       {
         "name": "Jet Aviation",
         "phone": "+1 201 462 4100",
         "email": "teb@jetaviation.com",
         "services": "FBO, MRO",
-        "website": "https://www.jetaviation.com"
+        "website": "https://www.jetaviation.com",
+        "type": "fbo",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "24/7",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "KLAS",
@@ -451,9 +904,22 @@
         "phone": "+1 702 261 3801",
         "email": "las@signatureflight.com",
         "services": "Full FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "24/7",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "KLAX",
@@ -466,16 +932,39 @@
         "phone": "+1 310 646 7001",
         "email": "lax@signatureflight.com",
         "services": "Full FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       },
       {
         "name": "Clay Lacy Aviation",
         "phone": "+1 818 989 2900",
         "email": "ops@claylacy.com",
         "services": "FBO at KVNY",
-        "website": "https://www.claylacy.com"
+        "website": "https://www.claylacy.com",
+        "type": "fbo",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "24/7",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "MMMX",
@@ -488,16 +977,39 @@
         "phone": "+52 55 5133 0730",
         "email": "mexico@universalaviation.aero",
         "services": "Full handling, permits",
-        "website": "https://www.universalaviation.aero"
+        "website": "https://www.universalaviation.aero",
+        "type": "handler",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "ASA - Aeropuertos y Servicios Auxiliares",
         "phone": "+52 55 5133 1000",
         "email": null,
         "services": "Government handling",
-        "website": null
+        "website": null,
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "SBGR",
@@ -510,16 +1022,39 @@
         "phone": "+55 11 2445 7070",
         "email": "saopaulo@universalaviation.aero",
         "services": "Handling, permits",
-        "website": "https://www.universalaviation.aero"
+        "website": "https://www.universalaviation.aero",
+        "type": "handler",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Lider Aviação",
         "phone": "+55 11 5033 9999",
         "email": "gru@lfrv.com.br",
         "services": "Full FBO",
-        "website": "https://www.lfrv.com.br"
+        "website": "https://www.lfrv.com.br",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "MYNN",
@@ -532,16 +1067,39 @@
         "phone": "+1 242 377 3355",
         "email": "ops@jetnassau.com",
         "services": "Full FBO",
-        "website": "https://www.jetnassau.com"
+        "website": "https://www.jetnassau.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       },
       {
         "name": "Odyssey Aviation",
         "phone": "+1 242 702 0200",
         "email": "nassau@odysseyaviation.com",
         "services": "FBO, customs",
-        "website": "https://www.odysseyaviation.com"
+        "website": "https://www.odysseyaviation.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "MWCR",
@@ -554,9 +1112,22 @@
         "phone": "+1 345 949 0241",
         "email": "ops@islandair.ky",
         "services": "Full handling",
-        "website": "https://www.islandair.ky"
+        "website": "https://www.islandair.ky",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "YSSY",
@@ -569,16 +1140,39 @@
         "phone": "+61 2 9693 5844",
         "email": "sydney@universalaviation.aero",
         "services": "Full handling",
-        "website": "https://www.universalaviation.aero"
+        "website": "https://www.universalaviation.aero",
+        "type": "handler",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Jet Aviation (Sydney Jet Base)",
         "phone": "+61 2 8337 6900",
         "email": "syd@jetaviation.com",
         "services": "FBO at YSSY",
-        "website": "https://www.jetaviation.com"
+        "website": "https://www.jetaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "NZAA",
@@ -591,9 +1185,22 @@
         "phone": "+64 9 256 7007",
         "email": "exec@aerocare.co.nz",
         "services": "Handling, biosecurity",
-        "website": "https://www.aerocare.co.nz"
+        "website": "https://www.aerocare.co.nz",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "LOWW",
@@ -606,16 +1213,39 @@
         "phone": "+43 1 7007 22651",
         "email": "vie@jetaviation.com",
         "services": "Full FBO",
-        "website": "https://www.jetaviation.com"
+        "website": "https://www.jetaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Vienna Aircraft Handling",
         "phone": "+43 1 7007 33550",
         "email": "ops@viennahandling.com",
         "services": "Ground handling",
-        "website": null
+        "website": null,
+        "type": "handler",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "LEBL",
@@ -628,9 +1258,22 @@
         "phone": "+34 93 298 3700",
         "email": "bcn@signatureflight.com",
         "services": "Full FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "LFMN",
@@ -643,16 +1286,39 @@
         "phone": "+33 4 93 21 36 00",
         "email": "nce@signatureflight.com",
         "services": "Full FBO, Monaco access",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Sky Valet",
         "phone": "+33 4 89 88 32 20",
         "email": "nice@skyvalet.com",
         "services": "VIP handling",
-        "website": "https://www.skyvalet.com"
+        "website": "https://www.skyvalet.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "EHAM",
@@ -665,16 +1331,39 @@
         "phone": "+31 20 649 3848",
         "email": "ams@jetaviation.com",
         "services": "Full FBO",
-        "website": "https://www.jetaviation.com"
+        "website": "https://www.jetaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "KLM Jet Center",
         "phone": "+31 20 649 2800",
         "email": "jetcenter@klm.com",
         "services": "VIP handling",
-        "website": null
+        "website": null,
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "EGKK",
@@ -687,9 +1376,22 @@
         "phone": "+44 1293 569 129",
         "email": "lgw@signatureflight.com",
         "services": "Full FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "EGGW",
@@ -702,16 +1404,39 @@
         "phone": "+44 1582 405 063",
         "email": "ltn@signatureflight.com",
         "services": "Full FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Harrods Aviation Luton",
         "phone": "+44 1582 424 488",
         "email": "luton@harrodsaviation.com",
         "services": "VIP handling",
-        "website": "https://www.harrodsaviation.com"
+        "website": "https://www.harrodsaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "LSZH",
@@ -724,16 +1449,39 @@
         "phone": "+41 43 816 51 11",
         "email": "zrh@jetaviation.com",
         "services": "Full FBO, MRO",
-        "website": "https://www.jetaviation.com"
+        "website": "https://www.jetaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "ExecuJet Zurich",
         "phone": "+41 43 816 50 50",
         "email": "zurich@execujet.com",
         "services": "FBO services",
-        "website": "https://www.execujet.com"
+        "website": "https://www.execujet.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "LTFM",
@@ -746,16 +1494,39 @@
         "phone": "+90 212 463 3000",
         "email": "ops@tgs.aero",
         "services": "Full handling",
-        "website": "https://www.tgs.aero"
+        "website": "https://www.tgs.aero",
+        "type": "handler",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       },
       {
         "name": "Celebi Aviation",
         "phone": "+90 212 465 0000",
         "email": "ist@celebiaviation.com",
         "services": "Ground handling",
-        "website": "https://www.celebiaviation.com"
+        "website": "https://www.celebiaviation.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "OMSJ",
@@ -768,9 +1539,22 @@
         "phone": "+971 6 508 8800",
         "email": "sharjah@gamaaviation.com",
         "services": "Full FBO, MRO",
-        "website": "https://www.gamaaviation.com"
+        "website": "https://www.gamaaviation.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "OERK",
@@ -783,16 +1567,39 @@
         "phone": "+966 11 220 5555",
         "email": "riyadh@saudia.com",
         "services": "VIP handling",
-        "website": "https://www.saudia.com"
+        "website": "https://www.saudia.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       },
       {
         "name": "NasJet",
         "phone": "+966 11 261 1111",
         "email": "ops@nasjet.com.sa",
         "services": "Full FBO",
-        "website": "https://www.nasjet.com.sa"
+        "website": "https://www.nasjet.com.sa",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "LLBG",
@@ -805,16 +1612,39 @@
         "phone": "+972 3 935 8888",
         "email": "jetfbo@iai.co.il",
         "services": "Full FBO",
-        "website": null
+        "website": null,
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       },
       {
         "name": "CAL Cargo",
         "phone": "+972 3 977 1111",
         "email": "vip@cal.co.il",
         "services": "VIP handling",
-        "website": null
+        "website": null,
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "ZSPD",
@@ -827,16 +1657,39 @@
         "phone": "+86 21 6834 5000",
         "email": "sha@hawkerpacific.com",
         "services": "Full FBO",
-        "website": "https://www.hawkerpacific.com"
+        "website": "https://www.hawkerpacific.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       },
       {
         "name": "Deer Jet",
         "phone": "+86 21 2231 5888",
         "email": "pvg@deerjet.com",
         "services": "FBO, charter",
-        "website": "https://www.deerjet.com"
+        "website": "https://www.deerjet.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "VABB",
@@ -849,16 +1702,39 @@
         "phone": "+91 22 6685 1100",
         "email": "mumbai@bird-execujet.com",
         "services": "Full FBO",
-        "website": "https://www.bird-execujet.com"
+        "website": "https://www.bird-execujet.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Taj Air",
         "phone": "+91 22 6638 8888",
         "email": "ops@tajair.com",
         "services": "Handling, charter",
-        "website": null
+        "website": null,
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "VTBS",
@@ -871,16 +1747,39 @@
         "phone": "+66 2 134 5999",
         "email": "bkk@mjets.com",
         "services": "Full FBO",
-        "website": "https://www.mjets.com"
+        "website": "https://www.mjets.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       },
       {
         "name": "VTBS Executive Terminal",
         "phone": "+66 2 132 9099",
         "email": null,
         "services": "VIP terminal",
-        "website": null
+        "website": null,
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "WIII",
@@ -893,16 +1792,39 @@
         "phone": "+62 21 5591 1188",
         "email": "jakarta@execujet.com",
         "services": "Full FBO",
-        "website": "https://www.execujet.com"
+        "website": "https://www.execujet.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Premiair",
         "phone": "+62 21 5591 9999",
         "email": "ops@premiair.co.id",
         "services": "Handling",
-        "website": null
+        "website": null,
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "RPLL",
@@ -915,16 +1837,39 @@
         "phone": "+63 2 8879 8300",
         "email": "ops@inaec.com",
         "services": "Full handling",
-        "website": "https://www.inaec.com"
+        "website": "https://www.inaec.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       },
       {
         "name": "PhilJets",
         "phone": "+63 2 8854 1111",
         "email": "ops@philjets.com",
         "services": "FBO, charter",
-        "website": "https://www.philjets.com"
+        "website": "https://www.philjets.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "RKSI",
@@ -937,16 +1882,39 @@
         "phone": "+82 32 744 8600",
         "email": "ops@kbac.co.kr",
         "services": "Full FBO",
-        "website": null
+        "website": null,
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       },
       {
         "name": "Asiana FBO",
         "phone": "+82 32 744 2114",
         "email": null,
         "services": "VIP handling",
-        "website": null
+        "website": null,
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "FACT",
@@ -959,16 +1927,39 @@
         "phone": "+27 21 934 8900",
         "email": "capetown@execujet.com",
         "services": "Full FBO",
-        "website": "https://www.execujet.com"
+        "website": "https://www.execujet.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Signature Cape Town",
         "phone": "+27 21 936 2800",
         "email": "cpt@signatureflight.com",
         "services": "Full FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "GMMX",
@@ -981,16 +1972,39 @@
         "phone": "+212 524 447 910",
         "email": "marrakech@swissport.com",
         "services": "VIP handling",
-        "website": "https://www.swissport.com"
+        "website": "https://www.swissport.com",
+        "type": "handler",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": false,
+        "vipLounge": false,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       },
       {
         "name": "Jetex Marrakech",
         "phone": "+212 524 447 800",
         "email": "marrakech@jetex.com",
         "services": "Full FBO",
-        "website": "https://www.jetex.com"
+        "website": "https://www.jetex.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "HECA",
@@ -1003,16 +2017,39 @@
         "phone": "+20 2 2696 7777",
         "email": "executive@egyptair.com",
         "services": "VIP handling",
-        "website": null
+        "website": null,
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       },
       {
         "name": "Smart Aviation",
         "phone": "+20 2 2265 5000",
         "email": "ops@smartaviation.com.eg",
         "services": "Full handling",
-        "website": null
+        "website": null,
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "KORD",
@@ -1025,16 +2062,39 @@
         "phone": "+1 773 686 7000",
         "email": "ord@signatureflight.com",
         "services": "Full FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Atlantic Aviation",
         "phone": "+1 773 462 7000",
         "email": "ord@atlanticaviation.com",
         "services": "Full FBO",
-        "website": "https://www.atlanticaviation.com"
+        "website": "https://www.atlanticaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "KPBI",
@@ -1047,16 +2107,39 @@
         "phone": "+1 561 684 1400",
         "email": "pbi@signatureflight.com",
         "services": "Full FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "Atlantic Aviation",
         "phone": "+1 561 684 6300",
         "email": "pbi@atlanticaviation.com",
         "services": "Full FBO",
-        "website": "https://www.atlanticaviation.com"
+        "website": "https://www.atlanticaviation.com",
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "KMIA",
@@ -1069,16 +2152,39 @@
         "phone": "+1 305 871 2700",
         "email": "mia@signatureflight.com",
         "services": "Full FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       },
       {
         "name": "Atlantic Aviation",
         "phone": "+1 305 871 4250",
         "email": "mia@atlanticaviation.com",
         "services": "Full FBO",
-        "website": "https://www.atlanticaviation.com"
+        "website": "https://www.atlanticaviation.com",
+        "type": "fbo",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "24/7",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "CYYZ",
@@ -1091,16 +2197,39 @@
         "phone": "+1 416 847 6000",
         "email": "yyz@skyservice.com",
         "services": "Full FBO",
-        "website": "https://www.skyservice.com"
+        "website": "https://www.skyservice.com",
+        "type": "fbo",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "medium"
       },
       {
         "name": "Signature Flight Support",
         "phone": "+1 905 676 1540",
         "email": "yyz@signatureflight.com",
         "services": "Full FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "fbo",
+        "operatingHours": "24/7",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "on-site",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "24/7",
+    "customs": "on-site",
+    "_version": 2
   },
   {
     "airport": "SCEL",
@@ -1113,16 +2242,39 @@
         "phone": "+56 2 2690 1000",
         "email": "scl@euroamerica.cl",
         "services": "Full handling",
-        "website": null
+        "website": null,
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       },
       {
         "name": "Signature Santiago",
         "phone": "+56 2 2601 9000",
         "email": "scl@signatureflight.com",
         "services": "Full FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "SAEZ",
@@ -1135,9 +2287,22 @@
         "phone": "+54 11 5480 6600",
         "email": "ops@flyzar.com",
         "services": "Full handling",
-        "website": "https://www.flyzar.com"
+        "website": "https://www.flyzar.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "TNCM",
@@ -1150,16 +2315,39 @@
         "phone": "+1 721 545 4240",
         "email": "sxm@signatureflight.com",
         "services": "Full FBO",
-        "website": "https://signatureaviation.com"
+        "website": "https://signatureaviation.com",
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "high"
       },
       {
         "name": "PJIAE",
         "phone": "+1 721 546 7542",
         "email": "fbo@sxmairport.com",
         "services": "Handling",
-        "website": null
+        "website": null,
+        "type": "both",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "MDPC",
@@ -1172,9 +2360,22 @@
         "phone": "+1 809 959 2376",
         "email": "fbo@aerodom.com",
         "services": "Full handling",
-        "website": null
+        "website": null,
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   },
   {
     "airport": "MKJS",
@@ -1187,8 +2388,21 @@
         "phone": "+1 876 952 2124",
         "email": "fbo@mbjairport.com",
         "services": "Full handling",
-        "website": null
+        "website": null,
+        "type": "fbo",
+        "operatingHours": "Contact FBO",
+        "fuel": [
+          "Jet-A"
+        ],
+        "hangar": true,
+        "vipLounge": true,
+        "crewLounge": true,
+        "customs": "airport",
+        "confidence": "medium"
       }
-    ]
+    ],
+    "operatingHours": "Contact FBO",
+    "customs": "airport",
+    "_version": 2
   }
 ]

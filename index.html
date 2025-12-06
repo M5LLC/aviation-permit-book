@@ -116,9 +116,17 @@
         }
       });
 
-      // Handle controller change
+      // Handle controller change - only reload on updates, not initial install
+      let refreshing = false;
       navigator.serviceWorker.addEventListener('controllerchange', () => {
-        window.location.reload();
+        console.log('[SW] Controller changed');
+        if (refreshing) return;
+        refreshing = true;
+        // Small delay to allow auth state to settle
+        setTimeout(() => {
+          console.log('[SW] Reloading due to new service worker...');
+          window.location.reload();
+        }, 100);
       });
     }
 

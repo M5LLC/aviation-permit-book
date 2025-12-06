@@ -178,31 +178,35 @@ service cloud.firestore {
     }
 
     // =====================================
-    // Master Data (Read-only for users)
+    // Master Data (Read-only for authenticated users)
     // =====================================
+    // Note: Using isAuthenticated() instead of isApproved() so users can
+    // access reference data immediately after sign-in, even if their user
+    // document hasn't been created yet or is pending approval.
+
     match /countries/{countryCode} {
-      allow read: if isApproved();
+      allow read: if isAuthenticated();
       // Write only via Admin SDK (data import/refresh)
       allow write: if false;
     }
 
     match /airports/{airportCode} {
-      allow read: if isApproved();
+      allow read: if isAuthenticated();
       allow write: if false;
     }
 
     match /fbos/{airportCode} {
-      allow read: if isApproved();
+      allow read: if isAuthenticated();
       allow write: if false;
     }
 
     match /firs/{countryCode} {
-      allow read: if isApproved();
+      allow read: if isAuthenticated();
       allow write: if false;
     }
 
     match /changelog/{entryId} {
-      allow read: if isApproved();
+      allow read: if isAuthenticated();
       allow write: if false;
     }
 

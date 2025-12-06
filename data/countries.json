@@ -37,7 +37,12 @@
       "EGLF",
       "EGGW"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+44 330 022 1500",
+    "caaEmail": "enquiries@caa.co.uk",
+    "permitPhone": "+44 330 022 1920",
+    "permitEmail": "flight.ops@caa.co.uk",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Germany",
@@ -78,7 +83,12 @@
       "EDDM",
       "EDDF"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+49 531 2355 0",
+    "caaEmail": "info@lba.de",
+    "permitPhone": "+49 531 2355 340",
+    "permitEmail": "slot@lba.de",
+    "caaContactConfidence": "high"
   },
   {
     "name": "France",
@@ -116,7 +126,11 @@
       "LFPG",
       "LFMN"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+33 1 58 09 43 21",
+    "caaEmail": "info.dsac@aviation-civile.gouv.fr",
+    "permitEmail": "survolbureauaccord@aviation-civile.gouv.fr",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Italy",
@@ -161,7 +175,11 @@
       "LIML",
       "LIPZ"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+39 06 4459 6100",
+    "caaEmail": "info@enac.gov.it",
+    "permitEmail": "foreignflights@enac.gov.it",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Spain",
@@ -199,7 +217,11 @@
       "LEBL",
       "LEPA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+34 91 396 82 00",
+    "caaEmail": "aesa@seguridadaerea.es",
+    "permitEmail": "autorizaciones.otv@seguridadaerea.es",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Switzerland",
@@ -238,7 +260,11 @@
       "LSGG",
       "LSZH"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+41 58 465 80 39",
+    "caaEmail": "info@bazl.admin.ch",
+    "permitEmail": "permits@bazl.admin.ch",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Netherlands",
@@ -275,7 +301,11 @@
       "EHAM",
       "EHRD"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+31 88 489 0000",
+    "caaEmail": "info@ilent.nl",
+    "permitEmail": "overflight@ilent.nl",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Belgium",
@@ -312,7 +342,11 @@
       "EBBR",
       "EBAW"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+32 2 206 41 11",
+    "caaEmail": "info@mobilit.fgov.be",
+    "permitEmail": "permits.ops@mobilit.fgov.be",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Austria",
@@ -349,7 +383,11 @@
       "LOWW",
       "LOWS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+43 51703 0",
+    "caaEmail": "info@austrocontrol.at",
+    "permitEmail": "flugbewilligungen@austrocontrol.at",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Portugal",
@@ -386,7 +424,11 @@
       "LPPT",
       "LPFR"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+351 21 842 35 00",
+    "caaEmail": "geral@anac.pt",
+    "permitEmail": "permits@anac.pt",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Ireland",
@@ -423,7 +465,11 @@
       "EIDW",
       "EINN"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+353 1 603 1100",
+    "caaEmail": "info@iaa.ie",
+    "permitEmail": "flightops@iaa.ie",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Greece",
@@ -461,7 +507,11 @@
       "LGMK",
       "LGSR"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+30 210 891 6000",
+    "caaEmail": "dcaa@hcaa.gr",
+    "permitEmail": "permits@hcaa.gr",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Turkey",
@@ -500,7 +550,11 @@
       "LTFM",
       "LTAI"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+90 312 203 60 00",
+    "caaEmail": "shgm@uab.gov.tr",
+    "permitEmail": "permits@shgm.gov.tr",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Poland",
@@ -537,7 +591,11 @@
       "EPWA",
       "EPKK"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+48 22 520 72 00",
+    "caaEmail": "kancelaria@ulc.gov.pl",
+    "permitEmail": "permits@ulc.gov.pl",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Czech Republic",
@@ -573,7 +631,11 @@
     "airports": [
       "LKPR"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+420 225 421 111",
+    "caaEmail": "podatelna@caa.cz",
+    "permitEmail": "permits@caa.cz",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Hungary",
@@ -609,7 +671,10 @@
     "airports": [
       "LHBP"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+36 1 296 5000",
+    "caaEmail": "hatosag@kozut.hu",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Romania",
@@ -645,7 +710,11 @@
     "airports": [
       "LROP"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+40 21 208 15 08",
+    "caaEmail": "aacr@caa.ro",
+    "permitEmail": "permits@caa.ro",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Bulgaria",
@@ -681,7 +750,10 @@
     "airports": [
       "LBSF"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+359 2 937 10 47",
+    "caaEmail": "caa@caa.bg",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Croatia",
@@ -719,7 +791,11 @@
       "LDSP",
       "LDDU"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+385 1 2369 300",
+    "caaEmail": "ccaa@ccaa.hr",
+    "permitEmail": "permits@ccaa.hr",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Serbia",
@@ -755,7 +831,10 @@
     "airports": [
       "LYBE"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+381 11 292 7100",
+    "caaEmail": "office@cad.gov.rs",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Norway",
@@ -792,7 +871,11 @@
       "ENGM",
       "ENBR"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+47 75 58 50 00",
+    "caaEmail": "postmottak@caa.no",
+    "permitEmail": "permits@caa.no",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Sweden",
@@ -829,7 +912,11 @@
       "ESSA",
       "ESSB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+46 11 415 30 00",
+    "caaEmail": "kontakt@transportstyrelsen.se",
+    "permitEmail": "permits.aviation@transportstyrelsen.se",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Denmark",
@@ -865,7 +952,11 @@
     "airports": [
       "EKCH"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+45 72 21 88 00",
+    "caaEmail": "dcaa@tbst.dk",
+    "permitEmail": "permits@tbst.dk",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Finland",
@@ -901,7 +992,11 @@
     "airports": [
       "EFHK"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+358 295 390 000",
+    "caaEmail": "kirjaamo@traficom.fi",
+    "permitEmail": "permits@traficom.fi",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Iceland",
@@ -937,7 +1032,10 @@
     "airports": [
       "BIKF"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+354 580 2400",
+    "caaEmail": "caa@caa.is",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Luxembourg",
@@ -973,7 +1071,10 @@
     "airports": [
       "ELLX"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+352 247 84600",
+    "caaEmail": "info@dac.lu",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Malta",
@@ -1009,7 +1110,10 @@
     "airports": [
       "LMML"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+356 2169 5400",
+    "caaEmail": "civil.aviation@transport.gov.mt",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Cyprus",
@@ -1046,7 +1150,10 @@
       "LCLK",
       "LCPH"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+357 22 800 100",
+    "caaEmail": "aviation@dca.mcw.gov.cy",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Slovenia",
@@ -1082,7 +1189,10 @@
     "airports": [
       "LJLJ"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+386 1 244 66 00",
+    "caaEmail": "info@caa.si",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Slovakia",
@@ -1118,7 +1228,10 @@
     "airports": [
       "LZIB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+421 2 4342 3811",
+    "caaEmail": "letectvo@nsat.sk",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Estonia",
@@ -1154,7 +1267,10 @@
     "airports": [
       "EETN"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+372 610 1500",
+    "caaEmail": "info@ecaa.ee",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Latvia",
@@ -1190,7 +1306,10 @@
     "airports": [
       "EVRA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+371 6708 3010",
+    "caaEmail": "caa@caa.gov.lv",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Lithuania",
@@ -1226,7 +1345,10 @@
     "airports": [
       "EYVI"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+370 706 66200",
+    "caaEmail": "caa@caa.lt",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Montenegro",
@@ -1263,7 +1385,10 @@
       "LYPG",
       "LYTV"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+382 20 201 070",
+    "caaEmail": "caa@caa.me",
+    "caaContactConfidence": "low"
   },
   {
     "name": "North Macedonia",
@@ -1299,7 +1424,10 @@
     "airports": [
       "LWSK"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+389 2 3116 504",
+    "caaEmail": "caa@caa.gov.mk",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Albania",
@@ -1335,7 +1463,10 @@
     "airports": [
       "LATI"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+355 4 238 1600",
+    "caaEmail": "info@aac.gov.al",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Kosovo",
@@ -1373,7 +1504,10 @@
     "airports": [
       "LYPR"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+383 38 248 629",
+    "caaEmail": "caa@rks-gov.net",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Bosnia and Herzegovina",
@@ -1409,7 +1543,10 @@
     "airports": [
       "LQSA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+387 33 289 200",
+    "caaEmail": "info@bhdca.gov.ba",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Moldova",
@@ -1445,7 +1582,10 @@
     "airports": [
       "LUKK"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+373 22 822 500",
+    "caaEmail": "caa@caa.md",
+    "caaContactConfidence": "low"
   },
   {
     "name": "China",
@@ -1487,7 +1627,11 @@
       "ZSPD",
       "ZGGG"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+86 10 6409 1114",
+    "caaEmail": "caacnews@caac.gov.cn",
+    "permitEmail": "overflights@atmb.net.cn",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "India",
@@ -1538,7 +1682,11 @@
       "VABB",
       "VOBL"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+91 11 2461 5606",
+    "caaEmail": "dgca@dgca.nic.in",
+    "permitEmail": "jdga@dgca.nic.in",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Japan",
@@ -1581,7 +1729,11 @@
       "RJAA",
       "RJBB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+81 3 5253 8111",
+    "caaEmail": "hqt-cat@gxb.mlit.go.jp",
+    "permitEmail": "hqt-cat-atc-slot@gxb.mlit.go.jp",
+    "caaContactConfidence": "high"
   },
   {
     "name": "South Korea",
@@ -1620,7 +1772,11 @@
       "RKSI",
       "RKSS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+82 44 201 4220",
+    "caaEmail": "molit@korea.kr",
+    "permitEmail": "aviation@molit.go.kr",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Singapore",
@@ -1657,7 +1813,11 @@
       "WSSS",
       "WSSL"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+65 6542 1122",
+    "caaEmail": "qsm@caas.gov.sg",
+    "permitEmail": "airnavservices_atcl@caas.gov.sg",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Thailand",
@@ -1695,7 +1855,11 @@
       "VTBD",
       "VTSP"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+66 2 286 8008",
+    "caaEmail": "info@caat.or.th",
+    "permitEmail": "permits@caat.or.th",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Vietnam",
@@ -1734,7 +1898,10 @@
       "VVNB",
       "VVTS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+84 24 3827 2900",
+    "caaEmail": "caav@caav.gov.vn",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Malaysia",
@@ -1771,7 +1938,10 @@
       "WMKK",
       "WMSA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+60 3 8871 4000",
+    "caaEmail": "aduan@caam.gov.my",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Indonesia",
@@ -1810,7 +1980,11 @@
       "WIII",
       "WADD"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+62 21 350 6666",
+    "caaEmail": "dgca@hubud.dephub.go.id",
+    "permitEmail": "foreignoversea@hubud.dephub.go.id",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Philippines",
@@ -1849,7 +2023,11 @@
       "RPLL",
       "RPLC"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+63 2 879 9131",
+    "caaEmail": "caap@caap.gov.ph",
+    "permitEmail": "overflights@caap.gov.ph",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Taiwan",
@@ -1888,7 +2066,10 @@
       "RCTP",
       "RCSS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+886 2 8978 2039",
+    "caaEmail": "caa@mail.caa.gov.tw",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Hong Kong",
@@ -1926,7 +2107,11 @@
     "airports": [
       "VHHH"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+852 2910 6830",
+    "caaEmail": "enquiry@cad.gov.hk",
+    "permitEmail": "atd@cad.gov.hk",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Macau",
@@ -1962,7 +2147,10 @@
     "airports": [
       "VMMC"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+853 2856 2622",
+    "caaEmail": "info@aacm.gov.mo",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Mongolia",
@@ -2000,7 +2188,11 @@
     "airports": [
       "ZMUB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+976 11 285 288",
+    "caaEmail": "info@mcaa.gov.mn",
+    "permitEmail": "permits@mcaa.gov.mn",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Myanmar",
@@ -2041,7 +2233,10 @@
       "VYYY",
       "VYMD"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+95 1 533 015",
+    "caaEmail": "dca@mcit.gov.mm",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Cambodia",
@@ -2078,7 +2273,10 @@
       "VDPP",
       "VDSR"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+855 23 725 937",
+    "caaEmail": "caa@cambodia-caa.gov.kh",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Laos",
@@ -2114,7 +2312,10 @@
     "airports": [
       "VLVT"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+856 21 512 163",
+    "caaEmail": "lnao@laopdr.com",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Bangladesh",
@@ -2150,7 +2351,10 @@
     "airports": [
       "VGHS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+880 2 890 14050",
+    "caaEmail": "info@caab.gov.bd",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Sri Lanka",
@@ -2186,7 +2390,10 @@
     "airports": [
       "VCBI"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+94 11 263 5354",
+    "caaEmail": "dgca@caa.lk",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Nepal",
@@ -2225,7 +2432,10 @@
     "airports": [
       "VNKT"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+977 1 426 2387",
+    "caaEmail": "caan@caanepal.gov.np",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Pakistan",
@@ -2265,7 +2475,10 @@
       "OPLA",
       "OPIS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+92 42 9920 4212",
+    "caaEmail": "dg@caapakistan.com.pk",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Brunei",
@@ -2301,7 +2514,10 @@
     "airports": [
       "WBSB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+673 233 0142",
+    "caaEmail": "info@dca.gov.bn",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Maldives",
@@ -2339,7 +2555,11 @@
     "airports": [
       "VRMM"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+960 333 3133",
+    "caaEmail": "info@caa.gov.mv",
+    "permitEmail": "permits@caa.gov.mv",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Bhutan",
@@ -2379,7 +2599,10 @@
     "airports": [
       "VQPR"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+975 2 331 144",
+    "caaEmail": "bcaa@bcaa.gov.bt",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Timor-Leste",
@@ -2417,7 +2640,10 @@
     "airports": [
       "WPDL"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+670 332 5100",
+    "caaEmail": "info@aactl.tl",
+    "caaContactConfidence": "low"
   },
   {
     "name": "North Korea",
@@ -2456,7 +2682,9 @@
     "airports": [
       "ZKPY"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+850 2 381 8221",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Afghanistan",
@@ -2496,7 +2724,9 @@
     "airports": [
       "OAKB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+93 20 2103 521",
+    "caaContactConfidence": "low"
   },
   {
     "name": "United Arab Emirates",
@@ -2535,7 +2765,12 @@
       "OMAA",
       "OMDW"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+971 2 599 6666",
+    "caaEmail": "info@gcaa.gov.ae",
+    "permitPhone": "+971 2 599 6800",
+    "permitEmail": "permits@gcaa.gov.ae",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Saudi Arabia",
@@ -2575,7 +2810,11 @@
       "OERK",
       "OEDF"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+966 11 280 8100",
+    "caaEmail": "info@gaca.gov.sa",
+    "permitEmail": "permits@gaca.gov.sa",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Qatar",
@@ -2611,7 +2850,11 @@
     "airports": [
       "OTHH"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+974 4465 7777",
+    "caaEmail": "qcaa@qcaa.gov.qa",
+    "permitEmail": "permits@qcaa.gov.qa",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Kuwait",
@@ -2647,7 +2890,11 @@
     "airports": [
       "OKBK"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+965 2431 9350",
+    "caaEmail": "info@dgca.gov.kw",
+    "permitEmail": "permits@dgca.gov.kw",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Bahrain",
@@ -2683,7 +2930,11 @@
     "airports": [
       "OBBI"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+973 1732 1166",
+    "caaEmail": "caa@caa.gov.bh",
+    "permitEmail": "permits@caa.gov.bh",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Oman",
@@ -2719,7 +2970,11 @@
     "airports": [
       "OOMS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+968 2451 9170",
+    "caaEmail": "info@caa.gov.om",
+    "permitEmail": "overflights@caa.gov.om",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Jordan",
@@ -2755,7 +3010,11 @@
     "airports": [
       "OJAI"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+962 6 489 1401",
+    "caaEmail": "info@carc.jo",
+    "permitEmail": "permits@carc.jo",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Israel",
@@ -2795,7 +3054,11 @@
     "airports": [
       "LLBG"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+972 3 979 2604",
+    "caaEmail": "caa@mot.gov.il",
+    "permitEmail": "permits@mot.gov.il",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Lebanon",
@@ -2833,7 +3096,10 @@
     "airports": [
       "OLBA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+961 1 628 000",
+    "caaEmail": "dgca@dgca.gov.lb",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Iraq",
@@ -2873,7 +3139,10 @@
       "ORBI",
       "ORMM"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+964 1 719 0000",
+    "caaEmail": "info@icao.gov.iq",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Iran",
@@ -2912,7 +3181,10 @@
     "airports": [
       "OIIE"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+98 21 6603 0001",
+    "caaEmail": "info@cao.ir",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Yemen",
@@ -2953,7 +3225,9 @@
       "OYSN",
       "OYAA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+967 1 274 222",
+    "caaContactConfidence": "low"
   },
   {
     "name": "United States",
@@ -2994,7 +3268,12 @@
       "KORD",
       "KTEB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 866 835 5322",
+    "caaEmail": "info@faa.gov",
+    "permitPhone": "+1 202 267 8166",
+    "permitEmail": "9-awa-avr-fc@faa.gov",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Canada",
@@ -3033,7 +3312,11 @@
       "CYUL",
       "CYYC"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 800 305 2059",
+    "caaEmail": "services@tc.gc.ca",
+    "permitEmail": "tc.sorfa@tc.gc.ca",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Mexico",
@@ -3074,7 +3357,11 @@
       "MMUN",
       "MMSD"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+52 55 4000 9400",
+    "caaEmail": "contacto@afac.gob.mx",
+    "permitEmail": "permisos@afac.gob.mx",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Panama",
@@ -3111,7 +3398,11 @@
       "MPTO",
       "MPPA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+507 501 9000",
+    "caaEmail": "info@aac.gob.pa",
+    "permitEmail": "permits@aac.gob.pa",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Costa Rica",
@@ -3148,7 +3439,10 @@
       "MROC",
       "MRLB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+506 2440 0744",
+    "caaEmail": "dgac@dgac.go.cr",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Guatemala",
@@ -3184,7 +3478,10 @@
     "airports": [
       "MGGT"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+502 2321 6900",
+    "caaEmail": "dgac@dgac.gob.gt",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Belize",
@@ -3220,7 +3517,10 @@
     "airports": [
       "MZBZ"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+501 225 2014",
+    "caaEmail": "dca@civilaviation.gov.bz",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Honduras",
@@ -3260,7 +3560,10 @@
       "MHLM",
       "MHRO"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+504 2234 8395",
+    "caaEmail": "dgac@dgac.gob.hn",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Nicaragua",
@@ -3296,7 +3599,10 @@
     "airports": [
       "MNMG"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+505 2233 1624",
+    "caaEmail": "inac@inac.gob.ni",
+    "caaContactConfidence": "low"
   },
   {
     "name": "El Salvador",
@@ -3332,7 +3638,10 @@
     "airports": [
       "MSSS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+503 2339 9010",
+    "caaEmail": "aac@aac.gob.sv",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Brazil",
@@ -3372,7 +3681,11 @@
       "SBRJ",
       "SBBR"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+55 61 3314 4999",
+    "caaEmail": "faleconosco@anac.gov.br",
+    "permitEmail": "autorizacoes.voos@anac.gov.br",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Argentina",
@@ -3411,7 +3724,11 @@
       "SAEZ",
       "SABE"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+54 11 5941 3000",
+    "caaEmail": "info@anac.gob.ar",
+    "permitEmail": "permisos@anac.gob.ar",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Chile",
@@ -3447,7 +3764,10 @@
     "airports": [
       "SCEL"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+56 2 2436 1100",
+    "caaEmail": "contacto@dgac.gob.cl",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Colombia",
@@ -3492,7 +3812,11 @@
       "SKMR",
       "SKCG"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+57 1 296 9000",
+    "caaEmail": "info@aerocivil.gov.co",
+    "permitEmail": "permisosdevuelo@aerocivil.gov.co",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Peru",
@@ -3531,7 +3855,10 @@
       "SPJC",
       "SPZO"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+51 1 615 7800",
+    "caaEmail": "dgac@mtc.gob.pe",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Venezuela",
@@ -3577,7 +3904,10 @@
       "SVMI",
       "SVMC"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+58 212 408 5200",
+    "caaEmail": "inac@inac.gob.ve",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Ecuador",
@@ -3627,7 +3957,10 @@
       "SEQM",
       "SEGU"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+593 2 294 4900",
+    "caaEmail": "dgac@dgac.gob.ec",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Bolivia",
@@ -3667,7 +4000,10 @@
       "SLLP",
       "SLVR"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+591 2 244 2550",
+    "caaEmail": "dgac@dgac.gob.bo",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Paraguay",
@@ -3703,7 +4039,10 @@
     "airports": [
       "SGAS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+595 21 415 000",
+    "caaEmail": "dinac@dinac.gov.py",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Uruguay",
@@ -3740,7 +4079,10 @@
       "SUMU",
       "SULS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+598 2 604 0271",
+    "caaEmail": "dinacia@dinacia.gub.uy",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Guyana",
@@ -3776,7 +4118,10 @@
     "airports": [
       "SYCJ"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+592 261 2284",
+    "caaEmail": "gcaa@gcaa-gy.org",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Suriname",
@@ -3814,7 +4159,10 @@
     "airports": [
       "SMJP"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+597 434 254",
+    "caaEmail": "casas@casas.sr",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Bahamas",
@@ -3851,7 +4199,11 @@
       "MYNN",
       "MYGF"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 242 377 7281",
+    "caaEmail": "bcad@bahamas.gov.bs",
+    "permitEmail": "bcad@bahamas.gov.bs",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Jamaica",
@@ -3888,7 +4240,10 @@
       "MKJP",
       "MKJS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 876 960 3948",
+    "caaEmail": "jcaa@jcaa.gov.jm",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Dominican Republic",
@@ -3925,7 +4280,10 @@
       "MDPC",
       "MDSD"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 809 227 3800",
+    "caaEmail": "info@idac.gov.do",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Cuba",
@@ -3965,7 +4323,10 @@
     "airports": [
       "MUHA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+53 7 838 1165",
+    "caaEmail": "iacc@iacc.cu",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Cayman Islands",
@@ -4001,7 +4362,10 @@
     "airports": [
       "MWCR"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 345 949 7811",
+    "caaEmail": "caacayman@gov.ky",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Turks and Caicos",
@@ -4037,7 +4401,10 @@
     "airports": [
       "MBPV"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 649 946 2290",
+    "caaEmail": "civilaviation@gov.tc",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Puerto Rico",
@@ -4076,7 +4443,10 @@
       "TJSJ",
       "TJBQ"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 787 253 4570",
+    "caaEmail": "info@dtop.pr.gov",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "US Virgin Islands",
@@ -4113,7 +4483,9 @@
       "TIST",
       "TISX"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 340 774 5074",
+    "caaContactConfidence": "low"
   },
   {
     "name": "British Virgin Islands",
@@ -4151,7 +4523,10 @@
     "airports": [
       "TUPJ"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 284 468 4555",
+    "caaEmail": "bvicaa@gov.vg",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Barbados",
@@ -4187,7 +4562,10 @@
     "airports": [
       "TBPB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 246 428 0950",
+    "caaEmail": "bcaa@barbados.gov.bb",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Trinidad and Tobago",
@@ -4223,7 +4601,10 @@
     "airports": [
       "TTPP"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 868 669 4282",
+    "caaEmail": "info@caa.gov.tt",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Aruba",
@@ -4259,7 +4640,10 @@
     "airports": [
       "TNCA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+297 524 2424",
+    "caaEmail": "dca@dca.aw",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Curaçao",
@@ -4295,7 +4679,10 @@
     "airports": [
       "TNCC"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+599 9 839 3400",
+    "caaEmail": "info@dca.cw",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Sint Maarten",
@@ -4331,7 +4718,10 @@
     "airports": [
       "TNCM"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 721 545 2008",
+    "caaEmail": "dca@sintmaartengov.org",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Haiti",
@@ -4369,7 +4759,10 @@
     "airports": [
       "MTPP"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+509 22 46 5999",
+    "caaEmail": "ofnac@ofnac.gouv.ht",
+    "caaContactConfidence": "low"
   },
   {
     "name": "St. Barthélemy",
@@ -4409,7 +4802,9 @@
     "airports": [
       "TFFJ"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+590 590 27 66 60",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Bermuda",
@@ -4445,7 +4840,11 @@
     "airports": [
       "TXKF"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 441 236 2099",
+    "caaEmail": "bcaa@gov.bm",
+    "permitEmail": "permits@bcaa.bm",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Antigua and Barbuda",
@@ -4481,7 +4880,10 @@
     "airports": [
       "TAPA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 268 462 0873",
+    "caaEmail": "abcaa@ab.gov.ag",
+    "caaContactConfidence": "low"
   },
   {
     "name": "St. Lucia",
@@ -4518,7 +4920,10 @@
       "TLPL",
       "TLPC"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 758 452 1958",
+    "caaEmail": "slaspa@candw.lc",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Grenada",
@@ -4554,7 +4959,10 @@
     "airports": [
       "TGPY"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 473 444 4175",
+    "caaEmail": "gcaa@gov.gd",
+    "caaContactConfidence": "low"
   },
   {
     "name": "St. Kitts and Nevis",
@@ -4590,7 +4998,10 @@
     "airports": [
       "TKPK"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 869 465 8121",
+    "caaEmail": "skcaa@gov.kn",
+    "caaContactConfidence": "low"
   },
   {
     "name": "St. Vincent and the Grenadines",
@@ -4626,7 +5037,10 @@
     "airports": [
       "TVSA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 784 457 1502",
+    "caaEmail": "svg.caa@gmail.com",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Dominica",
@@ -4665,7 +5079,10 @@
       "TDPD",
       "TDCF"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 767 448 5575",
+    "caaEmail": "aviation@dominica.gov.dm",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Anguilla",
@@ -4701,7 +5118,10 @@
     "airports": [
       "TQPF"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 264 498 2450",
+    "caaEmail": "aviation@gov.ai",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Montserrat",
@@ -4741,7 +5161,10 @@
     "airports": [
       "TRPM"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 664 491 2550",
+    "caaEmail": "civilaviation@gov.ms",
+    "caaContactConfidence": "low"
   },
   {
     "name": "South Africa",
@@ -4779,7 +5202,11 @@
       "FACT",
       "FALE"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+27 11 545 1000",
+    "caaEmail": "info@caa.co.za",
+    "permitEmail": "permits@caa.co.za",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Kenya",
@@ -4819,7 +5246,11 @@
       "HKWL",
       "HKMO"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+254 20 827 470",
+    "caaEmail": "info@kcaa.or.ke",
+    "permitEmail": "permits@kcaa.or.ke",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Nigeria",
@@ -4856,7 +5287,11 @@
       "DNMM",
       "DNAA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+234 9 870 8630",
+    "caaEmail": "info@ncaa.gov.ng",
+    "permitEmail": "permits@ncaa.gov.ng",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Egypt",
@@ -4894,7 +5329,11 @@
       "HEGN",
       "HESN"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+20 2 2267 7700",
+    "caaEmail": "ecaa@civilaviation.gov.eg",
+    "permitEmail": "overflights.permits@civilaviation.gov.eg",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Morocco",
@@ -4931,7 +5370,11 @@
       "GMMN",
       "GMMX"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+212 522 539 040",
+    "caaEmail": "onda@onda.ma",
+    "permitEmail": "survol@onda.ma",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Tanzania",
@@ -4969,7 +5412,10 @@
       "HTKJ",
       "HTZA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+255 22 211 5079",
+    "caaEmail": "info@tcaa.go.tz",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Ethiopia",
@@ -5005,7 +5451,10 @@
     "airports": [
       "HAAB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+251 11 551 2660",
+    "caaEmail": "info@ecaa.gov.et",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Ghana",
@@ -5041,7 +5490,10 @@
     "airports": [
       "DGAA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+233 21 776 171",
+    "caaEmail": "info@gcaa.com.gh",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Senegal",
@@ -5077,7 +5529,10 @@
     "airports": [
       "GOBD"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+221 33 865 0010",
+    "caaEmail": "anacim@anacim.sn",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Togo",
@@ -5115,7 +5570,10 @@
     "airports": [
       "DXXX"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+228 22 26 32 40",
+    "caaEmail": "anactogo@yahoo.fr",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Ivory Coast",
@@ -5151,7 +5609,10 @@
     "airports": [
       "DIAP"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+225 21 27 74 24",
+    "caaEmail": "anac@anac.ci",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Cameroon",
@@ -5188,7 +5649,10 @@
       "FKKD",
       "FKYS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+237 222 23 0080",
+    "caaEmail": "ccaa@ccaa.aero",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Angola",
@@ -5224,7 +5688,10 @@
     "airports": [
       "FNLU"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+244 222 321 690",
+    "caaEmail": "inavic@inavic.gov.ao",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Democratic Republic of Congo",
@@ -5262,7 +5729,10 @@
     "airports": [
       "FZAA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+243 99 818 2022",
+    "caaEmail": "rva@rva.cd",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Republic of Congo",
@@ -5298,7 +5768,10 @@
     "airports": [
       "FCBB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+242 06 668 0000",
+    "caaEmail": "anac@anac.cg",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Uganda",
@@ -5334,7 +5807,10 @@
     "airports": [
       "HUEN"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+256 312 353 000",
+    "caaEmail": "info@caa.go.ug",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Rwanda",
@@ -5370,7 +5846,10 @@
     "airports": [
       "HRYR"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+250 252 575 015",
+    "caaEmail": "info@caa.gov.rw",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Zambia",
@@ -5407,7 +5886,10 @@
       "FLKK",
       "FLLS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+260 211 251 633",
+    "caaEmail": "info@caa.co.zm",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Zimbabwe",
@@ -5444,7 +5926,10 @@
       "FVHA",
       "FVFA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+263 4 585 083",
+    "caaEmail": "caaz@caaz.co.zw",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Botswana",
@@ -5481,7 +5966,10 @@
       "FBSK",
       "FBMN"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+267 368 8200",
+    "caaEmail": "info@caab.co.bw",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Namibia",
@@ -5517,7 +6005,10 @@
     "airports": [
       "FYWH"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+264 61 295 5000",
+    "caaEmail": "dca@mwt.gov.na",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Mozambique",
@@ -5555,7 +6046,10 @@
     "airports": [
       "FQMA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+258 21 465 200",
+    "caaEmail": "iacm@iacm.gov.mz",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Madagascar",
@@ -5591,7 +6085,10 @@
     "airports": [
       "FMMI"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+261 20 24 412 00",
+    "caaEmail": "acm@aviation.gov.mg",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Mauritius",
@@ -5627,7 +6124,10 @@
     "airports": [
       "FIMP"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+230 637 3030",
+    "caaEmail": "civilaviation@govmu.org",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Seychelles",
@@ -5663,7 +6163,10 @@
     "airports": [
       "FSIA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+248 438 4400",
+    "caaEmail": "scaa@scaa.sc",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Tunisia",
@@ -5699,7 +6202,10 @@
     "airports": [
       "DTTA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+216 71 754 000",
+    "caaEmail": "dgac@dgac.tn",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Algeria",
@@ -5735,7 +6241,10 @@
     "airports": [
       "DAAG"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+213 21 74 55 00",
+    "caaEmail": "dacm@dacm.dz",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Libya",
@@ -5775,7 +6284,10 @@
       "HLLT",
       "HLLB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+218 21 333 7044",
+    "caaEmail": "info@caa.gov.ly",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Sudan",
@@ -5814,7 +6326,10 @@
     "airports": [
       "HSSS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+249 183 770 037",
+    "caaEmail": "scaa@scaa.gov.sd",
+    "caaContactConfidence": "low"
   },
   {
     "name": "South Sudan",
@@ -5852,7 +6367,10 @@
     "airports": [
       "HJJJ"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+211 929 133 444",
+    "caaEmail": "sscaa@sscaa.gov.ss",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Eritrea",
@@ -5890,7 +6408,9 @@
     "airports": [
       "HHAS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+291 1 181 313",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Djibouti",
@@ -5926,7 +6446,10 @@
     "airports": [
       "HDAM"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+253 21 35 04 01",
+    "caaEmail": "dacm@dacm.dj",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Somalia",
@@ -5966,7 +6489,9 @@
       "HCMM",
       "HCMN"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+252 61 5555555",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Mali",
@@ -6004,7 +6529,10 @@
     "airports": [
       "GABS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+223 20 22 46 44",
+    "caaEmail": "anac@anacmali.org",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Burkina Faso",
@@ -6042,7 +6570,10 @@
     "airports": [
       "DFFD"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+226 25 31 63 32",
+    "caaEmail": "anac@anac.bf",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Niger",
@@ -6080,7 +6611,10 @@
     "airports": [
       "DRRN"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+227 20 73 24 35",
+    "caaEmail": "anac@anac.ne",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Chad",
@@ -6116,7 +6650,10 @@
     "airports": [
       "FTTJ"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+235 22 52 25 35",
+    "caaEmail": "adac@adac-tchad.org",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Central African Republic",
@@ -6154,7 +6691,10 @@
     "airports": [
       "FEFF"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+236 21 61 46 14",
+    "caaEmail": "anac@anac.cf",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Gabon",
@@ -6190,7 +6730,10 @@
     "airports": [
       "FOOL"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+241 01 76 22 04",
+    "caaEmail": "anac@anac.ga",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Equatorial Guinea",
@@ -6227,7 +6770,10 @@
       "FGSL",
       "FGBT"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+240 333 093 313",
+    "caaEmail": "dgac@dgac.gq",
+    "caaContactConfidence": "low"
   },
   {
     "name": "São Tomé and Príncipe",
@@ -6263,7 +6809,10 @@
     "airports": [
       "FPST"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+239 222 1212",
+    "caaEmail": "inac@inac.st",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Cape Verde",
@@ -6300,7 +6849,10 @@
       "GVNP",
       "GVAC"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+238 260 8500",
+    "caaEmail": "aac@aac.cv",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Guinea",
@@ -6336,7 +6888,10 @@
     "airports": [
       "GUCY"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+224 622 28 05 05",
+    "caaEmail": "dnac@dnac.gov.gn",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Guinea-Bissau",
@@ -6374,7 +6929,10 @@
     "airports": [
       "GGOV"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+245 320 1020",
+    "caaEmail": "inac@inac.gw",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Gambia",
@@ -6410,7 +6968,10 @@
     "airports": [
       "GBYD"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+220 447 2928",
+    "caaEmail": "gcaa@gcaa.gm",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Sierra Leone",
@@ -6446,7 +7007,10 @@
     "airports": [
       "GFLL"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+232 76 601 410",
+    "caaEmail": "slcaa@slcaa.gov.sl",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Liberia",
@@ -6482,7 +7046,10 @@
     "airports": [
       "GLRB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+231 886 553 535",
+    "caaEmail": "lcaa@lcaa.gov.lr",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Benin",
@@ -6518,7 +7085,10 @@
     "airports": [
       "DBBB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+229 21 30 45 66",
+    "caaEmail": "anac@anac.bj",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Malawi",
@@ -6554,7 +7124,10 @@
     "airports": [
       "FWKI"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+265 1 700 788",
+    "caaEmail": "dca@dca.mw",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Lesotho",
@@ -6592,7 +7165,10 @@
     "airports": [
       "FXMM"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+266 22 350 777",
+    "caaEmail": "dca@dca.org.ls",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Eswatini",
@@ -6628,7 +7204,10 @@
     "airports": [
       "FDSK"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+268 2518 4655",
+    "caaEmail": "scaa@gov.sz",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Comoros",
@@ -6664,7 +7243,10 @@
     "airports": [
       "FMCH"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+269 773 02 01",
+    "caaEmail": "anac@anac.km",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Burundi",
@@ -6702,7 +7284,10 @@
     "airports": [
       "HBBA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+257 22 22 3530",
+    "caaEmail": "aacb@aacb.bi",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Australia",
@@ -6741,7 +7326,11 @@
       "YBBN",
       "YPPH"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+61 2 6217 1111",
+    "caaEmail": "casa@casa.gov.au",
+    "permitEmail": "approvals@casa.gov.au",
+    "caaContactConfidence": "high"
   },
   {
     "name": "New Zealand",
@@ -6780,7 +7369,11 @@
       "NZCH",
       "NZQN"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+64 4 560 9400",
+    "caaEmail": "info@caa.govt.nz",
+    "permitEmail": "permits@caa.govt.nz",
+    "caaContactConfidence": "high"
   },
   {
     "name": "Fiji",
@@ -6817,7 +7410,10 @@
       "NFFN",
       "NFNA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+679 331 2788",
+    "caaEmail": "caaf@caaf.org.fj",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Papua New Guinea",
@@ -6853,7 +7449,10 @@
     "airports": [
       "AYPY"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+675 324 4400",
+    "caaEmail": "mail@casapng.gov.pg",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "French Polynesia",
@@ -6889,7 +7488,10 @@
     "airports": [
       "NTAA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+689 40 86 00 00",
+    "caaEmail": "seac.pf@aviation-civile.gouv.fr",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "New Caledonia",
@@ -6925,7 +7527,10 @@
     "airports": [
       "NWWW"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+687 25 04 00",
+    "caaEmail": "dac@gouv.nc",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Vanuatu",
@@ -6961,7 +7566,10 @@
     "airports": [
       "NVVV"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+678 22 531",
+    "caaEmail": "caav@vanuatu.gov.vu",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Samoa",
@@ -6997,7 +7605,10 @@
     "airports": [
       "NSFA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+685 22 444",
+    "caaEmail": "sca@mcil.gov.ws",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Tonga",
@@ -7033,7 +7644,10 @@
     "airports": [
       "NFTF"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+676 23 022",
+    "caaEmail": "mca@mca.gov.to",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Solomon Islands",
@@ -7069,7 +7683,10 @@
     "airports": [
       "AGGH"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+677 36 602",
+    "caaEmail": "caasi@solomon.com.sb",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Marshall Islands",
@@ -7105,7 +7722,10 @@
     "airports": [
       "PKMJ"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+692 625 3250",
+    "caaEmail": "rmicaa@ntamar.net",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Palau",
@@ -7141,7 +7761,10 @@
     "airports": [
       "PTRO"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+680 587 2100",
+    "caaEmail": "baa@palaugov.org",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Micronesia",
@@ -7178,7 +7801,10 @@
       "PTPN",
       "PTKK"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+691 320 2653",
+    "caaEmail": "doca@mail.fm",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Guam",
@@ -7214,7 +7840,9 @@
     "airports": [
       "PGUM"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+1 671 475 0266",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Kazakhstan",
@@ -7251,7 +7879,11 @@
       "UACC",
       "UAAA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+7 7172 75 40 00",
+    "caaEmail": "info@caa.kz",
+    "permitEmail": "permits@caa.kz",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Uzbekistan",
@@ -7288,7 +7920,10 @@
       "UTTT",
       "UTSS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+998 71 140 2848",
+    "caaEmail": "info@caa.uz",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Turkmenistan",
@@ -7326,7 +7961,9 @@
     "airports": [
       "UTAA"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+993 12 39 27 39",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Kyrgyzstan",
@@ -7362,7 +7999,10 @@
     "airports": [
       "UCFM"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+996 312 31 24 24",
+    "caaEmail": "aga@aga.gov.kg",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Tajikistan",
@@ -7400,7 +8040,10 @@
     "airports": [
       "UTDD"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+992 372 21 20 00",
+    "caaEmail": "caa@tajikistan.tj",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Russia",
@@ -7442,7 +8085,11 @@
       "UUDD",
       "ULLI"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+7 495 645 8555",
+    "caaEmail": "info@favt.ru",
+    "permitEmail": "permits@favt.ru",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Ukraine",
@@ -7482,7 +8129,10 @@
       "UKBB",
       "UKKK"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+380 44 351 6371",
+    "caaEmail": "avia@mtu.gov.ua",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Belarus",
@@ -7521,7 +8171,10 @@
     "airports": [
       "UMMS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+375 17 213 6330",
+    "caaEmail": "info@caa.gov.by",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Armenia",
@@ -7557,7 +8210,10 @@
     "airports": [
       "UDYZ"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+374 60 373 110",
+    "caaEmail": "info@gdca.am",
+    "caaContactConfidence": "low"
   },
   {
     "name": "Azerbaijan",
@@ -7593,7 +8249,10 @@
     "airports": [
       "UBBB"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+994 12 497 5018",
+    "caaEmail": "scaa@scaa.gov.az",
+    "caaContactConfidence": "medium"
   },
   {
     "name": "Georgia",
@@ -7630,6 +8289,9 @@
       "UGTB",
       "UGBS"
     ],
-    "_version": 1
+    "_version": 2,
+    "caaPhone": "+995 32 294 8010",
+    "caaEmail": "info@gcaa.ge",
+    "caaContactConfidence": "medium"
   }
 ]

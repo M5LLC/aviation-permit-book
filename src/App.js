@@ -5,12 +5,13 @@
 import { getBranding } from './config/branding.js';
 import { getCurrentUser, signOut } from './services/auth.js';
 import { renderLoginPage } from './components/auth/LoginPage.js';
-import { renderHeader } from './components/layout/Header.js';
+import { renderHeader, attachHeaderHandlers } from './components/layout/Header.js';
 import { renderCountriesTab } from './components/countries/CountriesTab.js';
 import { renderRoutePlanner } from './components/route-planner/RoutePlanner.js';
 import { renderLeadTimeCalculator } from './components/lead-time/LeadTimeCalculator.js';
 import { renderFBODirectory } from './components/fbo-directory/FBODirectory.js';
-import { renderChangelog } from './components/changelog/Changelog.js';
+import { renderAirportsTab } from './components/airports/AirportsTab.js';
+import { renderReference } from './components/reference/ReferenceTab.js';
 import { renderAdminDashboard } from './components/admin/AdminDashboard.js';
 import {
   isPWA,
@@ -59,6 +60,7 @@ export function renderApp(isAuthenticated) {
   `;
 
   attachAppHandlers();
+  attachHeaderHandlers(switchTab);
 
   // Attach PWA install prompt handlers
   if (shouldShowInstallPrompt()) {
@@ -67,22 +69,17 @@ export function renderApp(isAuthenticated) {
 }
 
 /**
- * Render tab navigation
+ * Render tab navigation - Simplified with fewer tabs
  */
 function renderTabs() {
   const tabs = [
     { id: 'countries', label: 'Countries', icon: '🌍' },
+    { id: 'airports', label: 'Airports', icon: '🛬' },
     { id: 'routeplanner', label: 'Route Planner', icon: '✈️' },
-    { id: 'leadtime', label: 'Lead Time Calculator', icon: '📅' },
-    { id: 'fbos', label: 'FBO Directory', icon: '🏢' },
-    { id: 'changelog', label: 'Changelog', icon: '📝' },
+    { id: 'leadtime', label: 'Lead Time', icon: '📅' },
+    { id: 'fbos', label: 'FBOs', icon: '🏢' },
     { id: 'reference', label: 'Reference', icon: '📚' },
   ];
-
-  // Add admin tab if user is admin
-  if (state.user?.role === 'admin') {
-    tabs.push({ id: 'admin', label: 'Admin', icon: '⚙️' });
-  }
 
   return `
     <nav class="tabs" role="tablist">
@@ -108,33 +105,21 @@ function renderTabContent() {
   switch (state.currentTab) {
     case 'countries':
       return renderCountriesTab();
+    case 'airports':
+      return renderAirportsTab();
     case 'routeplanner':
       return renderRoutePlanner();
     case 'leadtime':
       return renderLeadTimeCalculator();
     case 'fbos':
       return renderFBODirectory();
-    case 'changelog':
-      return renderChangelog();
     case 'reference':
-      return renderReferencePlaceholder();
+      return renderReference();
     case 'admin':
       return renderAdminDashboard();
     default:
       return '<p>Tab not found</p>';
   }
-}
-
-// Placeholder renderers (to be replaced with actual components)
-function renderReferencePlaceholder() {
-  return `
-    <div class="card">
-      <div class="card-body text-center">
-        <h2>Reference</h2>
-        <p class="text-muted mt-2">Coming soon - CAA contacts, slot coordinators, and resources</p>
-      </div>
-    </div>
-  `;
 }
 
 function renderOfflineBanner() {
@@ -172,14 +157,6 @@ function attachAppHandlers() {
       switchTab(tabId);
     });
   });
-
-  // Sign out button
-  const signOutBtn = document.getElementById('sign-out-btn');
-  if (signOutBtn) {
-    signOutBtn.addEventListener('click', async () => {
-      await signOut();
-    });
-  }
 }
 
 /**

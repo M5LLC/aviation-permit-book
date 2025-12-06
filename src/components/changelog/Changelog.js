@@ -47,7 +47,7 @@ export function renderChangelog() {
 /**
  * Initialize the changelog
  */
-async function initChangelog() {
+export async function initChangelog() {
   try {
     // Load countries for name lookup
     const countriesData = await getCountries();

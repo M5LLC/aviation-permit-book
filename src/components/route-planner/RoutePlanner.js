@@ -1,9 +1,17 @@
 /**
  * Route Planner Component
  * Calculate routes and analyze FIR/permit requirements
+ * Enhanced with aircraft selector, Mach speeds, and realistic flight time calculation
  */
 
 import { getAirports, getFIRs, getCountries } from '../../services/firestore.js';
+import {
+  machSpeeds,
+  machToKnots,
+  getManufacturers,
+  getModels,
+  getVariants
+} from '../../data/aircraft.js';
 import L from 'leaflet';
 
 // Component state
@@ -13,7 +21,7 @@ let markersLayer = null;
 let airports = [];
 let firs = {};
 let countries = {};
-let waypoints = [];
+let speedMode = 'mach'; // 'mach' or 'knots'
 
 /**
  * Render the Route Planner tab
@@ -23,14 +31,10 @@ export function renderRoutePlanner() {
 
   return `
     <div class="route-planner">
-      <div class="route-planner-layout">
-        <div class="route-sidebar">
-          ${renderRouteForm()}
-          ${renderRouteResults()}
-        </div>
-        <div class="route-map-container">
-          <div id="route-map"></div>
-        </div>
+      ${renderRouteForm()}
+      <div id="routeMap" class="route-map"></div>
+      <div id="routeResults" class="route-results" style="display: none;">
+        ${renderRouteResultsContent()}
       </div>
     </div>
     ${renderRoutePlannerStyles()}
@@ -73,6 +77,8 @@ async function initRoutePlanner() {
 
   // Attach event listeners
   attachRouteListeners();
+  attachAircraftListeners();
+  attachSpeedListeners();
 }
 
 /**
@@ -83,13 +89,14 @@ function initMap() {
     map.remove();
   }
 
-  const mapContainer = document.getElementById('route-map');
+  const mapContainer = document.getElementById('routeMap');
   if (!mapContainer) return;
 
-  map = L.map('route-map', {
+  map = L.map('routeMap', {
     center: [30, 0],
     zoom: 2,
     worldCopyJump: true,
+    scrollWheelZoom: false, // Disable scroll zoom by default for better UX
   });
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -99,6 +106,18 @@ function initMap() {
 
   routeLayer = L.layerGroup().addTo(map);
   markersLayer = L.layerGroup().addTo(map);
+
+  // Enable scroll zoom only when map is clicked
+  mapContainer.addEventListener('click', () => {
+    map.scrollWheelZoom.enable();
+    mapContainer.classList.add('zoom-enabled');
+  });
+
+  // Disable scroll zoom when mouse leaves map
+  mapContainer.addEventListener('mouseleave', () => {
+    map.scrollWheelZoom.disable();
+    mapContainer.classList.remove('zoom-enabled');
+  });
 }
 
 /**
@@ -111,33 +130,61 @@ function renderRouteForm() {
         <h3>Route Planner</h3>
       </div>
       <div class="card-body">
-        <div class="form-group">
-          <label for="departure-input">Departure Airport</label>
-          <div class="autocomplete-wrapper">
-            <input type="text" id="departure-input" class="input"
-                   placeholder="ICAO code (e.g., KTEB)" autocomplete="off">
-            <div id="departure-results" class="autocomplete-results"></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="departure-input">Departure Airport</label>
+            <div class="autocomplete-wrapper">
+              <input type="text" id="departure-input" class="input"
+                     placeholder="ICAO code (e.g., KTEB)" autocomplete="off">
+              <div id="departure-results" class="autocomplete-results"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="destination-input">Destination Airport</label>
+            <div class="autocomplete-wrapper">
+              <input type="text" id="destination-input" class="input"
+                     placeholder="ICAO code (e.g., EGLL)" autocomplete="off">
+              <div id="destination-results" class="autocomplete-results"></div>
+            </div>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="destination-input">Destination Airport</label>
-          <div class="autocomplete-wrapper">
-            <input type="text" id="destination-input" class="input"
-                   placeholder="ICAO code (e.g., EGLL)" autocomplete="off">
-            <div id="destination-results" class="autocomplete-results"></div>
+          <label>Aircraft (Optional)</label>
+          <div class="aircraft-selector">
+            <select id="manufacturer-select" class="select">
+              <option value="">Select Manufacturer...</option>
+              ${getManufacturers().map(m => `<option value="${m}">${m}</option>`).join('')}
+            </select>
+            <select id="model-select" class="select" disabled>
+              <option value="">Select Model...</option>
+            </select>
+            <select id="variant-select" class="select" disabled>
+              <option value="">Select Variant...</option>
+            </select>
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
-            <label for="aircraft-speed">Aircraft Speed (kts)</label>
-            <select id="aircraft-speed" class="select">
-              <option value="420">Light Jet (~420 kts)</option>
-              <option value="480" selected>Mid Jet (~480 kts)</option>
-              <option value="510">Super Mid (~510 kts)</option>
-              <option value="550">Heavy Jet (~550 kts)</option>
-            </select>
+            <label>Cruise Speed</label>
+            <div class="speed-selector">
+              <div class="speed-toggle">
+                <button type="button" id="mach-toggle" class="toggle-btn active">Mach</button>
+                <button type="button" id="knots-toggle" class="toggle-btn">Knots</button>
+              </div>
+              <select id="mach-speed" class="select">
+                ${machSpeeds.map(s => `
+                  <option value="${s.value}" ${s.value === 0.85 ? 'selected' : ''}>
+                    ${s.label}${s.value !== 'custom' ? ` (${machToKnots(s.value)} kts)` : ''}
+                  </option>
+                `).join('')}
+              </select>
+              <input type="number" id="custom-speed" class="input"
+                     placeholder="Enter speed in knots..." style="display: none;"
+                     min="200" max="700">
+            </div>
           </div>
           <div class="form-group">
             <label for="operation-type">Operation Type</label>
@@ -164,61 +211,159 @@ function renderRouteForm() {
 }
 
 /**
- * Render route results panel
+ * Render route results content
  */
-function renderRouteResults() {
+function renderRouteResultsContent() {
   return `
-    <div id="route-results" class="route-results card" style="display: none;">
-      <div class="card-header">
-        <h3>Route Analysis</h3>
+    <div class="results-header">
+      <h3>Route Analysis</h3>
+    </div>
+
+    <div class="summary-stats">
+      <div class="stat-card">
+        <div class="stat-label">Total Distance</div>
+        <div class="stat-value" id="totalDistance">-</div>
       </div>
-      <div class="card-body">
-        <div class="route-summary">
-          <div class="summary-item">
-            <span class="summary-label">Distance</span>
-            <span class="summary-value" id="route-distance">-</span>
-          </div>
-          <div class="summary-item">
-            <span class="summary-label">Est. Flight Time</span>
-            <span class="summary-value" id="route-time">-</span>
-          </div>
-          <div class="summary-item">
-            <span class="summary-label">Countries/FIRs</span>
-            <span class="summary-value" id="route-firs">-</span>
-          </div>
-          <div class="summary-item">
-            <span class="summary-label">Permits Required</span>
-            <span class="summary-value" id="route-permits">-</span>
-          </div>
-          <div class="summary-item highlight">
-            <span class="summary-label">Max Lead Time</span>
-            <span class="summary-value" id="route-lead-time">-</span>
-          </div>
-        </div>
+      <div class="stat-card">
+        <div class="stat-label">Est. Flight Time</div>
+        <div class="stat-value" id="estFlightTime">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Countries/FIRs</div>
+        <div class="stat-value" id="countriesFirs">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Permits Required</div>
+        <div class="stat-value" id="permitsRequired">-</div>
+      </div>
+      <div class="stat-card highlight">
+        <div class="stat-label">Max Lead Time</div>
+        <div class="stat-value" id="maxLeadTime">-</div>
+      </div>
+    </div>
 
-        <div id="route-warnings" class="route-warnings" style="display: none;">
-          <h4>⚠️ Warnings</h4>
-          <ul id="warnings-list"></ul>
-        </div>
+    <div id="routeWarnings" class="warnings-section" style="display: none;">
+      <h4>Route Warnings</h4>
+      <ul id="warningsList"></ul>
+    </div>
 
-        <div class="fir-table-container">
-          <h4>FIR/Country Analysis</h4>
-          <table class="table fir-table">
-            <thead>
-              <tr>
-                <th>Country</th>
-                <th>FIRs</th>
-                <th>Permit</th>
-                <th>Lead Time</th>
-              </tr>
-            </thead>
-            <tbody id="fir-table-body">
-            </tbody>
-          </table>
+    <div class="fir-table-container">
+      <h4>FIR/Country Analysis</h4>
+      <table class="fir-table">
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>FIR(s)</th>
+            <th>Permit Required</th>
+            <th>Lead Time</th>
+            <th>Notes</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody id="firTableBody">
+        </tbody>
+      </table>
+    </div>
+
+    <div id="nextSteps" class="next-steps-section">
+      <h4>Next Steps</h4>
+      <ol id="nextStepsList">
+        <li>Review permit requirements for each country along the route</li>
+        <li>Contact handling agents at destination and tech stops</li>
+        <li>Submit permit applications based on lead time requirements</li>
+        <li>Confirm fuel availability and handling arrangements</li>
+        <li>Verify overflight and landing slot requirements</li>
+      </ol>
+    </div>
+
+    <!-- Country Details Modal -->
+    <div id="countryDetailsModal" class="modal-overlay" style="display: none;">
+      <div class="modal modal-lg">
+        <div class="modal-header">
+          <h3 class="modal-title">
+            <span id="modalCountryFlag"></span>
+            <span id="modalCountryName"></span>
+          </h3>
+          <button class="modal-close" id="closeCountryModal">&times;</button>
+        </div>
+        <div class="modal-body" id="modalCountryContent">
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" id="closeCountryModalBtn">Close</button>
         </div>
       </div>
     </div>
   `;
+}
+
+/**
+ * Attach aircraft selector event listeners
+ */
+function attachAircraftListeners() {
+  const manufacturerSelect = document.getElementById('manufacturer-select');
+  const modelSelect = document.getElementById('model-select');
+  const variantSelect = document.getElementById('variant-select');
+
+  manufacturerSelect?.addEventListener('change', (e) => {
+    const manufacturer = e.target.value;
+    modelSelect.disabled = !manufacturer;
+    modelSelect.innerHTML = '<option value="">Select Model...</option>' +
+      getModels(manufacturer).map(m => `<option value="${m}">${m}</option>`).join('');
+    variantSelect.disabled = true;
+    variantSelect.innerHTML = '<option value="">Select Variant...</option>';
+  });
+
+  modelSelect?.addEventListener('change', (e) => {
+    const manufacturer = manufacturerSelect.value;
+    const model = e.target.value;
+    variantSelect.disabled = !model;
+    variantSelect.innerHTML = '<option value="">Select Variant...</option>' +
+      getVariants(manufacturer, model).map(v => `<option value="${v}">${v}</option>`).join('');
+  });
+}
+
+/**
+ * Attach speed selector event listeners
+ */
+function attachSpeedListeners() {
+  const machToggle = document.getElementById('mach-toggle');
+  const knotsToggle = document.getElementById('knots-toggle');
+  const machSpeed = document.getElementById('mach-speed');
+  const customSpeed = document.getElementById('custom-speed');
+
+  machToggle?.addEventListener('click', () => {
+    speedMode = 'mach';
+    machToggle.classList.add('active');
+    knotsToggle.classList.remove('active');
+    machSpeed.style.display = '';
+    customSpeed.style.display = 'none';
+  });
+
+  knotsToggle?.addEventListener('click', () => {
+    speedMode = 'knots';
+    knotsToggle.classList.add('active');
+    machToggle.classList.remove('active');
+    machSpeed.style.display = 'none';
+    customSpeed.style.display = '';
+    // Pre-fill with converted Mach speed
+    const mach = parseFloat(machSpeed.value);
+    if (!isNaN(mach) && machSpeed.value !== 'custom') {
+      customSpeed.value = machToKnots(mach);
+    }
+  });
+
+  machSpeed?.addEventListener('change', (e) => {
+    if (e.target.value === 'custom') {
+      customSpeed.style.display = '';
+      customSpeed.placeholder = 'Enter Mach number (e.g., 0.82)...';
+      customSpeed.min = '0.5';
+      customSpeed.max = '1.0';
+      customSpeed.step = '0.01';
+      customSpeed.focus();
+    } else {
+      customSpeed.style.display = 'none';
+    }
+  });
 }
 
 /**
@@ -305,12 +450,85 @@ function handleAirportSearch(query, type) {
 }
 
 /**
+ * Get current speed in knots
+ */
+function getCurrentSpeedKnots() {
+  const machSpeed = document.getElementById('mach-speed');
+  const customSpeed = document.getElementById('custom-speed');
+
+  if (speedMode === 'knots') {
+    return parseInt(customSpeed.value) || 480;
+  }
+
+  // Mach mode
+  const machValue = machSpeed.value;
+  if (machValue === 'custom') {
+    const customMach = parseFloat(customSpeed.value);
+    return isNaN(customMach) ? 480 : machToKnots(customMach);
+  }
+
+  return machToKnots(parseFloat(machValue));
+}
+
+/**
+ * Calculate realistic flight time with operational factors
+ * Based on Support Docs/flight-time-calculation-methodology.html
+ */
+function calculateRealisticFlightTime(distance, cruiseSpeed, depLon, destLon) {
+  // Step 1: Base cruise time
+  let baseCruiseTime = distance / cruiseSpeed;
+
+  // Step 2: Climb/descent time based on distance
+  let climbDescentTime;
+  if (distance < 500) {
+    climbDescentTime = 0.33; // 20 min for short flights
+  } else if (distance < 1000) {
+    climbDescentTime = 0.28; // 17 min for medium flights
+  } else {
+    climbDescentTime = 0.25; // 15 min for long flights
+  }
+
+  // Step 3: ATC routing factor based on distance
+  let routingFactor;
+  if (distance < 500) {
+    routingFactor = 1.12; // 12% longer
+  } else if (distance < 1000) {
+    routingFactor = 1.08; // 8% longer
+  } else if (distance < 2000) {
+    routingFactor = 1.06; // 6% longer
+  } else {
+    routingFactor = 1.04; // 4% longer
+  }
+
+  let flightTime = (baseCruiseTime + climbDescentTime) * routingFactor;
+
+  // Step 4: Terminal delays (~4 min)
+  flightTime += 0.067;
+
+  // Step 5: Prevailing wind factor (for flights > 1000 NM)
+  if (distance > 1000) {
+    const isEastbound = destLon > depLon;
+    const isWestbound = destLon < depLon;
+    if (isWestbound) {
+      flightTime *= 1.04; // 4% slower (headwinds)
+    } else if (isEastbound) {
+      flightTime *= 0.96; // 4% faster (tailwinds)
+    }
+  }
+
+  // Step 6: Taxi time (12 min)
+  flightTime += 0.2;
+
+  return flightTime;
+}
+
+/**
  * Calculate route
  */
 function calculateRoute() {
   const depCode = document.getElementById('departure-input').value.toUpperCase().trim();
   const destCode = document.getElementById('destination-input').value.toUpperCase().trim();
-  const speed = parseInt(document.getElementById('aircraft-speed').value);
+  const speed = getCurrentSpeedKnots();
   const opType = document.getElementById('operation-type').value;
 
   if (!depCode || !destCode) {
@@ -352,8 +570,8 @@ function calculateRoute() {
   // Draw route on map
   drawRoute(routePoints, depAirport, destAirport);
 
-  // Display results
-  displayResults(distance, speed, analysis);
+  // Display results with enhanced flight time
+  displayResults(distance, speed, analysis, depAirport, destAirport);
 }
 
 /**
@@ -546,6 +764,7 @@ function buildRouteAnalysis(countryCodes, opType) {
       required,
       leadTime,
       warning: firInfo.warning,
+      notes: firInfo.notes || countryInfo.notes || '',
     });
   });
 
@@ -600,25 +819,30 @@ function drawRoute(routePoints, depAirport, destAirport) {
 /**
  * Display route results
  */
-function displayResults(distance, speed, analysis) {
-  const resultsEl = document.getElementById('route-results');
+function displayResults(distance, speed, analysis, depAirport, destAirport) {
+  const resultsEl = document.getElementById('routeResults');
   resultsEl.style.display = 'block';
 
-  // Flight time
-  const flightHours = distance / speed;
+  // Calculate realistic flight time
+  const flightHours = calculateRealisticFlightTime(
+    distance,
+    speed,
+    depAirport.lon,
+    destAirport.lon
+  );
   const hours = Math.floor(flightHours);
   const minutes = Math.round((flightHours - hours) * 60);
 
-  document.getElementById('route-distance').textContent = `${Math.round(distance).toLocaleString()} nm`;
-  document.getElementById('route-time').textContent = `${hours}h ${minutes}m`;
-  document.getElementById('route-firs').textContent = analysis.countries.length;
-  document.getElementById('route-permits').textContent = analysis.permitsRequired;
-  document.getElementById('route-lead-time').textContent =
+  document.getElementById('totalDistance').textContent = `${Math.round(distance).toLocaleString()} NM`;
+  document.getElementById('estFlightTime').textContent = `${hours}h ${minutes}m`;
+  document.getElementById('countriesFirs').textContent = analysis.countries.length;
+  document.getElementById('permitsRequired').textContent = analysis.permitsRequired;
+  document.getElementById('maxLeadTime').textContent =
     analysis.maxLeadTime > 0 ? `${analysis.maxLeadTime} days` : 'None';
 
   // Warnings
-  const warningsEl = document.getElementById('route-warnings');
-  const warningsListEl = document.getElementById('warnings-list');
+  const warningsEl = document.getElementById('routeWarnings');
+  const warningsListEl = document.getElementById('warningsList');
   if (analysis.warnings.length > 0) {
     warningsEl.style.display = 'block';
     warningsListEl.innerHTML = analysis.warnings.map(w => `<li>${w}</li>`).join('');
@@ -626,8 +850,8 @@ function displayResults(distance, speed, analysis) {
     warningsEl.style.display = 'none';
   }
 
-  // FIR table
-  const tableBody = document.getElementById('fir-table-body');
+  // FIR table with Notes and Details columns
+  const tableBody = document.getElementById('firTableBody');
   tableBody.innerHTML = analysis.countries.map(c => `
     <tr class="${c.warning ? 'warning-row' : ''}">
       <td>
@@ -642,11 +866,173 @@ function displayResults(distance, speed, analysis) {
         </span>
       </td>
       <td>${c.required ? c.leadTime + ' days' : '-'}</td>
+      <td class="notes-cell">${c.notes || '-'}</td>
+      <td>
+        <button class="btn btn-sm btn-secondary view-country-btn" data-code="${c.code}">
+          View
+        </button>
+      </td>
     </tr>
   `).join('');
 
+  // Attach country detail modal handlers
+  attachCountryDetailHandlers();
+
   // Scroll results into view
   resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+/**
+ * Attach country detail modal handlers
+ */
+function attachCountryDetailHandlers() {
+  document.querySelectorAll('.view-country-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const code = e.target.dataset.code;
+      openCountryDetailsModal(code);
+    });
+  });
+
+  document.getElementById('closeCountryModal')?.addEventListener('click', closeCountryDetailsModal);
+  document.getElementById('closeCountryModalBtn')?.addEventListener('click', closeCountryDetailsModal);
+
+  // Close on overlay click
+  document.getElementById('countryDetailsModal')?.addEventListener('click', (e) => {
+    if (e.target.id === 'countryDetailsModal') {
+      closeCountryDetailsModal();
+    }
+  });
+}
+
+/**
+ * Open country details modal
+ */
+function openCountryDetailsModal(code) {
+  const country = countries[code];
+  const firInfo = firs[code];
+
+  if (!country) return;
+
+  document.getElementById('modalCountryFlag').textContent = country.flag || '🏳️';
+  document.getElementById('modalCountryName').textContent = country.name;
+
+  document.getElementById('modalCountryContent').innerHTML = renderCountryModalContent(country, firInfo);
+  document.getElementById('countryDetailsModal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+/**
+ * Close country details modal
+ */
+function closeCountryDetailsModal() {
+  document.getElementById('countryDetailsModal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+/**
+ * Render country modal content
+ */
+function renderCountryModalContent(country, firInfo) {
+  return `
+    <div class="country-modal-grid">
+      ${country.warnings?.length ? `
+        <div class="modal-section warnings">
+          ${country.warnings.map(w => `
+            <div class="alert alert-warning">⚠️ ${w}</div>
+          `).join('')}
+        </div>
+      ` : ''}
+
+      <div class="modal-section">
+        <h4>Permit Requirements</h4>
+        ${renderPermitSummary(country.permits)}
+      </div>
+
+      <div class="modal-section">
+        <h4>FIR Information</h4>
+        <div class="detail-row">
+          <span class="detail-label">FIRs:</span>
+          <span>${firInfo?.firs?.join(', ') || 'Unknown'}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">ICAO Prefix:</span>
+          <span>${country.icaoPrefix || 'N/A'}</span>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <h4>Civil Aviation Authority</h4>
+        <div class="detail-row">
+          <span class="detail-label">CAA:</span>
+          <span>${country.caa || 'Contact local handler'}</span>
+        </div>
+        ${country.caaWebsite ? `
+          <div class="detail-row">
+            <span class="detail-label">Website:</span>
+            <a href="${country.caaWebsite}" target="_blank" rel="noopener">${country.caaWebsite}</a>
+          </div>
+        ` : ''}
+      </div>
+
+      <div class="modal-section">
+        <h4>Additional Information</h4>
+        <div class="detail-row">
+          <span class="detail-label">Crew Visa:</span>
+          <span>${country.visaCrew || 'Verify requirements'}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Key Airports:</span>
+          <span>${country.airports?.join(', ') || 'N/A'}</span>
+        </div>
+        ${country.notes ? `
+          <div class="detail-row full-width">
+            <span class="detail-label">Notes:</span>
+            <span>${country.notes}</span>
+          </div>
+        ` : ''}
+      </div>
+    </div>
+  `;
+}
+
+/**
+ * Render permit summary table
+ */
+function renderPermitSummary(permits) {
+  if (!permits) return '<p class="text-muted">No permit data available</p>';
+
+  const types = [
+    { key: 'overflight', label: 'Overflight' },
+    { key: 'landingPrivate', label: 'Landing (Private)' },
+    { key: 'landingCharter', label: 'Landing (Charter)' },
+    { key: 'techStop', label: 'Tech Stop' },
+  ];
+
+  const rows = types
+    .filter(t => permits[t.key])
+    .map(t => {
+      const p = permits[t.key];
+      return `
+        <tr>
+          <td>${t.label}</td>
+          <td>
+            <span class="badge ${p.required ? 'badge-danger' : 'badge-success'}">
+              ${p.required ? 'Yes' : 'No'}
+            </span>
+          </td>
+          <td>${p.leadTime ? p.leadTime + ' days' : '-'}</td>
+        </tr>
+      `;
+    });
+
+  return rows.length ? `
+    <table class="permit-table table">
+      <thead>
+        <tr><th>Type</th><th>Required</th><th>Lead Time</th></tr>
+      </thead>
+      <tbody>${rows.join('')}</tbody>
+    </table>
+  ` : '<p class="text-muted">No permit data available</p>';
 }
 
 /**
@@ -656,35 +1042,16 @@ function renderRoutePlannerStyles() {
   return `
     <style>
       .route-planner {
-        height: calc(100vh - 180px);
-        min-height: 600px;
+        max-width: 1200px;
+        margin: 0 auto;
       }
 
-      .route-planner-layout {
-        display: grid;
-        grid-template-columns: 400px 1fr;
-        gap: var(--spacing-lg);
-        height: 100%;
+      .route-form {
+        margin-bottom: var(--spacing-xl);
       }
 
-      .route-sidebar {
-        display: flex;
-        flex-direction: column;
-        gap: var(--spacing-lg);
-        overflow-y: auto;
-        padding-right: var(--spacing-sm);
-      }
-
-      .route-map-container {
-        border-radius: var(--radius-lg);
-        overflow: hidden;
-        box-shadow: var(--shadow-md);
-      }
-
-      #route-map {
-        height: 100%;
-        width: 100%;
-        min-height: 400px;
+      .route-form .card-body {
+        padding: var(--spacing-xl);
       }
 
       .route-form .card-header h3 {
@@ -692,12 +1059,105 @@ function renderRoutePlannerStyles() {
         font-size: 1.1rem;
       }
 
+      .route-form .form-group {
+        margin-bottom: var(--spacing-lg);
+      }
+
+      .route-form label {
+        display: block;
+        margin-bottom: var(--spacing-sm);
+        font-weight: 500;
+      }
+
       .form-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: var(--spacing-md);
+        gap: var(--spacing-xl);
+        margin-bottom: var(--spacing-lg);
       }
 
+      /* Aircraft Selector */
+      .aircraft-selector {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-md);
+        margin-top: var(--spacing-sm);
+      }
+
+      /* Speed Selector */
+      .speed-selector {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+      }
+
+      .speed-toggle {
+        display: flex;
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        border: 1px solid var(--gray-300);
+      }
+
+      .toggle-btn {
+        flex: 1;
+        padding: var(--spacing-xs) var(--spacing-sm);
+        border: none;
+        background: var(--white);
+        cursor: pointer;
+        font-size: 0.85rem;
+        font-weight: 500;
+        transition: all 0.2s;
+      }
+
+      .toggle-btn:first-child {
+        border-right: 1px solid var(--gray-300);
+      }
+
+      .toggle-btn.active {
+        background: var(--primary);
+        color: var(--white);
+      }
+
+      .toggle-btn:hover:not(.active) {
+        background: var(--gray-100);
+      }
+
+      /* Map */
+      .route-map {
+        height: 500px;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: var(--shadow-md);
+        margin-bottom: var(--spacing-lg);
+        position: relative;
+      }
+
+      .route-map::after {
+        content: 'Click map to enable scroll zoom';
+        position: absolute;
+        bottom: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.75);
+        color: white;
+        padding: 6px 14px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        z-index: 1000;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+
+      .route-map:hover::after {
+        opacity: 1;
+      }
+
+      .route-map.zoom-enabled::after {
+        display: none;
+      }
+
+      /* Autocomplete */
       .autocomplete-wrapper {
         position: relative;
       }
@@ -758,64 +1218,81 @@ function renderRoutePlannerStyles() {
         color: var(--primary-light);
       }
 
-      .route-results .card-header h3 {
-        margin: 0;
-        font-size: 1.1rem;
+      /* Results */
+      .route-results {
+        background: var(--white);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-md);
+        padding: var(--spacing-lg);
       }
 
-      .route-summary {
+      .results-header h3 {
+        margin: 0 0 var(--spacing-lg);
+        font-size: 1.25rem;
+        color: var(--gray-800);
+      }
+
+      /* Summary Stats - 5 column grid */
+      .summary-stats {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: var(--spacing-md);
         margin-bottom: var(--spacing-lg);
       }
 
-      .summary-item {
-        display: flex;
-        flex-direction: column;
-        padding: var(--spacing-sm);
-        background: var(--gray-50);
+      .stat-card {
+        background: var(--gray-100);
         border-radius: var(--radius-md);
+        padding: var(--spacing-md);
+        text-align: center;
       }
 
-      .summary-item.highlight {
+      .stat-card.highlight {
         background: var(--primary);
         color: var(--white);
-        grid-column: 1 / -1;
       }
 
-      .summary-label {
+      .stat-label {
         font-size: 0.7rem;
         text-transform: uppercase;
         color: var(--gray-500);
+        margin-bottom: var(--spacing-xs);
       }
 
-      .summary-item.highlight .summary-label {
+      .stat-card.highlight .stat-label {
         color: rgba(255,255,255,0.7);
       }
 
-      .summary-value {
+      .stat-value {
         font-size: 1.25rem;
         font-weight: 600;
       }
 
-      .route-warnings {
-        background: rgba(220, 53, 69, 0.1);
-        border-left: 4px solid var(--danger);
+      /* Warnings - Amber style */
+      .warnings-section {
+        background: #fff3cd;
+        border-left: 4px solid #f59e0b;
         padding: var(--spacing-md);
         border-radius: var(--radius-md);
         margin-bottom: var(--spacing-lg);
       }
 
-      .route-warnings h4 {
+      .warnings-section h4 {
         margin: 0 0 var(--spacing-sm);
         font-size: 0.9rem;
+        color: #856404;
       }
 
-      .route-warnings ul {
+      .warnings-section ul {
         margin: 0;
         padding-left: var(--spacing-lg);
         font-size: 0.85rem;
+        color: #856404;
+      }
+
+      /* FIR Table */
+      .fir-table-container {
+        margin-bottom: var(--spacing-lg);
       }
 
       .fir-table-container h4 {
@@ -824,7 +1301,26 @@ function renderRoutePlannerStyles() {
       }
 
       .fir-table {
+        width: 100%;
+        border-collapse: collapse;
         font-size: 0.85rem;
+      }
+
+      .fir-table th {
+        background: #1e3a5f;
+        color: white;
+        padding: var(--spacing-sm) var(--spacing-md);
+        text-align: left;
+        font-weight: 600;
+      }
+
+      .fir-table td {
+        padding: var(--spacing-sm) var(--spacing-md);
+        border-bottom: 1px solid var(--gray-200);
+      }
+
+      .fir-table tr:hover {
+        background: var(--gray-50);
       }
 
       .fir-table code {
@@ -847,20 +1343,229 @@ function renderRoutePlannerStyles() {
         background: rgba(255, 193, 7, 0.1);
       }
 
+      .notes-cell {
+        font-size: 0.8rem;
+        color: var(--gray-600);
+        max-width: 200px;
+      }
+
+      /* Next Steps */
+      .next-steps-section {
+        background: var(--gray-50);
+        border-radius: var(--radius-md);
+        padding: var(--spacing-md);
+      }
+
+      .next-steps-section h4 {
+        margin: 0 0 var(--spacing-sm);
+        font-size: 0.9rem;
+        color: var(--gray-700);
+      }
+
+      .next-steps-section ol {
+        margin: 0;
+        padding-left: var(--spacing-lg);
+        font-size: 0.85rem;
+        color: var(--gray-600);
+      }
+
+      .next-steps-section li {
+        margin-bottom: var(--spacing-xs);
+      }
+
+      /* Responsive */
       @media (max-width: 1024px) {
-        .route-planner-layout {
+        .summary-stats {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .stat-card.highlight {
+          grid-column: span 3;
+        }
+
+        .aircraft-selector {
           grid-template-columns: 1fr;
-          height: auto;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .form-row {
+          grid-template-columns: 1fr;
         }
 
-        .route-map-container {
-          height: 400px;
-          order: -1;
+        .summary-stats {
+          grid-template-columns: repeat(2, 1fr);
         }
 
-        .route-sidebar {
-          overflow: visible;
-          padding-right: 0;
+        .stat-card.highlight {
+          grid-column: span 2;
+        }
+
+        .route-map {
+          height: 350px;
+        }
+
+        .fir-table {
+          font-size: 0.75rem;
+        }
+
+        .notes-cell {
+          display: none;
+        }
+      }
+
+      /* Modal Overlay */
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        padding: var(--spacing-lg);
+      }
+
+      .modal {
+        background: var(--white);
+        border-radius: var(--radius-lg);
+        max-width: 600px;
+        width: 100%;
+        max-height: 80vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .modal-lg {
+        max-width: 700px;
+      }
+
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--spacing-md) var(--spacing-lg);
+        border-bottom: 1px solid var(--gray-200);
+        background: var(--gray-50);
+      }
+
+      .modal-title {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        margin: 0;
+        font-size: 1.25rem;
+      }
+
+      .modal-close {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--gray-500);
+        padding: 0;
+        line-height: 1;
+      }
+
+      .modal-close:hover {
+        color: var(--gray-700);
+      }
+
+      .modal-body {
+        padding: var(--spacing-lg);
+        overflow-y: auto;
+        flex: 1;
+      }
+
+      .modal-footer {
+        display: flex;
+        justify-content: flex-end;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md) var(--spacing-lg);
+        border-top: 1px solid var(--gray-200);
+      }
+
+      /* Country Modal Content */
+      .country-modal-grid {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-lg);
+      }
+
+      .modal-section h4 {
+        margin: 0 0 var(--spacing-sm);
+        font-size: 0.9rem;
+        color: var(--gray-700);
+        border-bottom: 1px solid var(--gray-200);
+        padding-bottom: var(--spacing-xs);
+      }
+
+      .detail-row {
+        display: flex;
+        gap: var(--spacing-md);
+        padding: var(--spacing-xs) 0;
+      }
+
+      .detail-label {
+        font-weight: 500;
+        color: var(--gray-600);
+        min-width: 120px;
+        flex-shrink: 0;
+      }
+
+      .detail-row a {
+        color: var(--primary);
+        word-break: break-all;
+      }
+
+      /* View button styling */
+      .view-country-btn {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+      }
+
+      /* Permit table in modal */
+      .modal .permit-table {
+        font-size: 0.85rem;
+        margin-top: var(--spacing-sm);
+      }
+
+      .modal .permit-table th {
+        background: var(--gray-100);
+        color: var(--gray-700);
+        font-weight: 600;
+      }
+
+      /* Alert in modal */
+      .modal .alert {
+        padding: var(--spacing-sm) var(--spacing-md);
+        border-radius: var(--radius-md);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .modal .alert-warning {
+        background: #fff3cd;
+        color: #856404;
+        border: 1px solid #ffeeba;
+      }
+
+      @media (max-width: 600px) {
+        .modal {
+          max-height: 90vh;
+        }
+
+        .modal-body {
+          padding: var(--spacing-md);
+        }
+
+        .detail-row {
+          flex-direction: column;
+          gap: var(--spacing-xs);
+        }
+
+        .detail-label {
+          min-width: auto;
         }
       }
     </style>

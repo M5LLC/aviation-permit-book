@@ -431,6 +431,12 @@ function renderNotesDisplay(notes) {
  * Render expanded details section
  */
 function renderExpandedDetails(country) {
+  const contactConfidenceClass = {
+    high: 'badge-success',
+    medium: 'badge-warning',
+    low: 'badge-danger',
+  }[country.caaContactConfidence] || 'badge-info';
+
   return `
     <div class="expanded-grid">
       <div class="detail-item">
@@ -440,8 +446,38 @@ function renderExpandedDetails(country) {
       <div class="detail-item">
         <label>CAA Website</label>
         <span>${country.caaWebsite
-          ? `<a href="${country.caaWebsite}" target="_blank" rel="noopener">${country.caaWebsite}</a>`
+          ? `<a href="${country.caaWebsite}" target="_blank" rel="noopener">${new URL(country.caaWebsite).hostname}</a>`
           : 'N/A'}</span>
+      </div>
+      <div class="detail-item">
+        <label>CAA Phone</label>
+        <span>${country.caaPhone
+          ? `<a href="tel:${country.caaPhone}">${country.caaPhone}</a>`
+          : 'N/A'}</span>
+      </div>
+      <div class="detail-item">
+        <label>CAA Email</label>
+        <span>${country.caaEmail
+          ? `<a href="mailto:${country.caaEmail}">${country.caaEmail}</a>`
+          : 'N/A'}</span>
+      </div>
+      ${country.permitPhone || country.permitEmail ? `
+      <div class="detail-item">
+        <label>Permit Desk Phone</label>
+        <span>${country.permitPhone
+          ? `<a href="tel:${country.permitPhone}">${country.permitPhone}</a>`
+          : 'N/A'}</span>
+      </div>
+      <div class="detail-item">
+        <label>Permit Desk Email</label>
+        <span>${country.permitEmail
+          ? `<a href="mailto:${country.permitEmail}">${country.permitEmail}</a>`
+          : 'N/A'}</span>
+      </div>
+      ` : ''}
+      <div class="detail-item">
+        <label>Contact Confidence</label>
+        <span class="badge ${contactConfidenceClass}">${country.caaContactConfidence || 'unknown'}</span>
       </div>
       <div class="detail-item">
         <label>Crew Visa</label>

@@ -9,6 +9,7 @@ import { getFBOs } from '../../services/firestore.js';
 let allFBOs = [];
 let filteredFBOs = [];
 let selectedRegion = 'all';
+let selectedType = 'all';
 let searchQuery = '';
 let expandedAirport = null;
 
@@ -25,7 +26,7 @@ export function renderFBODirectory() {
           <div class="search-wrapper">
             <span class="search-icon">🔍</span>
             <input type="text" id="fbo-search" class="input"
-                   placeholder="Search by airport code, name, or city...">
+                   placeholder="Search by airport code, name, FBO, or city...">
           </div>
           <select id="fbo-region-filter" class="select">
             <option value="all">All Regions</option>
@@ -37,6 +38,12 @@ export function renderFBODirectory() {
             <option value="Central America">Central America</option>
             <option value="South America">South America</option>
             <option value="Africa">Africa</option>
+          </select>
+          <select id="fbo-type-filter" class="select">
+            <option value="all">All Types</option>
+            <option value="fbo">FBOs Only</option>
+            <option value="handler">Handlers Only</option>
+            <option value="both">Full Service</option>
           </select>
         </div>
         <div class="fbo-stats">
@@ -103,15 +110,43 @@ function attachFBOListeners() {
       filterFBOs();
     });
   }
+
+  // Type filter
+  const typeFilter = document.getElementById('fbo-type-filter');
+  if (typeFilter) {
+    typeFilter.addEventListener('change', (e) => {
+      selectedType = e.target.value;
+      filterFBOs();
+    });
+  }
 }
 
 /**
- * Filter FBOs based on search and region
+ * Filter FBOs based on search, region, and type
  */
 function filterFBOs() {
-  filteredFBOs = allFBOs.filter(entry => {
+  filteredFBOs = allFBOs.map(entry => {
+    // Clone the entry to avoid mutating original
+    const filteredEntry = { ...entry };
+
+    // Filter FBOs by type if type filter is active
+    if (selectedType !== 'all') {
+      filteredEntry.fbos = (entry.fbos || []).filter(fbo =>
+        fbo.type === selectedType || fbo.type === 'both'
+      );
+    } else {
+      filteredEntry.fbos = entry.fbos || [];
+    }
+
+    return filteredEntry;
+  }).filter(entry => {
     // Region filter
     if (selectedRegion !== 'all' && entry.region !== selectedRegion) {
+      return false;
+    }
+
+    // Type filter - exclude airports with no matching FBOs
+    if (selectedType !== 'all' && entry.fbos.length === 0) {
       return false;
     }
 
@@ -119,6 +154,7 @@ function filterFBOs() {
     if (searchQuery) {
       const searchFields = [
         entry.id,
+        entry.airport,
         entry.airportName,
         entry.country,
         ...(entry.fbos || []).map(f => f.name)
@@ -243,11 +279,41 @@ function renderAirportCard(entry) {
  * Render a single FBO item
  */
 function renderFBOItem(fbo) {
-  const services = fbo.services || [];
+  const services = fbo.services || '';
+  const typeLabel = {
+    'fbo': 'FBO',
+    'handler': 'Handler',
+    'both': 'Full Service'
+  }[fbo.type] || 'Service';
+
+  const typeClass = {
+    'fbo': 'type-fbo',
+    'handler': 'type-handler',
+    'both': 'type-both'
+  }[fbo.type] || 'type-fbo';
+
+  const confidenceClass = {
+    'high': 'confidence-high',
+    'medium': 'confidence-medium',
+    'low': 'confidence-low'
+  }[fbo.confidence] || 'confidence-medium';
+
+  // Build amenities list
+  const amenities = [];
+  if (fbo.vipLounge) amenities.push('VIP Lounge');
+  if (fbo.crewLounge) amenities.push('Crew Lounge');
+  if (fbo.hangar) amenities.push('Hangar');
+  if (fbo.customs === 'on-site') amenities.push('On-site Customs');
 
   return `
     <div class="fbo-item">
-      <div class="fbo-name">${fbo.name}</div>
+      <div class="fbo-header">
+        <div class="fbo-name">${fbo.name}</div>
+        <div class="fbo-badges">
+          <span class="type-badge ${typeClass}">${typeLabel}</span>
+          <span class="confidence-badge ${confidenceClass}" title="Contact confidence">${fbo.confidence || 'medium'}</span>
+        </div>
+      </div>
       <div class="fbo-contact">
         ${fbo.phone ? `
           <a href="tel:${fbo.phone}" class="contact-link">
@@ -268,9 +334,28 @@ function renderFBOItem(fbo) {
           </a>
         ` : ''}
       </div>
-      ${services.length > 0 ? `
+      <div class="fbo-details">
+        ${fbo.operatingHours ? `
+          <span class="detail-item">
+            <span class="detail-icon">🕐</span>
+            ${fbo.operatingHours}
+          </span>
+        ` : ''}
+        ${fbo.fuel && fbo.fuel.length > 0 ? `
+          <span class="detail-item">
+            <span class="detail-icon">⛽</span>
+            ${fbo.fuel.join(', ')}
+          </span>
+        ` : ''}
+      </div>
+      ${amenities.length > 0 ? `
+        <div class="fbo-amenities">
+          ${amenities.map(a => `<span class="amenity-tag">${a}</span>`).join('')}
+        </div>
+      ` : ''}
+      ${services ? `
         <div class="fbo-services">
-          ${services.map(s => `<span class="service-tag">${s}</span>`).join('')}
+          <span class="services-text">${services}</span>
         </div>
       ` : ''}
     </div>
@@ -444,11 +529,71 @@ function renderFBOStyles() {
         margin-bottom: 0;
       }
 
+      .fbo-item .fbo-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: var(--spacing-sm);
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
+      }
+
       .fbo-name {
         font-weight: 600;
         font-size: 1rem;
-        margin-bottom: var(--spacing-sm);
         color: var(--primary);
+        margin: 0;
+      }
+
+      .fbo-badges {
+        display: flex;
+        gap: var(--spacing-xs);
+        flex-wrap: wrap;
+      }
+
+      .type-badge {
+        padding: 0.15rem 0.5rem;
+        border-radius: 999px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .type-badge.type-fbo {
+        background: #e3f2fd;
+        color: #1565c0;
+      }
+
+      .type-badge.type-handler {
+        background: #fff3e0;
+        color: #e65100;
+      }
+
+      .type-badge.type-both {
+        background: #e8f5e9;
+        color: #2e7d32;
+      }
+
+      .confidence-badge {
+        padding: 0.15rem 0.4rem;
+        border-radius: 999px;
+        font-size: 0.65rem;
+        font-weight: 500;
+      }
+
+      .confidence-badge.confidence-high {
+        background: rgba(40, 167, 69, 0.15);
+        color: #155724;
+      }
+
+      .confidence-badge.confidence-medium {
+        background: rgba(255, 193, 7, 0.2);
+        color: #856404;
+      }
+
+      .confidence-badge.confidence-low {
+        background: rgba(220, 53, 69, 0.15);
+        color: #721c24;
       }
 
       .fbo-contact {
@@ -476,10 +621,49 @@ function renderFBOStyles() {
         font-size: 0.9rem;
       }
 
-      .fbo-services {
+      .fbo-details {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .detail-item {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        font-size: 0.8rem;
+        color: var(--gray-600);
+      }
+
+      .detail-icon {
+        font-size: 0.85rem;
+      }
+
+      .fbo-amenities {
         display: flex;
         flex-wrap: wrap;
         gap: var(--spacing-xs);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .amenity-tag {
+        background: var(--primary);
+        color: var(--white);
+        padding: 0.15rem 0.5rem;
+        border-radius: 999px;
+        font-size: 0.65rem;
+        font-weight: 500;
+      }
+
+      .fbo-services {
+        margin-top: var(--spacing-xs);
+      }
+
+      .services-text {
+        font-size: 0.8rem;
+        color: var(--gray-600);
+        font-style: italic;
       }
 
       .service-tag {

@@ -7,9 +7,9 @@
  * - Background sync for offline actions (future)
  */
 
-const CACHE_NAME = 'permit-book-v1';
-const STATIC_CACHE_NAME = 'permit-book-static-v1';
-const DATA_CACHE_NAME = 'permit-book-data-v1';
+const CACHE_NAME = 'permit-book-v2';
+const STATIC_CACHE_NAME = 'permit-book-static-v2';
+const DATA_CACHE_NAME = 'permit-book-data-v2';
 
 // Static assets to cache on install
 const STATIC_ASSETS = [
@@ -28,10 +28,8 @@ self.addEventListener('install', (event) => {
         console.log('[SW] Caching static assets');
         return cache.addAll(STATIC_ASSETS);
       })
-      .then(() => {
-        // Skip waiting to activate immediately
-        return self.skipWaiting();
-      })
+    // Don't skipWaiting here - let updates happen naturally
+    // or via explicit user action through the message handler
   );
 });
 
@@ -51,10 +49,8 @@ self.addEventListener('activate', (event) => {
           })
         );
       })
-      .then(() => {
-        // Claim all clients immediately
-        return self.clients.claim();
-      })
+    // Don't claim clients immediately - let them update on next navigation
+    // This prevents page reloads during auth operations
   );
 });
 
