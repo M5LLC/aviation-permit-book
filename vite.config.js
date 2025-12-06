@@ -6,6 +6,17 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Vendor chunks
+          'firebase': ['firebase/app', 'firebase/auth', 'firebase/firestore'],
+          'leaflet': ['leaflet'],
+        },
+      },
+    },
+    // Increase chunk size warning limit (Firebase is large)
+    chunkSizeWarningLimit: 600,
   },
   server: {
     port: 3000,
@@ -19,5 +30,9 @@ export default defineConfig({
       '@utils': '/src/utils',
       '@config': '/src/config',
     },
+  },
+  // PWA optimizations
+  optimizeDeps: {
+    include: ['firebase/app', 'firebase/auth', 'firebase/firestore', 'leaflet'],
   },
 });
