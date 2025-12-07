@@ -278,8 +278,8 @@ function attachFormHandlers() {
   document.getElementById('show-login')?.addEventListener('click', () => switchView('login'));
 }
 
-// Auto-attach handlers when loaded
-setTimeout(attachFormHandlers, 0);
+// Export for use by App.js after rendering
+export { attachFormHandlers };
 
 /**
  * Render auth page styles

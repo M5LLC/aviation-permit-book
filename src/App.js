@@ -4,7 +4,7 @@
 
 import { getBranding } from './config/branding.js';
 import { getCurrentUser, signOut } from './services/auth.js';
-import { renderLoginPage } from './components/auth/LoginPage.js';
+import { renderLoginPage, attachFormHandlers } from './components/auth/LoginPage.js';
 import { renderHeader, attachHeaderHandlers } from './components/layout/Header.js';
 import { renderCountriesTab } from './components/countries/CountriesTab.js';
 import { renderRoutePlanner } from './components/route-planner/RoutePlanner.js';
@@ -143,7 +143,8 @@ function renderPWAIndicator() {
  * Attach event handlers for login page
  */
 function attachLoginHandlers() {
-  // Login handlers are attached in LoginPage.js
+  // Attach form handlers after DOM is updated
+  attachFormHandlers();
 }
 
 /**

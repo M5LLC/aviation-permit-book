@@ -799,6 +799,46 @@ function renderCountriesStyles() {
       .header-badges {
         display: flex;
         gap: var(--spacing-xs);
+        align-items: center;
+      }
+
+      /* Enhanced confidence badges for dark header */
+      .header-badges .badge {
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 0.3rem 0.6rem;
+        border-radius: 999px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(4px);
+      }
+
+      .header-badges .badge-success {
+        background: rgba(40, 167, 69, 0.9);
+        color: #fff;
+        border-color: rgba(40, 167, 69, 0.5);
+        box-shadow: 0 0 8px rgba(40, 167, 69, 0.4);
+      }
+
+      .header-badges .badge-warning {
+        background: rgba(255, 193, 7, 0.95);
+        color: #1a1a1a;
+        border-color: rgba(255, 193, 7, 0.6);
+        box-shadow: 0 0 8px rgba(255, 193, 7, 0.4);
+      }
+
+      .header-badges .badge-danger {
+        background: rgba(220, 53, 69, 0.9);
+        color: #fff;
+        border-color: rgba(220, 53, 69, 0.5);
+        box-shadow: 0 0 8px rgba(220, 53, 69, 0.4);
+      }
+
+      .header-badges .badge-info {
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        border-color: rgba(255, 255, 255, 0.4);
       }
 
       .country-body {
